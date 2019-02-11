@@ -1,6 +1,16 @@
 site_name: iOS Developer Guide
 site_url: 'http://developer.jwplayer.com/sdk/ios/docs/developer-guide/'
 site_favicon: favicon.png
+docs_dir: docs
+site_dir: developer-guide
+theme:
+  name: null
+  custom_dir: node_modules/mkdocs-jwplayer/jwplayer
+  include_search_page: true
+  search_index_only: false
+
+markdown_extensions:
+   - markdown_fenced_code_tabs
 extra:
   noindex: true
   product: ios
@@ -42,12 +52,3 @@ nav:
 - About:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'
-theme:
-  name: null
-  custom_dir: node_modules/mkdocs-jwplayer/jwplayer
-  include_search_page: true
-  search_index_only: false
-docs_dir: dev-guide-markdown
-site_dir: developer-guide
-markdown_extensions:
-   - markdown_fenced_code_tabs
