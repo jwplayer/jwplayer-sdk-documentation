@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Methods - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			Methods
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../advertising/overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/vast/">VAST</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/google-ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../interaction/exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/audio/">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/localization/">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../chromecast/getting-started/">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="methods">Methods</h1>
+<h2 id="playback">Playback</h2>
+<p>These methods are used to retrieve and change the current playback state of the Player: is the Player idle, buffering, playing or paused.</p>
+<p><strong>load(JWMediaSource jwMediaSource)</strong>
+The load method will load a media from a provided URL. Similar to the view properties, the Load method contains optional poster url and internal drawable to show as poster images. </p>
+<p>Load media from a given JWMediaSource. This JWMediaSource can be a SingleSource if there is just a unique URL, or can be a MultipleQualityMediaSource if there are multiple qualities for a video.</p>
+<p><strong>getState()</strong>
+Get the state of the Player (IDLE, BUFFERING, PLAYING, or PAUSED) </p>
+<ul>
+<li>IDLE: either playback has not started or playback was stopped (due to a stop() call or an error). Either the play or the error icon is visible in the display.</li>
+<li>BUFFERING: user pressed play, but sufficient data to start playback has to be loaded first. The buffering icon is visible in the display.</li>
+<li>PLAYING: the video is currently playing. No icon is visible in the display.</li>
+<li>PAUSED: the video is currently paused. The play icon is visible in the display.</li>
+</ul>
+<p><strong>pause(state)</strong><br />
+Toggles playback of the Player. If the state is set true the Player will pause, if set false the Player will start playing and if omitted, the Player will toggle playback.</p>
+<p><strong>play(state)</strong><br />
+Toggles playback of the Player. If the state is set true the Player will start playing, if set false the Player will pause and if omitted, the Player will toggle playback.</p>
+<p><strong>playAd(url)</strong><br />
+In addition to using a VAST ad schedule (see the “Adding VAST Ads” section below), the SDK supports playing ads on an ad-hoc basis using the playAd() method. Simply specify the URL of the VAST tag and the ad will play immediately.</p>
+<p><strong>stop()</strong><br />
+Stops the Player (returning it to the IDLE state) and unloads the currently playing media file.</p>
+<p><strong>onPlay(callback)</strong><br />
+Fired when the Player enters the PLAYING state. Event attributes:
+oldstate (String): the state the Player moved from. Can be BUFFERING or PAUSED.</p>
+<p><strong>onPause(callback)</strong><br />
+Fired when the Player enters the PAUSED state. Event attributes:
+oldstate (String): the state the Player moved from. Can be BUFFERING or PLAYING.</p>
+<p><strong>onBuffer(callback)</strong><br />
+Fired when the Player enters the BUFFERING state. Event attributes:
+oldstate (String): the state the Player moved from. Can be IDLE, PLAYING or PAUSED.</p>
+<p><strong>onIdle(callback)</strong><br />
+Fired when the Player enters the IDLE state. Event attributes:
+oldstate (String): the state the Player moved from. Can be BUFFERING, PLAYING or PAUSED.</p>
+<p><strong>onComplete(callback)</strong><br />
+Fired when an item completes playback. It has no event attributes.</p>
+<p><strong>onError(callback)</strong><br />
+Fired when a media error has occurred, causing the Player to stop playback and go into IDLE mode. Event attributes:</p>
+<ul>
+<li>message (String): The reason for the error. See section on Error Messages for a list of possible media errors.</li>
+</ul>
+<h2 id="seeking"><strong>Seeking</strong></h2>
+<p>These methods are used to retrieve and update the current media playback position.</p>
+<p><strong>getPosition()</strong><br />
+Get the current playback position (playhead) in milliseconds, or -1 if playback is not active</p>
+<p><strong>getDuration()</strong><br />
+Get the duration of the current media in milliseconds, or -1 if unknown. Note that the duration is not available until the first frame of the media has played.</p>
+<p><strong>seek(position)</strong><br />
+Jump to the specified position within the currently playing media. The position is required and must be provided as an integer, in milliseconds.</p>
+<p><strong>onSeek(callback)</strong><br />
+Fired after a seek has been requested either by scrubbing the controlbar or through the API. Event attributes:</p>
+<ul>
+<li>position (Number): The position of the Player before the Player seeks (in milliseconds).</li>
+<li>offset (Number): The user requested position to seek to (in milliseconds). Note the actual position the Player will eventually seek to may differ, e.g. because HLS can only seek to fragment boundaries.</li>
+</ul>
+<p><strong>onTime(callback)</strong><br />
+While the Player is playing, this event is fired as the playback position gets updated. This may occur as frequently as 10 times per second. Event attributes:</p>
+<ul>
+<li>duration(Number): Duration of the current item in milliseconds.</li>
+<li>position(Number): Playback position in milliseconds.</li>
+</ul>
+<h2 id="controls-and-fullscreen"><strong>Controls and Fullscreen</strong></h2>
+<p>The controls of the Player (buttons, etc) should be configured using the layout XML properties of JWPlayerView. See the JWPlayerView description under “Classes and Methods.”</p>
+<p>The following methods allow you to use fullscreen features of the Player.</p>
+<p><strong>getFullscreen()</strong><br />
+Find out whether the Player is currently playing in fullscreen mode. Returns either true or false.</p>
+<p><strong>setFullscreen(boolean state, boolean allowRotation)</strong><br />
+Switch to fullscreen mode or back to windowed mode. Method parameters are:</p>
+<ul>
+<li>state: Set to true to make the player fullscreen, false to make windowed mode.</li>
+<li>allowRotation: Set to true to allow rotation of the phone to enter/exit fullscreen, false if rotation should be locked or only changed by another call to setFullscreen().</li>
+</ul>
+<p><strong>onFullscreen(callback)</strong><br />
+Fired when the Player toggles to and from fullscreen. Event attributes:</p>
+<ul>
+<li>state (boolean): true for fullscreen, false for windowed mode</li>
+<li>userRequest (booelan): true if onFullscreen() was caused by the user tapping the fullscreen button, otherwise false.</li>
+</ul>
+<h2 id="autostart-and-repeat"><strong>Autostart and Repeat</strong></h2>
+<p>The SDK exposes methods for controlling the Autostart and Repeat:</p>
+<p><strong>setAutoStart(boolean)</strong>
+If set to true, the player will start media playback automatically.</p>
+<p><strong>setRepeat(boolean)</strong>
+If set to true, the player will repeat the media (or playlist) automatically after completion.</p>
+<p><strong>isAutoStart()</strong><br />
+Returns (true or false) whether or not the player is set to start media playback automatically.  </p>
+<p><strong>isRepeat()</strong><br />
+Returns (true or false) whether or not the player is set to repeat the media (or playlist) playback.</p>
+<h2 id="playlist"><strong>Playlist</strong></h2>
+<p>The public methods for Playlist are:</p>
+<p><strong>first()</strong><br />
+Plays the first item on the playlist
+Returns a boolean to indicate whether or not the operation was successful.</p>
+<p><strong>getCurrent()</strong><br />
+Returns the current mediaSource in the playlist.</p>
+<p><strong>getCurrentIndex()</strong><br />
+Returns the index of the current media list item that is playing.</p>
+<p><strong>getLastIndex()</strong><br />
+Returns the index of the last media in the list.</p>
+<p><strong>getSize()</strong><br />
+Returns the number of items in the playlist.</p>
+<p><strong>isFinished()</strong><br />
+Returns a boolean indicating whether or not the playlist has finished (i.e., played the last item in the list).</p>
+<p><strong>isFirst()</strong><br />
+Returns a boolean indicating whether or not the current media is the first in the playlist.</p>
+<p><strong>isLast()</strong><br />
+Returns a boolean indicating whether or not the current media is the last in the playlist.</p>
+<p><strong>last()</strong><br />
+Plays the last source on the playlist.
+Returns a boolean indicating whether or not the operation was successful.</p>
+<p><strong>next()</strong><br />
+Plays the next source on the playlist.
+Returns a boolean indicating whether or not the operation was successful.</p>
+<p><strong>previous()</strong><br />
+Plays the previous source on the playlist.
+Returns a boolean indicating whether or not the operation was successful.</p>
+<p><strong>skipTo(index)</strong><br />
+Plays the media at the specified index in the playlist.
+index is an integer indicating the index of the video to be played. (Note that the index count starts at zero, not one.)<br />
+Returns a boolean indicating whether or not the operation was successful.</p>
+<h2 id="quality"><strong>Quality</strong></h2>
+<p>The SDK exposes the Quality API calls to allow app developers to switch video stream quality manually. This could be in response to changing network conditions, a user action, or other event. Call attributes are the same as with the web-based JW Player. This API is only relevant if multiple quality levels of the video are available (for example, from an HLS master playlist).</p>
+<p><strong>Note:</strong> Quality switching using the Quality API is not the same as automatic adaptive HLS. When you switch streams using the Quality API, the new media stream is loaded and the player seeks to the playhead position. </p>
+<p><strong>getQualityLevels(List<QualityLevel> levels)</strong>
+Returns an array with quality levels from the Player. Each level is an object that contains a label property from the NAME attribute in the HLS playlist.</p>
+<p><strong>getCurrentQuality()</strong><br />
+Return the index of the current quality level.</p>
+<p><strong>setCurrentQuality(int index)</strong>
+The index of the desired quality level to set the Player to playback.</p>
+<p><strong>onQualityLevels(List<QualityLevel> levels)</strong>
+Fired when the list of available quality levels is updated. E.g., happens shortly after a playlist item starts playing.</p>
+<p><strong>onQualityChange(int currentQuality)</strong>
+Fired when the active quality level is changed. E.g., happens in response to a user clicking the controlbar quality menu or a script calling setCurrentQuality.</p>
+<p><strong>Note:</strong> HLS Playlist Default Stream Variant
+The SDK always begins playback using the first stream variant in the HLS playlist. This is in accordance with the Apple recommended guidelines HLS (see <a href="https://developer.apple.com/library/ios/technotes/tn2224/_index.html">https://developer.apple.com/library/ios/technotes/tn2224/_index.html</a>) and is true whether you are using adaptive HLS in Android 4.x or the JW Player HLS fallback provider. </p>
+<p>If you want to start playback with a variant other than the first variant, use the <strong>setCurrentQuality(int index)</strong> method in the Quality API. Note that this method cannot be called until <strong>onQualityLevels()</strong> method is called.</p>
+<h2 id="advertising"><strong>Advertising</strong></h2>
+<p><strong>onAdComplete(callback)</strong><br />
+Fired whenever an ad has completed playback. Event attributes:
+tag (String): The URL to the VAST XML file (ad tag) that is currently playing.</p>
+<p><strong>onAdSkipped(callback)</strong><br />
+Fired whenever an ad has been skipped. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL to the VAST XML file (ad tag) that was skipped.</li>
+</ul>
+<p><strong>onAdPlay(callback)</strong><br />
+Fired whenever an ad starts to be played. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL to the VAST XML file (ad tag) that was played.</li>
+</ul>
+<p><strong>onAdPause(callback)</strong><br />
+Fired when the Ad Player enters the PAUSED state. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL to the VAST XML file (ad tag) that was paused.</li>
+</ul>
+<p><strong>onAdBuffer(callback)</strong><br />
+Fired when the Ad Player enters the BUFFERING state. Event attributes:
+tag (String): The URL to the VAST XML file (ad tag) that was buffered.</p>
+<p><strong>onAdError(callback)</strong><br />
+Fired whenever an error prevents the ad from playing. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL to the VAST XML file (ad tag) that had the error.  </li>
+<li><strong>message</strong> (String): The error message.</li>
+</ul>
+<p>The following error messages are possible:  </p>
+<ol>
+<li>Invalid ad tag (e.g. invalid XML, broken VAST)</li>
+<li>Ad tag empty (e.g. no ad available after chasing the wrappers)</li>
+<li>No compatible creatives (e.g. only FLV video in HTML5)</li>
+<li>Error playing creative (e.g. a 404 on the MP4 video)</li>
+<li>Error loading ad tag (for all else)
+Unsupported wrapped VAST xml</li>
+</ol>
+<p><strong>onAdImpression(callback)</strong><br />
+Fired whenever an ad starts playing back. At this point, the VAST tag is loaded and the creative selected. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL of the ad tag that is currently playing.</li>
+</ul>
+<p><strong>onAdTime(callback)</strong><br />
+Fired while ad playback is in progress. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL of the ad tag that is currently playing.</li>
+<li><strong>position</strong> (Number): The current playback position in the ad creative, in milliseconds.</li>
+<li><strong>duration</strong> (Number): The total duration of the ad creative.</li>
+</ul>
+<p><strong>onAdClick(callback)</strong><br />
+Fired whenever a user clicks an ad to be redirected to its landing page. Event attributes:</p>
+<ul>
+<li><strong>tag</strong> (String): The URL of the ad tag that is currently playing.</li>
+</ul>
+<h2 id="captions"><strong>Captions</strong></h2>
+<p>The SDK supports adding caption tracks (subtitles) to video sources. At this time we support the following subtitle formats: SRT, WebVTT and TTML.</p>
+<p>To add text captions to a video source, create a <code>Caption</code> object using the default constructor and set it's properties.</p>
+<pre><code>Caption englishCaptions = new Caption();
+caption.setFile(&quot;https://url/to/caption/en-track.vtt&quot;);
+caption.setLabel(&quot;English&quot;);
+caption.setDefault(true); // In order to set this track as the default caption track
+</code></pre>
+
+<p>After you've instantiated one or more caption tracks you can add it to a <code>PlaylistItem</code>:</p>
+<pre><code>ArrayList&lt;Caption&gt; captionTracks = new ArrayList&lt;&gt;();
+captionTracks.add(englishCaptions);
+playlistItem.setCaptions(captionTracks);
+</code></pre>
+
+<p>Now you can load the playlistItem into the JWPlayerView and it will display the captions.</p>
+<h2 id="metadata">Metadata</h2>
+<p>The SDK broadcasts media metadata, these broadcasts allow developers to listen for metadata embedded 
+in the current playing media file (e.g. dimensions, bitrates).
+To receive these broadcasts you must implement the <code>VideoAdvertising.onMetaListener</code> interface.
+And register the class that implements the interface onto the JWPlayerView.</p>
+<p>Example:</p>
+<ol>
+<li>Create a class that listens for Metadata:</li>
+</ol>
+<pre><code>public class MetadataListener implements VideoPlayerEvents.OnMetaListener {
+
+    private static final String TAG = &quot;MetadataListener&quot;;
+
+    /**
+     * Fired when new metadata has been broadcasted by the player.
+     *
+     * @param meta the metadata
+     */
+    @Override
+    public void onMeta(Metadata meta) {
+        // Prints Meta to logcat in JSON form
+        Log.i(TAG, meta.toString());    
+    }
+}
+</code></pre>
+
+<ol>
+<li>Register the listener</li>
+</ol>
+<pre><code>mPlayerView.addOnMetadataListener(MetadataListener);
+</code></pre>
+
+<p>Note: the actual available metadata may differ between streaming standards and actual streams.</p>
+	                
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

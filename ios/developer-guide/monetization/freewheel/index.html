@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreeWheel - iOS Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link ">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link is-selected">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+    
+      <a href="/sdk/ios/reference/">API Reference</a>
+      <a href="/sdk/ios/docs/developer-guide/">Developer Guide</a>
+      <a href="/ios-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/ios/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			FreeWheel
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Welcome</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../2x-redirect/">2.x Documentation</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Get Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../intro/requirements/">System Requirements</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../intro/getting-started/">Library and Project Setup</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Create a JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../embedding/embedding/">Basic Embedding</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../embedding/features/">Advanced Features</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interact with JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../api/classes/">Classes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../api/callbacks/">Callbacks</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customize</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/building-skins/">Custom Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/captions/">Captions</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Casting</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../casting/airplay/">AirPlay</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../casting/chromecast/">Chromecast</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Ads</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../ad-configuration/">Basic Ad Embed</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../ad-schedules/">Ad Scheduling</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../ad-waterfall/">Tag Waterfall</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../ad-tag-variables/">Ad tag variables</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../nonlinear-ads/">Non linear ads</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../ad-google_ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li class="active">
+    <a href="./">FreeWheel</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../ad-rules/">Ad Rules</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v3/">To 3.x from 2.x</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2dot8/">To 2.8.0 from 2.7.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Troubleshooting</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../troubleshooting/troubleshooting/">Q&A</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="freewheel">FreeWheel</h1>
+<h2 id="overview">Overview</h2>
+<p>The JW Player SDK for iOS is integrated with FreeWheel Ad Manager and supports VAST and VPAID advertising. In this document we will set up your project with FreeWheel and demonstrate all supported features of the FreeWheel implementation.</p>
+<h2 id="supported-features">Supported Features</h2>
+<ul>
+<li>Pre-rolls</li>
+<li>Mid-rolls</li>
+<li>VPAID</li>
+<li>Ad Skip Offset</li>
+<li>Ad Click-through</li>
+<li>Multiple Ad Instances</li>
+<li>Custom Parameters</li>
+</ul>
+<h2 id="setting-up-your-project-for-freewheel-sdk">Setting up your project for FreeWheel SDK</h2>
+<h3 id="building-with-the-framework">Building with the Framework</h3>
+<ol>
+<li>Add the FreeWheel <code>AdManager.framework</code> to your project. This can be downloaded from your <a href="https://hub.freewheel.tv/">FreeWheel Hub</a> account (sign-in required). </li>
+<li>Place <code>AdManager.framework</code> in your project directory.</li>
+<li>In <strong>Build Phases &gt; Link Binary With Libraries</strong>, add <code>AdManager.framework</code>.
+<img alt="Importing FW" src="../../images/fw_intergration.png" /></li>
+</ol>
+<div class="alert important">As per <a href="https://hub.freewheel.tv/pages/viewpage.action?spaceKey=techdocs&amp;title=How+to+Compile+FreeWheel+iOS+SDK+and+Optional+Modules+into+App#HowtoCompileFreeWheeliOSSDKandOptionalModulesintoApp-Enable-ObjCLinkerFlag">FreeWheel's documentation</a>, be sure that <code>-ObjC</code> is added to <strong>Build Settings &gt; Other Linker Flags</strong>.</div>
+<p>Now, you can configure FreeWheel ads in the JW Player SDK.</p>
+<p>If you are using Swift instead of Objective-C, use to the <a href="https://hub.freewheel.tv/display/techdocs/Use+AdManager+in+a+Swift+Project">FreeWheel guide</a> to set up your library.</p>
+<h2 id="freewheel-parameters">FreeWheel Parameters</h2>
+<p>Setting up a FreeWheel campaign requires the following parameters: </p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>networkId</strong></td>
+<td>96749</td>
+</tr>
+<tr>
+<td><strong>serverId</strong></td>
+<td>http://cue.v.fwmrm.net</td>
+</tr>
+<tr>
+<td><strong>profileId</strong></td>
+<td>96749:global-cocoa</td>
+</tr>
+<tr>
+<td><strong>sectionId</strong></td>
+<td>DemoSiteGroup.01</td>
+</tr>
+<tr>
+<td><strong>mediaId</strong></td>
+<td>DemoVideoGroup.01</td>
+</tr>
+</tbody>
+</table>
+<h2 id="freewheel-configuration">FreeWheel Configuration</h2>
+<p>To configure Freewheel ads you have to use <code>JWConfig</code>, <code>JWAdConfig</code> and <code>JWFreewheelConfig</code> in the API.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code>// Create JWFreewheelConfig instance and set up FreeWheel parameters
+JWFreewheelConfig *fwConf = [[JWFreewheelConfig alloc] init];
+fwConf.mediaId = @"DemoVideoGroup.01";
+fwConf.serverId = @"http://demo.v.fwmrm.net/ad/g/1";
+fwConf.profileId = @"96749:global-cocoa";
+fwConf.sectionId = @"DemoSiteGroup.01";
+fwConf.networkId = 96749;
+
+// Create JWAdConfig, then assign ad client and JWFreewheelConfig instance created previously. Other parameters available.
+JWAdConfig *advertising = [[JWAdConfig alloc] init];
+advertising.client = JWAdClientFreewheel;
+advertising.adMessage = @"Ad message xx";
+advertising.skipMessage = @"Skip in xx";
+advertising.skipText = @"Move on";
+advertising.skipOffset = 3;
+advertising.freewheel = fwConf;
+
+// Assign JWAdConfig (with FreeWheel configuration) to JWConfig instance for player
+JWConfig *conf = [[JWConfig alloc] init];
+conf.advertising = advertising;
+</code></pre>
+<h2 id="assign-an-ad-schedule-to-a-playlist-item">Assign an Ad Schedule to a Playlist Item</h2>
+<p>Set up an ad schedule for FreeWheel ads using the <code>JWAdBreak</code> API and assign it to the adSchedule property of the <code>JWConfig</code> instance.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code>// Creating ad breaks: preroll + two midrolls
+JWAdBreak *prerollBreak = [JWAdBreak adBreakWithTag:@"custom_preroll_1" offset:@"pre"];
+JWAdBreak *midrollBreak_1 = [JWAdBreak adBreakWithTag:@"custom_midroll_1" offset:@"12"];
+JWAdBreak *midrollBreak_2 = [JWAdBreak adBreakWithTag:@"custom_midroll_2" offset:@&amp;ldquo;50%&amp;rdquo;];
+JWAdBreak *midrollBreak_3 = [JWAdBreak adBreakWithTag:@"custom_midroll_3" offset:@&amp;ldquo;00:00:45&amp;rdquo;];
+
+JWConfig *conf = [JWConfig alloc init];
+
+// Freewheel config goes here (described previously)
+
+// Adding JWAdBreak instances into adSchedule array
+conf.advertising.schedule = @[prerollBreak, midrollBreak_1, midrollBreak_2, midrollBreak_3];
+</code></pre>
+<p>Note: While creating the <code>JWAdBreak</code> instance you must to pass two parameters - tag and offset:
+- <code>tag</code> - for FreeWheel it can be any string with any content - it is used for determining a particular ad break in the FreeWheel plugin internally. If you have multiple ad breaks placed in the ad schedule array, the tag value should be unique for each ad break.
+- <code>offset</code> - position where ad break should be played. Use &ldquo;pre&rdquo; for the JWAdBreak offset value if you want to play pre-roll. Please reference the following section that describes how to set ad offsets for mid-rolls.</p>
+<h2 id="ad-offset">Ad Offset</h2>
+<p>FreeWheel supports defining advertising offsets. The following formats are available:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Seconds</strong></td>
+<td>JWAdBreak *secBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_1" offset:@"12"];</td>
+</tr>
+<tr>
+<td><strong>Percentage</strong></td>
+<td>JWAdBreak *percBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_2" offset:@&ldquo;50%&rdquo;];</td>
+</tr>
+<tr>
+<td><strong>Time Stamp</strong></td>
+<td>JWAdBreak *timestampBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_3" offset:@&ldquo;00:00:45&rdquo;];</td>
+</tr>
+</tbody>
+</table>
+<h2 id="custom-parameters">Custom Parameters</h2>
+<p>Use the <code>custom</code> property of <code>JWFreewheelConfig</code> object to customize your FreeWheel ad request.</p>
+<p><strong>Code Example:</strong></p>
+<p> <pre><code class>fwConf.custom = @{@&quot;key1&quot;: @&quot;val1&quot;, @&quot;key2&quot;: @&quot;val2&quot;};
+</code></pre></p>
+<h2 id="vpaid">VPAID</h2>
+<p>No additional setup required to use VPAID. FreeWheel configuration for VPAID and VAST are the same. However, the FreeWheel campaign should be configured to use VPAID. </p>
+<h2 id="unsupported-features">Unsupported Features</h2>
+<h3 id="postroll">Postroll</h3>
+<p>Post-rolls are not supported at this time but will be added in the future.</p>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../ad-google_ima/" title="Google IMA">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../ad-rules/" title="Ad Rules"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Localization - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			Localization
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../advertising/overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/vast/">VAST</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/google-ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../interaction/exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/audio/">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li class="active">
+    <a href="./">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../chromecast/getting-started/">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="localization-overview">Localization Overview</h1>
+<p>The JW Player SDK for Android supports localizing error strings and setting the language in the IMA SDK.</p>
+<h2 id="localized-error-messages">Localized Error Messages</h2>
+<p>The following default error messages can be overridden by defining string resources in your application's strings.xml file.</p>
+<table>
+<thead>
+<tr>
+<th align="left">String ID</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>jw_error_unrecognized_input_format_exception</code></td>
+<td align="left">Displayed when the content URL doesn't point to video, or is being redirected to a WiFi portal or proxy.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_decoder_initialization_exception</code></td>
+<td align="left">Displayed when the device does not have a hardware decoder that can decode the video content.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_io_exception</code></td>
+<td align="left">Displayed when any IO exception occurs - e.g. interrupted stream, failed to read local file.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_illegal_argument_exception</code></td>
+<td align="left">Displayed when an illegal argument is passed to ExoPlayer.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_invalid_response_code_exception</code></td>
+<td align="left">Displayed when an HTTP request recieves an unsupported response code - e.g. 500, 404.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_http_data_source_exception</code></td>
+<td align="left">Displayed when ExoPlayer fails to fetch a segment of content - e.g. attempting to buffer while offline.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_cast_media_format_unsupported</code></td>
+<td align="left">Displayed when casting is attempted with an unsupported media type.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_cast_loading_failed</code></td>
+<td align="left">Displayed when loading fails during casting.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_cast_loading_failed_with_status_code</code></td>
+<td align="left">Displayed when loading failed during casting and a status code is available.</td>
+</tr>
+<tr>
+<td align="left"><code>jw_error_cast_loading_failed_no_connection</code></td>
+<td align="left">Displayed when connecting to Chromecast fails</td>
+</tr>
+</tbody>
+</table>
+<h2 id="imasdksettings">ImaSdkSettings</h2>
+<p>To localize the language used during IMA ads:</p>
+<pre><code class="java">    ImaSdkSettings imaSdkSettings = new ImaSdkSettings();
+    // Use the 2-letter ISO 639-1 language code for your desired language 
+    imaSdkSettings.setLanguage(&quot;NL&quot;);
+    ImaAdvertising imaAdvertising = new ImaAdvertising(schedule, imaSdkSettings);
+    playerConfig.setAdvertising(imaAdvertising);
+</code></pre>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../css-skins/" title="CSS Skins">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../../drm/drm-protected-playback/" title="Playing secure content"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

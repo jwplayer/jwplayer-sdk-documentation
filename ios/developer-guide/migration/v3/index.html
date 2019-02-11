@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To 3.x from 2.x - iOS Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link ">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link is-selected">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+    
+      <a href="/sdk/ios/reference/">API Reference</a>
+      <a href="/sdk/ios/docs/developer-guide/">Developer Guide</a>
+      <a href="/ios-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/ios/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			To 3.x from 2.x
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Welcome</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../2x-redirect/">2.x Documentation</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Get Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../intro/requirements/">System Requirements</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../intro/getting-started/">Library and Project Setup</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Create a JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../embedding/embedding/">Basic Embedding</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../embedding/features/">Advanced Features</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interact with JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../api/classes/">Classes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../api/callbacks/">Callbacks</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customize</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/building-skins/">Custom Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/captions/">Captions</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Casting</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../casting/airplay/">AirPlay</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../casting/chromecast/">Chromecast</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Ads</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../monetization/ad-configuration/">Basic Ad Embed</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/ad-schedules/">Ad Scheduling</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/ad-waterfall/">Tag Waterfall</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/ad-tag-variables/">Ad tag variables</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/nonlinear-ads/">Non linear ads</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/ad-google_ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/freewheel/">FreeWheel</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../monetization/ad-rules/">Ad Rules</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration</span>
+    
+    <ul>
+      
+        
+  <li class="active">
+    <a href="./">To 3.x from 2.x</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../v2dot8/">To 2.8.0 from 2.7.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Troubleshooting</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../troubleshooting/troubleshooting/">Q&A</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="jw-player-ios-sdk-migration-from-v2x-to-v3x">JW Player iOS SDK Migration from v2.x to v3.x</h1>
+<p>This Migration Guide will walk you through all major changes from the 2.x versions of the JW Player iOS SDK.</p>
+<h2 id="license-key-download">License Key &amp; Download</h2>
+<p>Your 2.x license key will not work with the JW Player iOS SDK for versions 3.0 and above. You can get your new mobile-only license key from your JW Player account representative. You may currently use Cocoapods to update to 3.x.</p>
+<h2 id="api-summary">API Summary</h2>
+<p>The 3.x release of the JW Player iOS SDK contains some API changes, most importantly:</p>
+<ul>
+<li>All API callbacks now use the form <code>on&lt;#CallbackName#&gt;:(JWEvent *)event</code>. The <code>event</code> parameter will have the old callback's parameters as properties. This (as well as the introduction of the 'JWPlayerError' class) lays the groundwork for future updates.</li>
+<li>For example, <code>onAdPause</code>'s <code>event</code> parameter has properties <code>tag</code>, <code>newState</code>, and <code>oldState</code>, which were previously passed in as parameters themselves.</li>
+<li>The player states are now represented with the <code>JWPlayerState</code> enum instead of strings.</li>
+<li>The <code>adConfig</code> property of the <code>JWConfig</code> has been renamed to <code>advertising</code> for consistency across all JW Player platforms.</li>
+<li>The <code>JWConfig</code>'s adSchedule property has been replaced with a <code>schedule</code> property in the config's <code>advertising</code> property.</li>
+<li>Skin customization is now handled with <code>JWSkinStyling</code> instead of the JWConfig's <code>premiumSkin</code> and <code>cssSkin</code> properties. See <a href="../../customization/building-skins/">Skinning section</a> for more information.</li>
+</ul>
+<h2 id="api-changes">API Changes</h2>
+<h3 id="added-api">Added API</h3>
+<h4 id="jwplayercontroller">JWPlayerController</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>pauseAd:(BOOL)state</code></td>
+<td align="left">Pauses or resumes ad playback.</td>
+</tr>
+<tr>
+<td align="left"><code>loadFeed:(NSString *)feedUrl</code></td>
+<td align="left">Loads a new playlist feed into the player.</td>
+</tr>
+<tr>
+<td align="left"><code>next</code></td>
+<td align="left">Tells JW Player to immediately play the next playlist item.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jwconfig">JWConfig</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>desc</code></td>
+<td align="left">A description of your video or audio item.</td>
+</tr>
+<tr>
+<td align="left"><code>mediaId</code></td>
+<td align="left">Unique identifier of the item; applicable only when a a single file is set.</td>
+</tr>
+<tr>
+<td align="left"><code>nextupOffset</code></td>
+<td align="left">Configures when the Next Up card displays during playback.</td>
+</tr>
+<tr>
+<td align="left"><code>displayTitle</code></td>
+<td align="left">Configures if the title of a media file should be displayed.</td>
+</tr>
+<tr>
+<td align="left"><code>displayDescription</code></td>
+<td align="left">Configures if the description title of a media file should be displayed.</td>
+</tr>
+<tr>
+<td align="left"><code>skin</code></td>
+<td align="left">The customization options for the player's skin.</td>
+</tr>
+<tr>
+<td align="left"><code>logo</code></td>
+<td align="left">The configuration options for a clickable watermark that is overlayed on the video.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jwadconfig">JWAdConfig</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>tag</code></td>
+<td align="left">The URL of the VAST tag to display.</td>
+</tr>
+<tr>
+<td align="left"><code>schedule</code></td>
+<td align="left">An array of JWAdBreak objects that provides info about ad breaks.</td>
+</tr>
+<tr>
+<td align="left"><code>rules</code></td>
+<td align="left">Used to control the frequency of ad playback.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jwplaylistitem">JWPlaylistItem</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>recommendations</code></td>
+<td align="left">URL to a feed that contains related items for a particular playlist item.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jwrelatedconfig">JWRelatedConfig</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>displayMode</code></td>
+<td align="left">Configure the recommendations user interface (Shelf or overlay).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jwplayererror">JWPlayerError</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Class</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>JWPlayerError</code></td>
+<td align="left">A subclass of <code>NSError</code>. A <code>JWPlayerError</code> can thus be safely cast as an <code>NSError</code> without needing to further modify your code.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modified-api">Modified API</h3>
+<h4 id="method-signature-changes">Method Signature Changes</h4>
+<table>
+<thead>
+<tr>
+<th align="left">2.x</th>
+<th align="left">3.x</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>load:(NSString *)file</code></td>
+<td align="left"><code>loadFeed:(NSString *)feedUrl</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>loadPlaylist:(NSArray *)playlist</code></td>
+<td align="left"><code>load:(NSArray &lt;JWPlaylistItem *&gt; *)playlist</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>seek:(NSInteger)position</code></td>
+<td align="left"><code>seek:(NSUInteger)position</code></td>
+<td align="left">Changed parameter type.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="name-changes">Name Changes</h4>
+<table>
+<thead>
+<tr>
+<th align="left">2.x</th>
+<th align="left">3.x</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>adClient</code></td>
+<td align="left"><code>client</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>adConfig</code></td>
+<td align="left"><code>advertising</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>adSchedule</code></td>
+<td align="left"><code>schedule</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>captionStyling</code></td>
+<td align="left"><code>captions</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>NSInteger currentQualityLevel</code></td>
+<td align="left"><code>NSUInteger currentQuality</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>defaultValue</code></td>
+<td align="left"><code>defaultTrack</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>fontColor</code></td>
+<td align="left"><code>color</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>imaSettings</code></td>
+<td align="left"><code>googimaSettings</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>isInFullscreen</code></td>
+<td align="left"><code>fullscreen</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>JWAdConfig</code></td>
+<td align="left"><code>JWAdvertising</code></td>
+<td align="left">Changed class name.</td>
+</tr>
+<tr>
+<td align="left"><code>levels</code></td>
+<td align="left"><code>qualityLevels</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>BOOL nonlinear</code></td>
+<td align="left"><code>JWAdType type</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>NSNumber *playbackPosition</code></td>
+<td align="left"><code>CGFloat position</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>playerState</code></td>
+<td align="left"><code>state</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>relatedConfig</code></td>
+<td align="left"><code>related</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>stretch</code></td>
+<td align="left"><code>stretching</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="type-changes">Type Changes</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">2.x</th>
+<th align="left">3.x</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>bitRateUpperBound</code></td>
+<td align="left"><code>double</code></td>
+<td align="left"><code>CGFloat</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>buffer</code></td>
+<td align="left"><code>NSInteger</code></td>
+<td align="left"><code>NSUInteger</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>currentAudioTrack</code></td>
+<td align="left"><code>NSInteger</code></td>
+<td align="left"><code>NSUInteger</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>currentCaptions</code></td>
+<td align="left"><code>NSInteger</code></td>
+<td align="left"><code>NSUInteger</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>currentQualityLevel</code></td>
+<td align="left"><code>NSInteger</code></td>
+<td align="left"><code>NSUInteger currentQuality</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>duration</code></td>
+<td align="left"><code>double</code></td>
+<td align="left"><code>CGFloat</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>nonlinear</code></td>
+<td align="left"><code>BOOL</code></td>
+<td align="left"><code>JWAdType type</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>playbackPosition</code></td>
+<td align="left"><code>NSNumber*</code></td>
+<td align="left"><code>CGFloat position</code></td>
+<td align="left">Changed property name and type.</td>
+</tr>
+<tr>
+<td align="left"><code>preload</code></td>
+<td align="left"><code>BOOL</code></td>
+<td align="left"><code>JWPreload</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>skipOffset</code></td>
+<td align="left"><code>NSInteger</code></td>
+<td align="left"><code>NSUInteger skipOffset</code></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="removed-api-methods">Removed API Methods</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>loadConfig:</code></td>
+<td align="left">Loads a new JWConfig object into the player.</td>
+</tr>
+<tr>
+<td align="left"><code>pictureInPictureDisabled</code></td>
+<td align="left">Boolean value that determines whether the video should allow Picture In Picture display.</td>
+</tr>
+<tr>
+<td align="left"><code>enterFullScreen</code></td>
+<td align="left">Switches the player to full screen mode.</td>
+</tr>
+<tr>
+<td align="left"><code>exitFullScreen</code></td>
+<td align="left">Switches the player to inline mode.</td>
+</tr>
+<tr>
+<td align="left"><code>togglePictureInPicture</code></td>
+<td align="left">Toggles the player into and out of Picture In Picture display.</td>
+</tr>
+<tr>
+<td align="left"><code>timeSliderAbove</code></td>
+<td align="left">Sets the timeslider above the control bar buttons at all player sizes.</td>
+</tr>
+<tr>
+<td align="left"><code>premiumSkin</code></td>
+<td align="left">Sets a premium JW Player skin to use with the player.</td>
+</tr>
+<tr>
+<td align="left"><code>cssSkin</code></td>
+<td align="left">A url to a CSS file that contains a skin to be used during player setup.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="callback-changes">Callback Changes</h2>
+<h3 id="modified-callbacks">Modified Callbacks</h3>
+<p>All callbacks now use the form <code>onCallbackName:(JWEvent *)event</code>.</p>
+<h3 id="renamed-callbacks">Renamed Callbacks</h3>
+<table>
+<thead>
+<tr>
+<th align="left">2.x</th>
+<th align="left">3.x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>onOpenRelatedOverlay:</code></td>
+<td align="left"><code>onRelatedOpen:</code></td>
+</tr>
+<tr>
+<td align="left"><code>onCloseRelatedOverlay:</code></td>
+<td align="left"><code>onRelatedClose:</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="removed-callbacks">Removed Callbacks</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Callback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>onCaptionsChange:</code></td>
+</tr>
+<tr>
+<td align="left"><code>onQualityLevels:</code></td>
+</tr>
+<tr>
+<td align="left"><code>onQualityChange:</code></td>
+</tr>
+<tr>
+<td align="left"><code>onVisualQuality:</code></td>
+</tr>
+<tr>
+<td align="left"><code>onPictureInPicture:</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="enum-changes">Enum Changes</h2>
+<table>
+<thead>
+<tr>
+<th align="left">2.x</th>
+<th align="left">3.x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>JWFairPlay</code> (JWEncryption)</td>
+<td align="left"><code>JWEncryptionFairPlay</code></td>
+</tr>
+<tr>
+<td align="left"><code>none</code> (JWEdgeStyle)</td>
+<td align="left"><code>JWEdgeStyleNone</code></td>
+</tr>
+<tr>
+<td align="left"><code>dropshadow</code> (JWEdgeStyle)</td>
+<td align="left"><code>JWEdgeStyleDropshadow</code></td>
+</tr>
+<tr>
+<td align="left"><code>raised</code> (JWEdgeStyle)</td>
+<td align="left"><code>JWEdgeStyleRaised</code></td>
+</tr>
+<tr>
+<td align="left"><code>depressed</code> (JWEdgeStyle)</td>
+<td align="left"><code>JWEdgeStyleDepressed</code></td>
+</tr>
+<tr>
+<td align="left"><code>uniform</code> (JWEdgeStyle)</td>
+<td align="left"><code>JWEdgeStyleUniform</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWRelatedOpenMethod</code></td>
+<td align="left"><code>JWRelatedMethod</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWRelatedCompleteAction</code></td>
+<td align="left"><code>JWRelatedOnComplete</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWStretchUniform</code> (JWStretching)</td>
+<td align="left"><code>JWStretchingUniform</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWStretchExactFit</code> (JWStretching)</td>
+<td align="left"><code>JWStretchingExactFit</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWStretchFill</code> (JWStretching)</td>
+<td align="left"><code>JWStretchingFill</code></td>
+</tr>
+<tr>
+<td align="left"><code>JWStretchNone</code> (JWStretching)</td>
+<td align="left"><code>JWStretchingNone</code></td>
+</tr>
+<tr>
+<td align="left"><code>vastPlugin</code> (JWAdClient)</td>
+<td align="left"><code>JWAdClientVast</code></td>
+</tr>
+<tr>
+<td align="left"><code>googIMA</code> (JWAdClient)</td>
+<td align="left"><code>JWAdClientGoogima</code></td>
+</tr>
+<tr>
+<td align="left"><code>freewheel</code> (JWAdClient)</td>
+<td align="left"><code>JWAdClientFreewheel</code></td>
+</tr>
+</tbody>
+</table>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../../monetization/ad-rules/" title="Ad Rules">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../v2dot8/" title="To 2.8.0 from 2.7.x"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

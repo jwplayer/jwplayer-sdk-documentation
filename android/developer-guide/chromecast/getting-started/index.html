@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Getting started - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			Getting started
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../advertising/overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/vast/">VAST</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/google-ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../interaction/exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/audio/">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/localization/">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li class="active">
+    <a href="./">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="chromecast">Chromecast</h1>
+<h2 id="overview">Overview</h2>
+<p>Enabling Chromecast functionality for your Android application using the JW Player SDK is simple. </p>
+<p><strong>There are 6 steps to complete:</strong></p>
+<ol>
+<li>
+<p>(Not required for Maven users) Include Google's <a href="https://github.com/googlecast/CastCompanionLibrary-android">CastCompanionLibrary</a> in your project.</p>
+</li>
+<li>
+<p>Initialize JW Player's <a href="http://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/cast/CastManager.html">CastManager</a> at the <code>Application</code> level</p>
+</li>
+<li>
+<p>Create an activity that is a descendant of <a href="http://developer.android.com/reference/android/support/v4/app/FragmentActivity.html">FragmentActivity</a> from the <code>android.support.v4</code> support library</p>
+</li>
+<li>
+<p>Add a <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/JWPlayerFragment.html">JWPlayerFragment</a> or a <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/JWPlayerView.html">JWPlayerView</a> to your <code>Activity</code> </p>
+</li>
+<li>
+<p>Add a <a href="http://developer.android.com/reference/android/support/v7/app/MediaRouteButton.html">MediaRouteButton</a> to the <code>ActionBar</code> or to your Activity's layout</p>
+</li>
+<li>
+<p>Connect your device to the same WiFi network as your Chromecast</p>
+</li>
+</ol>
+<p>Now you can cast <a href="https://developers.google.com/cast/docs/media">compatible media formats</a> that are currently playing in your application to the big screen!</p>
+<h2 id="including-googles-castcompanionlibrary-not-required-if-your-app-uses-mvnjwplayercom-to-add-the-jw-player-sdk-dependencies">Including Google's CastCompanionLibrary (not required if your app uses mvn.jwplayer.com to add the JW Player SDK dependencies)</h2>
+<p>Since JW Player's SDK was built using <strong>version #cast_companion_version#</strong> of Google's <code>CastCompanionLibrary</code></p>
+<p>In your app's build.gradle, add the library from jCenter repo by adding the following line to your project's
+dependencies:</p>
+<pre><code class="groovy"> dependencies {
+    ...
+    compile 'com.google.android.libraries.cast.companionlibrary:ccl:#cast_companion_version#'
+ }
+</code></pre>
+
+<h2 id="initializing-the-castmanager">Initializing the CastManager</h2>
+<p>Connecting to Chromecast devices is managed by the <code>CastManager</code> class. The <code>CastManager</code> is a singleton class that must be initialized in the <code>onCreate()</code> method of the application.</p>
+<h3 id="initialization">Initialization</h3>
+<p>Create a new class that extends from Android's <code>Application</code> class, and override the <code>onCreate()</code> method as shown below</p>
+<pre><code class="java">public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        /*
+         * We need to initialize singletons in the global application object to prevent issues
+         * with garbage collection.
+         */
+        CastManager.initialize(this);
+        // You can now get a reference to the singleton by calling CastManager.getInstance();
+    }
+}
+</code></pre>
+
+<p>After you creating your <code>MyApplication</code> class, you should modify the  <code>AndroidManifest.xml</code> and set the fully qualified name within the <code>&lt;application&gt;</code> tag.</p>
+<pre><code class="xml">&lt;application
+        android:icon=&quot;@drawable/ic_launcher&quot;
+        android:label=&quot;@string/app_name&quot;
+        android:theme=&quot;@style/Theme.AppCompat&quot;
+        android:name=&quot;com.longtailvideo.jwplayer.example.MyApplication&quot;&gt;
+...
+&lt;/application&gt;
+</code></pre>
+
+<h2 id="configuring-your-activity">Configuring your Activity</h2>
+<p>To enable casting, the activity in which JW Player exists must be a descendant of <code>FragmentActivity</code> of the <code>android.support.v4</code> support library. </p>
+<p>In our example we will be using <a href="http://developer.android.com/reference/android/support/v7/app/AppCompatActivity.html">AppCompatActivity</a> from the <code>android.support.v7</code> support library, which satisfies the criteria.</p>
+<pre><code class="java">public class ChromecastActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chromecast);
+    }
+
+}
+</code></pre>
+
+<p>You now have two options</p>
+<h3 id="option-a-use-jwplayerfragment">Option A: Use JWPlayerFragment</h3>
+<p>The fastest way to get Chromecast up and running is by using the <code>JWPlayerFragment</code> or <code>JWPlayerSupportFragment</code>. The JWPlayerFragment will take care of adding the <code>MediaRouteButton</code> to your action bar which allows users to begin casting.</p>
+<p>As a refresher, here's how to add a <a href="https://developer.jwplayer.com/sdk/android/docs/developer-guide/usage/jwplayer-fragment/">JWPlayerFragment</a> to your Activity.</p>
+<p>As soon as you completed the above steps and added the <code>JWPlayerFragment</code> to your Activity's layout you should now be ready to start Casting, just make sure you are on the same network as your casting device and the Cast button will appear on your <code>ActionBar</code>.</p>
+<h3 id="option-b-use-jwplayerview">Option B: Use JWPlayerView</h3>
+<p>Using <code>JWPlayerView</code> allows more granular control over the player and the <code>MediaRouteButton</code></p>
+<p>As a refresher, here's how to add a <a href="https://developer.jwplayer.com/sdk/android/docs/developer-guide/usage/jwplayer-view/">JWPlayerView</a> to your Activity.</p>
+<p>As soon as you completed the above steps and added the <code>JWPlayerView</code> to your activity you should now be ready to add your <code>MediaRouteButton</code>.</p>
+<h2 id="adding-the-mediaroutebutton">Adding the MediaRouteButton</h2>
+<p>The <code>MediaRouteButton</code> allows users to select which device they'd like to start casting to. During the cast session it provides a customizable dialog that allows users to play, pause or cease casting at any time. Below we'll describe two ways of adding the MediaRouteButton to you application, either to the ActionBar or to your Activity's layout.</p>
+<h3 id="adding-a-mediaroutebutton-to-the-actionbar">Adding a MediaRouteButton to the ActionBar</h3>
+<p>You will only have to add the <code>MediaRouteButton</code> to your <code>ActionBar</code> when using the <code>JWPlayerView</code> as this is the default location of the <code>MediaRouteButton</code> when using the <code>JWPlayerFragment</code>.</p>
+<p>There are two ways to add the <code>MediaRouteButton</code> to your <code>ActionBar</code></p>
+<h4 id="add-to-actionbar-via-xml">Add to ActionBar via XML</h4>
+<p>Add the following item to your Activity's <code>menu_main.xml</code>:</p>
+<pre><code class="xml">&lt;item android:id=&quot;@+id/media_route_menu_item&quot;
+    android:title=&quot;@string/media_route_menu_title&quot;
+    app:actionProviderClass=&quot;android.support.v7.app.MediaRouteActionProvider&quot;
+    app:showAsAction=&quot;always&quot;
+  /&gt;
+</code></pre>
+
+<p>In your Activity override <code>onCreateOptionsMenu()</code>:</p>
+<pre><code class="java">@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+  super.onCreateOptionsMenu(menu);
+  // Inflate the menu
+  getMenuInflater().inflate(R.menu.menu_main, menu);
+  // Register the MediaRouterButton on the JWPlayer SDK
+  CastManager.getInstance().addMediaRouterButton(menu, R.id.media_route_menu_item);
+  return true;
+}
+</code></pre>
+
+<h4 id="add-to-actionbar-programmatically">Add to ActionBar Programmatically</h4>
+<p>It is also possible to add the <code>MediaRouteButton</code> to your ActionBar programmatically.</p>
+<p>In your Activity override <code>onCreateOptionsMenu()</code> as shown below</p>
+<pre><code class="java">@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+  super.onCreateOptionsMenu(menu);
+  // Create the button
+  MenuItem castButton = menu.add(Menu.NONE, R.id.media_route_menu_item, Menu.NONE, R.string.ccl_media_route_menu_title);
+  // Make the button always visible
+  MenuItemCompat.setShowAsAction(castButton, MenuItemCompat.SHOW_AS_ACTION_ALWAYS);
+  // Set the action provider to MediaRouteActionProvider
+  MenuItemCompat.setActionProvider(castButton, new MediaRouteActionProvider(getActivity()));
+  // Register the MediaRouterButton on the JW Player SDK
+  CastManager.getInstance().addMediaRouterButton(menu, R.id.media_route_menu_item);
+  return true;
+}
+</code></pre>
+
+<p>The Cast button will now appear when your device is on the same wifi network as a Chromecast device.</p>
+<div class="alert warning">Note: Since the ActionBar is usually hidden when in fullscreen mode, you may want to include the MediaRouteButton in your Activity's layout instead to allow users to begin casting when in fullscreen.</div>
+<h3 id="adding-a-mediaroutebutton-to-your-viewgroup">Adding a MediaRouteButton to your ViewGroup</h3>
+<p>As mentioned in the above note, in some cases, you may want to add your <code>MediaRouteButton</code> to a <code>ViewGroup</code> rather than an <code>ActionBar</code>. </p>
+<h4 id="add-to-viewgroup-via-xml">Add to ViewGroup via XML</h4>
+<p>Add the code below to your xml layout</p>
+<pre><code class="xml">&lt;android.support.v7.app.MediaRouteButton
+        android:id=&quot;@+id/chromecast_btn&quot;
+        android:layout_width=&quot;50dp&quot;
+        android:layout_height=&quot;50dp&quot; /&gt;
+</code></pre>
+
+<p>Then add this to your Activity</p>
+<pre><code class="java">MediaRouteButton chromecastBtn = (MediaRouteButton) findViewById(R.id.chromecast_btn);
+CastManager.getInstance().addMediaRouterButton(chromecastBtn);  
+</code></pre>
+
+<h4 id="add-to-viewgroup-programmatically">Add to ViewGroup Programmatically</h4>
+<p>Once you assign an id to your <code>ViewGroup</code> you can easily add the <code>MediaRouteButton</code> to your layout as shown below</p>
+<pre><code class="java">ViewGroup container = (ViewGroup) findViewById(R.id.player_container);
+MediaRouteButton chromecastBtn = new MediaRouteButton(this);
+container.addView(chromecastBtn);
+CastManager.getInstance().addMediaRouterButton(chromecastBtn);
+</code></pre>
+
+<h2 id="ready-to-start-casting">Ready to start casting</h2>
+<p>At this point your application is ready to start casting. Just make sure you are on the same WiFi network as your Chromecast device.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers. Custom Receivers are not yet officially supported, but may work if the video playback implements the same interface used in the Default Media Receiver. To specify a receiver, specify a Media Receiver Application ID when initializing the CastManager.</p>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../../drm/custom-http-headers/" title="Custom HTTP headers">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../customization/" title="Customization"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio API - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			Audio API
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../advertising/overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/vast/">VAST</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/google-ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../advertising/freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li class="active">
+    <a href="./">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/localization/">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../chromecast/getting-started/">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="audiotrack">AudioTrack</h1>
+<p>The <code>AudioTrack</code> class represents an audio track in an HLS, SmoothStreaming, or DASH stream. Audio tracks are sent to the developer via the <code>onAudioTracks()</code> callback.</p>
+<p>At this moment Audio Track switching is only supported for DASH and SmoothStreaming streams.</p>
+<h2 id="audio-api-methods">Audio API Methods</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>List&lt;AudioTrack&gt; getAudioTracks()</code></td>
+<td align="left">Returns a List with audio tracks from the player.</td>
+</tr>
+<tr>
+<td align="left"><code>int getCurrentAudioTrack()</code></td>
+<td align="left">Returns the index of the currently active audio track.</td>
+</tr>
+<tr>
+<td align="left"><code>setCurrentAudioTrack(int index)</code></td>
+<td align="left">Change the audio track to the provided index. The index must be within the list provided by <code>getAudioTracks()</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="audio-callbacks">Audio Callbacks</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Callback</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">onAudioTracks(<a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/events/AudioTracksEvent.html">AudioTracksEvent</a> audioTracksEvent)</td>
+<td align="left">Fired when the list of available audio tracks is updated. Happens shortly after a playlist item starts playing.</td>
+</tr>
+<tr>
+<td align="left">onAudioTrackChanged(<a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/events/AudioTrackChangedEvent.html">AudioTrackChangedEvent</a> audioTrackChangedEvent)</td>
+<td align="left">Fired when the active audio track is changed. Happens in response to a user clicking the audio tracks menu or a call to <code>setCurrentAudioTrack()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="background-audio">Background Audio</h2>
+<p>The JW Player allows you to keep continuing audio playback when your app has been backgrounded.
+You can enable background audio playback by calling <code>setBackgroundAudio(true)</code> on the JWPlayerView.</p>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../quality/" title="Quality API">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../captions/" title="Captions API"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

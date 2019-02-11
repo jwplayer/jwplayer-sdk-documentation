@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VAST - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			VAST
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li class="active">
+    <a href="./">VAST</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../google-ima/">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../interaction/exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/audio/">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/localization/">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../chromecast/getting-started/">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="vast">VAST</h1>
+<h2 id="overview">Overview</h2>
+<p>The JW Player SDK for Android supports VAST advertising and follows the standards set by the IAB.</p>
+<div class="alert warning">As of version 2.3 of the JW Player SDK for Android, your VAST advertisements must have CORS configured for: </p>
+<p>Access-Control-Allow-Origin: http://intercept.jw/ </p>
+<p>This configuration is described in the IAB VAST specification on page 16: <a href="http://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf">http://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf</a></div>
+<h2 id="supported-features">Supported Features</h2>
+<ul>
+<li>VAST 4</li>
+<li>Ad Tag Waterfalls</li>
+<li>Non-Linear Banner Ads</li>
+<li>Playlist Item Level Advertising</li>
+<li>Playlist Level Advertising</li>
+<li>VMAP</li>
+<li>Ad Pods</li>
+<li>VPAID 2.0</li>
+<li>Ad Tag Variables</li>
+<li>Skip Offset</li>
+</ul>
+<h2 id="ad-tag-waterfalls">Ad tag waterfalls</h2>
+<p>When using <code>AdSource.VAST</code> you have the ability to define an ad tag waterfall. Ad tag waterfalls allow you to set several ad tags to a single ad break and the player will play the first ad that returns a valid response.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create waterfall string array
+String[] waterfall = new String[]{
+        &quot;http://demo.jwplayer.com/android/vast-tags/pbadreroll.xml&quot;,
+        &quot;http://demo.jwplayer.com/android/vast-tags/preroll.xml&quot;
+};
+
+// Create your ad schedule
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, waterfall);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+adSchedule.add(adBreak);
+
+// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+
+// Create a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+playlist.add(video);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="non-linear-overlay-ads">Non-linear Overlay Ads</h2>
+<p>In addition to standard, linear video advertising, JW Player also supports the display of banner ads as an overlay over the video content. This means that advertisements can appear without disrupting playback. This method of advertising is known as a non-linear overlay ads.</p>
+<p>Non-linear ads are set up just like regular linear ads, with the only difference being that you must call setAdType() on your <code>AdBreak</code> and set it to <code>AdType.NONLINEAR</code>.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Set the ad break offset
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;http://playertest.longtailvideo.com/adtags/nonlinear.xml&quot;);
+
+// Specify the AdType as NONLINEAR
+adBreak.setAdType(AdType.NONLINEAR);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+adSchedule.add(adBreak);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+// Create a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+playlist.add(video);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="assign-an-ad-schedule-to-a-playlist-item">Assign an ad schedule to a playlist item</h2>
+<p>You can also define playlist item specific ad schedules to further customize your ad strategy.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Create advertising schedule
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;http://www.adotube.com/php/services/player/OMLService.php?avpid=oRYYzvQ&amp;platform_version=vast20&amp;ad_type=linear&amp;groupbypass=1&amp;HTTP_REFERER=http://www.longtailvideo.com&amp;video_identifier=longtailvideo.com,test&quot;);
+
+adSchedule.add(adBreak);
+
+// Set advertising schedule to your video
+video.setAdSchedule(adSchedule);
+
+
+// Create second video
+PlaylistItem video2 = new PlaylistItem(&quot;http://playertest.longtailvideo.com/jwpromo/jwpromo.m3u8&quot;);
+
+// Create different advertising schedule
+List&lt;AdBreak&gt; adSchedule2 = new ArrayList&lt;AdBreak&gt;();
+
+AdBreak adBreak2 = new AdBreak(&quot;10&quot;, AdSource.VAST, &quot;http://demo.jwplayer.com/android/vast-tags/preroll.xml&quot;);
+
+adSchedule2.add(adBreak2);
+
+// Set advertising schedule to your video
+video2.setAdSchedule(adSchedule2);
+
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+playlist.add(video);
+playlist.add(video2);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="assign-an-ad-schedule-to-the-entire-playlist">Assign an ad schedule to the entire playlist</h2>
+<p>When using <code>AdSource.VAST</code> you have the option of setting an ad schedule for the entire playlist by creating an <code>Advertising</code> object.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create your ad schedule
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;http://www.adotube.com/php/services/player/OMLService.php?avpid=oRYYzvQ&amp;platform_version=vast20&amp;ad_type=linear&amp;groupbypass=1&amp;HTTP_REFERER=http://www.longtailvideo.com&amp;video_identifier=longtailvideo.com,test&quot;);
+
+adSchedule.add(adBreak);
+
+// Set your ad schedule to your advertising object
+Advertising advertising = new Advertising(AdSource.VAST, adSchedule);
+
+advertising.setSkipOffset(3);
+advertising.setAdMessage(&quot;Text that appears in the control bar&quot;);
+advertising.setCueText(&quot;Text that appears when you hover over the ad marker&quot;);
+advertising.setSkipMessage(&quot;Text that appears before skip is available&quot;);
+advertising.setSkipText(&quot;Text that appears when skip is available&quot;);
+
+// Create a playlist, you'll need this to build your player config
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+PlaylistItem video2 = new PlaylistItem(&quot;http://playertest.longtailvideo.com/jwpromo/jwpromo.m3u8&quot;);
+
+playlist.add(video);
+playlist.add(video2);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .advertising(advertising)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="vmap-advertising">VMAP Advertising</h2>
+<p>Currently, <code>VMAP</code> advertising schedules can only be assigned to the entire playlist using our <code>VMAPAdvertising</code> object. The added benefit of using <code>VMAP</code> is the fact that it contains its own ad schedule which can be served across different platforms.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Set the url to the VMAP tag
+VMAPAdvertising vmapAdvertising = new VMAPAdvertising(AdSource.VAST,&quot;https://playertest.longtailvideo.com/adtags/vmap2.xml&quot;);
+
+// Create a playlist, you'll need this to build your player config
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+PlaylistItem video2 = new PlaylistItem(&quot;http://playertest.longtailvideo.com/jwpromo/jwpromo.m3u8&quot;);
+
+playlist.add(video);
+playlist.add(video2);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .advertising(vmapAdvertising)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="ad-pods">Ad Pods</h2>
+<p>VAST 3 Ad Pods allow ad networks to deliver multiple ads in a single ad break.</p>
+<div class="alert warning">When configuring ad pods that contain both VPAID 2.0 and regular linear ads it is important that you schedule the VPAID 2.0 ads first, followed by your linear ads. You CANNOT mix the sequence.</div>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Set the ad break offset
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;https://s3.amazonaws.com/demo.jwplayer.com/advertising/assets/vast3_jw_ads.xml&quot;);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+adSchedule.add(adBreak);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+// Create a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+
+playlist.add(video);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="vpaid-20">VPAID 2.0</h2>
+<p>As of version 2.3.0 the JW Player SDK for Android supports VPAID 2 creatives. This version of VPAID can deliver JavaScript ad creatives.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Set the ad break offset
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;http://search.spotxchange.com/vast/2.00/85394?VPAID=js&amp;content_page_url=www.testing123.com&amp;cb=__random-number__&amp;device[devicetype]=1&amp;device[dnt]=0&quot;);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+adSchedule.add(adBreak);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+// Create a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+
+playlist.add(video);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<p><strong>Caution:</strong></p>
+<ul>
+<li><strong>Only VPAID 2.0 JavaScript creatives are supported</strong>. Flash and Silverlight creatives are not supported.</li>
+<li>HTML5 Fullscreen API's are currently <strong>NOT</strong> supported since the JW Player SDK for Android has its own fullscreen behavior.</li>
+<li>Because of this you must make sure that your ad creatives are responsive and are able to handle dynamic changes in width and height, which occur when a user rotates their device.</li>
+</ul>
+<p>We recommend you to test your VPAID creatives with our SDK before distributing them as they may throw errors or not work as expected when rendered by the JW Player SDK for Android.</p>
+<h2 id="ad-tag-variables">Ad tag variables</h2>
+<p>Ad tag variables are special macros which expand to provide your ad request additional details about your content such as its title, description or the player's height and width.</p>
+<p>For a complete list of supported macros please visit:
+<a href="https://support.jwplayer.com/customer/portal/articles/1434340-ad-tag-targeting-macros">https://support.jwplayer.com/customer/portal/articles/1434340-ad-tag-targeting-macros</a></p>
+<p><strong>Code Example</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Make sure to set the item information you'll be expanding later
+video.setDescription(&quot;BipBop&quot;);
+
+// Set the ad break offset
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.VAST, &quot;https://playertest.longtailvideo.com/adtags/vmap2.xml?descr=__item-description__&amp;height=__player-height__&amp;width=__player-width__&quot;);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;AdBreak&gt;();
+adSchedule.add(adBreak);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+// Create a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;PlaylistItem&gt;();
+
+playlist.add(video);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="setting-the-skip-offset">Setting the skip offset</h2>
+<p>When using <code>AdSource.VAST</code> you can set the time it takes to show a skip button for the ad provided. You can set it for both playlist level advertising and playlist item level advertising. Below is a code example for the playlist item level advertising scenario.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Construct a new AdBreak containing the Ad tag
+// This AdBreak will play a midroll at 10%
+AdBreak adBreak = new AdBreak(&quot;10%&quot;, AdSource.VAST, &quot;http://demo.jwplayer.com/android/vast-tags/preroll.xml&quot;);
+
+// Add the AdBreak to a List
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;&gt;();
+adSchedule.add(adBreak);
+
+// Build a PlaylistItem and assign adSchedule
+PlaylistItem video = new PlaylistItem.Builder()
+                    .file(&quot;http://url.with.content/file.mp4&quot;)
+                    .adSchedule(adSchedule)
+                    .build();
+
+// Add the PlaylistItem to a List 
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+playlist.add(video);
+
+// Create an empty list for the Advertising object
+List&lt;AdBreak&gt; emptyList = new ArrayList&lt;&gt;();
+
+// Construct the Advertising Object
+Advertising advertising = new Advertising(AdSource.VAST,emptyList);
+
+// Set the skip offset in seconds
+advertising.setSkipOffset(3);
+
+// Build the PlayerConfig
+PlayerConfig playerConfig = new PlayerConfig.Builder(this)
+                            .playlist(playlist)
+                            .advertising(advertising)
+                            .build();
+
+// Setup the player
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="timing-your-ads">Timing your ads</h2>
+<p>Timing your ads is accomplished with the <a href="http://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/ads/AdBreak.html"><code>AdBreak</code></a> object and its offset variable.</p>
+<p>Values permitted include:</p>
+<ul>
+<li><code>pre</code>: specifies that the AdBreak should be played before the video content.</li>
+<li><code>post</code>: specifies that the AdBreak should be played after the video content.</li>
+<li>A time value specified in one of the following formats:<ul>
+<li>Seconds: <code>50</code></li>
+<li>Fractional seconds: <code>50.5</code></li>
+<li>Percentage of the entire video: <code>50%</code></li>
+<li>Timecode (hh:mm:ss.mmm): <code>01:55:30:000</code></li>
+</ul>
+</li>
+</ul>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../overview/" title="Advertising Overview">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../google-ima/" title="Google IMA"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

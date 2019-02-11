@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html class="mkdocs-jwplayer ">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google IMA - Android Developer Guide</title>
+
+    
+      <meta name="robots" content="noindex, follow">
+    
+
+    
+      <meta name="description" content="JW Developers provides tools and resources for developers using JW Player, JW Platform and the Android and iOS SDKs." />
+    
+
+    
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+    
+
+    <link rel="stylesheet" href="../../css/mkdocs-jwplayer.min.css">
+
+    
+
+    
+    
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBF9PW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MBF9PW');</script>
+
+  </head>
+  <body>
+    <div class="site">
+
+				<div class="site-top">
+	        <!--Start Common Site Header-->
+<div class="site-header">
+  <div class="site-header-container">
+    <a class="logo" href="/">
+      <img src="//developer.jwplayer.com/img/jw-logo-mark-white.svg">
+      <img src="//developer.jwplayer.com/img/jw-logo-text-white.svg">
+      <span class="developer">Developer</span>
+    </a>
+    <a class="menu-toggle" href="#">Menu</a>
+    <ul class="menu">
+      <li><a class="link" href="https://www.jwplayer.com">Company</a></li>
+      <li><a class="link" href="https://www.jwplayer.com/blog">Blog</a></li>
+      <li><a class="link" href="https://support.jwplayer.com">Support</a></li>
+      <li><a class="link" href="https://dashboard.jwplayer.com">Sign-In</a></li>
+      <li><a class="link" href="/search/"><img class="search-icon" src="//icons.jwplayer.com/icons/white/search.svg" width="15" /></a></li>
+      <li><a class="btn md red" href="https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade">Get Started</a></li>
+    </ul>
+  </div>
+</div>
+<!--End Common Site Header-->
+	        <div class="site-secondary-header">
+  <div class="site-secondary-header-container">
+    <div class="site-secondary-header-group">
+      <div class="site-secondary-header-dropdown">
+        <a class="site-secondary-header-dropdown-arrow" href="#"></a>
+        <a href="/jw-player/" class="site-secondary-header-dropdown-link ">JW Player</a>
+        <a href="/jw-platform/" class="site-secondary-header-dropdown-link ">JW Platform</a>
+        <a href="/android-sdk/" class="site-secondary-header-dropdown-link is-selected">Android SDK</a>
+        <a href="/ios-sdk/" class="site-secondary-header-dropdown-link ">iOS SDK</a>
+      </div>
+    </div>
+    
+    
+    
+      <a href="/sdk/android/reference/">API Reference</a>
+      <a href="/sdk/android/docs/developer-guide/">Developer Guide</a>
+      <a href="/android-sdk/demos/">Best Practice Apps</a>
+      <a href="/sdk/android/docs/developer-guide/about/release-notes/">Release Notes</a>
+    
+    
+  </div>
+</div>
+	        <div class="page-header">
+	<div class="page-label">
+		
+			Google IMA
+		
+	</div>
+	<form class="search" action="./../../search.html" method="get">
+		<input type="search" name="q" placeholder="Search documentation..." />
+	</form>
+</div>
+				</div>
+
+        <div class="site-bottom">
+
+					<div class="site-body">
+
+	          <div class="page">
+
+	            <div class="page-body">
+
+	              <div class="scroll-to-top">
+	<img src="//icons.jwplayer.com/icons/white/change-arrow-up.svg">
+</div>
+
+	              <div class="aside">
+									
+										<ul>
+											
+		                    
+  <li>
+    
+      <span>Getting Started</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../..">Introduction</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/download-sdk/">Download SDK</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-proguard/">Configure ProGuard</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../getting-started/configure-project/">Configure project</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Creating a JWPlayer</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-fragment/">JWPlayerFragment</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../usage/jwplayer-view/">JWPlayerView</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Advertising</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../overview/">Advertising Overview</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../vast/">VAST</a>
+  </li>
+
+      
+        
+  <li class="active">
+    <a href="./">Google IMA</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../freewheel/">FreeWheel</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Interacting with the JW Player</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../interaction/exoplayer/">ExoPlayer API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playback/">Playback API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/playlists/">Playlists</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/quality/">Quality API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/audio/">Audio API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/captions/">Captions API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/related/">Related Feed API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/advertising/">Advertising API</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/multiwindow/">Multi-Window Mode</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../interaction/javadocs/">JavaDocs</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Customization</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../customization/xml-options-and-playerconfig/">XML Options and PlayerConfig</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/css-skins/">CSS Skins</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../customization/localization/">Localization</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Digital Rights Management</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../drm/drm-protected-playback/">Playing secure content</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../drm/custom-http-headers/">Custom HTTP headers</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Chromecast</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../chromecast/getting-started/">Getting started</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/customization/">Customization</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/supported-media/">Supported Media</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../chromecast/known-issues/">Known issues</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>Migration Guides</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../migration/v2/">Migration from v1.x to v2.x (Nov 17 2015)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v2-8/">Migration from v2.7 to v2.8 (Feb 22 2018)</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../migration/v3/">Migration from v2.x to v3.x</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>3rd Party Integration</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../integration/analytics/">Analytics</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+		                    
+  <li>
+    
+      <span>About</span>
+    
+    <ul>
+      
+        
+  <li >
+    <a href="../../about/license/">License</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/release-notes/">Release Notes</a>
+  </li>
+
+      
+        
+  <li >
+    <a href="../../about/requirements/">System Requirements</a>
+  </li>
+
+      
+    </ul>
+  </li>
+
+		                  
+										</ul>
+							    
+	              </div>
+
+	              <div class="main">
+	                
+	                  <h1 id="google-ima">Google IMA</h1>
+<h2 id="overview">Overview</h2>
+<p>The JW Player SDK for Android is integrated with Google's IMA SDK v#ima_sdk_version# and supports VAST and VMAP advertising. In this document we will set up your project with Google Play Services Ads and demonstrate all supported features of the Google IMA implementation.</p>
+<h2 id="supported-features">Supported Features</h2>
+<ul>
+<li>ImaSdkSettings</li>
+<li>Playlist level advertising</li>
+<li>Playlist item level advertising</li>
+<li>VMAP</li>
+<li>Ad Pods</li>
+</ul>
+<h2 id="setting-up-your-project-for-google-ima">Setting up your project for Google IMA</h2>
+<h3 id="building-with-gradle">Building with Gradle</h3>
+<p>To use the Google IMA SDK you must add the following dependencies to your application's <code>build.gradle</code> file:</p>
+<pre><code class="groovy">compile 'com.longtailvideo.jwplayer:jwplayer-ima:#sdk_version_simple#'
+</code></pre>
+
+<h3 id="building-with-aar">Building with AAR</h3>
+<p>Add the jwplayer-ima aar dependency to your project then add the following to your application's <code>build.gradle</code></p>
+<pre><code class="groovy">compile 'com.google.android.gms:play-services-ads:#play_services_ads_version#'
+compile 'com.google.ads.interactivemedia.v3:interactivemedia:#ima_sdk_version#'
+</code></pre>
+
+<h2 id="assign-an-ad-schedule-to-the-entire-playlist">Assign an ad schedule to the entire playlist</h2>
+<p>As of version 2.6.x of the JW Player SDK for Android, you have the option of setting an ad schedule for the entire playlist by creating an <code>ImaAdvertising</code> object.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create your ad schedule
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;&gt;();
+
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.IMA, &quot;https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=&quot;);
+
+adSchedule.add(adBreak);
+
+// Set your ad schedule to your advertising object
+ImaAdvertising imaAdvertising = new ImaAdvertising(adSchedule);
+
+// Create a playlist, you'll need this to build your player config
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+PlaylistItem video2 = new PlaylistItem(&quot;http://playertest.longtailvideo.com/jwpromo/jwpromo.m3u8&quot;);
+
+playlist.add(video);
+playlist.add(video2);
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .advertising(imaAdvertising)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h3 id="note">Note:</h3>
+<p>The following methods have no effect on the <code>ImaAdvertising</code> object as the IMA advertising UI is inherited by the Google IMA SDK.</p>
+<pre><code class="java">imaAdvertising.setSkipOffset(3);
+imaAdvertising.setAdMessage(&quot;Text that appears in the control bar&quot;);
+imaAdvertising.setCueText(&quot;Text that appears when you hover over the ad marker&quot;);
+imaAdvertising.setSkipMessage(&quot;Text that appears before skip is available&quot;);
+imaAdvertising.setSkipText(&quot;Text that appears when skip is available&quot;);
+</code></pre>
+
+<h2 id="assign-an-ad-schedule-to-a-playlist-item">Assign an ad schedule to a playlist item</h2>
+<p>Setting up an ad schedule for your videos is simple, create the ad, set the AdSource as <code>AdSource.IMA</code> then assign your <code>List&lt;AdBreak&gt;</code> to your media.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Construct a new AdBreak containing the Ad Tag
+// This AdBreak will play a midroll at 10%
+AdBreak adBreak = new AdBreak(&quot;10%&quot;, AdSource.IMA, &quot;https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=&quot;);
+
+// Add the AdBreak to a List
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;&gt;();
+adSchedule.add(adBreak);
+
+// Build a PlaylistItem and assign adSchedule
+PlaylistItem video = new PlaylistItem.Builder()
+                    .file(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;)
+                    .adSchedule(adSchedule)
+                    .build();
+
+// Add the PlaylistItem to a List 
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+playlist.add(video);
+
+// Build the PlayerConfig
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+                    .playlist(playlist)
+                    .build();
+
+// Setup the player
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="custom-parameters">Custom Parameters</h2>
+<p>Use the <code>AdBreak</code> object to customize your IMA ad request.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">Map&lt;String, String&gt; customParams = new HashMap&lt;&gt;();
+customParams.put(&quot;age&quot;, &quot;18&quot;);
+customParams.put(&quot;gender&quot;, &quot;male&quot;);
+
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.IMA, &quot;YOUR_TAG&quot;);
+adBreak.setCustomParams(customParams);
+</code></pre>
+
+<p>Alternatively, you can use the <code>adschedule</code> object to customize your IMA request.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">&quot;adschedule&quot;: {
+    &quot;adBreak1&quot;: {
+        &quot;offset&quot;: &quot;pre&quot;,
+        &quot;custParams&quot; : {
+            &quot;age&quot; : &quot;18&quot;,
+            &quot;gender&quot; : &quot;male&quot;
+        },
+        &quot;ad&quot;: {
+                &quot;source&quot;: &quot;googima&quot;,
+                &quot;tag&quot;: &quot;YOUR_TAG&quot;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="vmap-advertising">VMAP Advertising</h2>
+<p>Currently, VMAP advertising schedules can only be assigned to the entire playlist by using our <code>VMAPAdvertising</code> object. The added benefit of using VMAP is the fact that it contains its own ad schedule which can be easily served across different platforms.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create a new ImaVMAPAdvertising
+ImaVMAPAdvertising imaVMAPAdvertising = new ImaVMAPAdvertising(&quot;https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpostpod&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=&quot;);
+
+// Construct a PlaylistItem
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Add the PlaylistItem to a List 
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+playlist.add(video);
+
+// Build the PlayerConfig
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+                            .playlist(playlist)
+                            .advertising(imaVMAPAdvertising)
+                            .build();
+
+// Setup the player
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="ad-pods">Ad Pods</h2>
+<p>Ad Pods allow ad networks to deliver multiple ads within a single ad break.</p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create video
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+
+// Set the ad break offset and tag
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.IMA, &quot;http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=sample_ar%3Dpreonlybumper&amp;cmsid=496&amp;vid=short_onecue&amp;correlator=&quot;);
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;&gt;();
+adSchedule.add(adBreak);
+
+// Set the ad schedule to your video
+video.setAdSchedule(adSchedule);
+
+// Add the PlaylistItem to a List 
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+playlist.add(video);
+
+// Build the PlayerConfig
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+                            .playlist(playlist)
+                            .build();
+
+// Setup the player
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h3 id="ima-sdk-settings">IMA SDK Settings</h3>
+<p>As of version 2.6.x of the JW Player SDK for Android, settings for the IMA SDK can be configured by creating a new instance of <code>ImaSdkSettings</code>. Developers can then assigning it to an <code>ImaAdvertising</code> or <code>ImaVMAPAdvertising</code> instance by calling <code>setImaSdkSetting()</code> or by passing it into the constructor.</p>
+<p>For more information on the <code>ImaSdkSettings</code> class and its features please refer to the official Google documentation:</p>
+<p><a href="https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/api/reference/com/google/ads/interactivemedia/v3/api/ImaSdkSettings">https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/api/reference/com/google/ads/interactivemedia/v3/api/ImaSdkSettings</a></p>
+<p><strong>Code Example:</strong></p>
+<pre><code class="java">// Create two videos with separate ad schedules
+List&lt;AdBreak&gt; adSchedule = new ArrayList&lt;&gt;();
+AdBreak adBreak = new AdBreak(&quot;pre&quot;, AdSource.IMA, &quot;https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=&quot;);
+adSchedule.add(adBreak);
+PlaylistItem video = new PlaylistItem(&quot;http://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8&quot;);
+video.setAdSchedule(adSchedule);
+
+List&lt;AdBreak&gt; adSchedule2 = new ArrayList&lt;&gt;();
+AdBreak adBreak2 = new AdBreak(&quot;pre&quot;, AdSource.IMA, &quot;https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319096/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&amp;correlator=&quot;);
+adSchedule2.add(adBreak2);
+PlaylistItem video2 = new PlaylistItem(&quot;http://playertest.longtailvideo.com/jwpromo/jwpromo.m3u8&quot;);
+video2.setAdSchedule(adSchedule2);
+
+// Add your videos to a playlist
+List&lt;PlaylistItem&gt; playlist = new ArrayList&lt;&gt;();
+playlist.add(video);
+playlist.add(video2);
+
+// Setup the IMA SDK Settings and localize the advertising UI
+ImaSdkSettings imaSdkSettings = ImaSdkFactory.getInstance().createImaSdkSettings();
+imaSdkSettings.setLanguage(&quot;nl&quot;);
+
+
+// Set an empty List&lt;AdBreak&gt; to ImaAdvertising
+// This will allow the imaSdkSettings to take effect while having playlist item specific ad schedules
+// You could set the ad schedule to the ImaAdvertising object if you want the same schedule for each item
+ImaAdvertising imaAdvertising = new ImaAdvertising(new ArrayList&lt;AdBreak&gt;(), imaSdkSettings);
+
+
+// Create your player config
+PlayerConfig playerConfig = new PlayerConfig.Builder()
+        .playlist(playlist)
+        .advertising(imaAdvertising)
+        .build();
+
+// Setup your player with the config
+mPlayerView.setup(playerConfig);
+</code></pre>
+
+<h2 id="unsupported-features">Unsupported Features</h2>
+<h3 id="ad-tag-waterfalls">Ad tag waterfalls</h3>
+<p>When using <code>AdSource.IMA</code> you do not have the ability to define an ad tag waterfall in your code. An ad tag waterfall analog is instead defined in your Google Dashboard.</p>
+<h3 id="non-linear-overlay-ads">Non-linear Overlay Ads</h3>
+<p>Non-linear ads are not currently supported via <code>AdSource.IMA</code>. This is a limitation of the Google IMA SDK for Android. For more information please refer to the documentation here:</p>
+<p><a href="https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility">https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility</a></p>
+<h3 id="ad-skip-offset">Ad skip offset</h3>
+<p>The ad skip offset is always set within the ad response of a Google IMA ad tag and we do not override the value. To configure your skip offset please contact your ad network.</p>
+<h3 id="ad-tag-variables">Ad tag variables</h3>
+<p>The ad tag variables specified in our VAST documentation are not supported when using <code>AdSource.IMA</code>. Instead we suggest contacting Google IMA to provide you with a list of ad tag variables supported in the Google IMA SDK.</p>
+<h3 id="vpaid">VPAID</h3>
+<p>The Google IMA SDK does not support VPAID 1.0 or VPAID 2.0 ads. This is a limitation of the Google IMA SDK for Android. For more information please refer to the documentation here:</p>
+<p><a href="https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility">https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility</a></p>
+	                
+	                
+	                  <div class="pagination prev-next">
+                      
+   	                      <a class="btn md" href="../vast/" title="VAST">Previous Page</a>
+   	                    
+	                    
+	                      <a class="btn md" href="../freewheel/" title="FreeWheel"/>Next Page</a>
+	                    
+	                  </div>
+	                
+	              </div>
+
+	            </div>
+
+	          </div>
+	        </div>
+
+	        <!--Start Common Site Footer-->
+<footer class="global-site-footer">
+  <div class="global-site-footer-container">
+    <div class="product-links-row">
+      <div class="product-link-block">
+        <a href="//www.jwplayer.com">
+          <div class="product">JW Player</div>
+          <div class="description">Browse our products, company, resources, and pricing</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//dashboard.jwplayer.com">
+          <div class="product">Dashboard</div>
+          <div class="description">Content, players, analytics, and account management</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//developer.jwplayer.com">
+          <div class="product">Developer</div>
+          <div class="description">Join the community, demos, references, dev guides, and tools.</div>
+        </a>
+      </div>
+      <div class="product-link-block">
+        <a href="//support.jwplayer.com">
+          <div class="product">Support</div>
+          <div class="description">Search the articles, ask the community, or give feedback</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base-row">
+    <div class="copyright">
+      &copy; 2016 - <script>document.write(new Date().getFullYear())</script> | Longtail Ad Solutions, Inc. All Rights Reserved. JW Player is a registered trademark.
+    </div>
+    <div class="footer-links">
+      <a href="//www.jwplayer.com/careers/">Careers</a>
+      <a href="//www.jwplayer.com/tos/">Terms of Service</a>
+      <a href="//www.jwplayer.com/privacy/">Privacy Policy</a>
+      <a href="//www.jwplayer.com/dmca/">DMCA</a>
+      <a href="//www.jwplayer.com/privacy/#ad-choices">Ad Choices</a>
+    </div>
+  </div>
+</footer>
+<!--End Common Site Footer-->
+
+        </div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../js/mkdocs-jwplayer.min.js"></script>
+
+    
+      <script src="../../search/main.js"></script>
+    
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+    <script>
+      window.onload = (function(){ prettyPrint(); });
+    </script>
+  </body>
+</html>

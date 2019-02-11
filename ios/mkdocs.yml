@@ -1,0 +1,53 @@
+site_name: iOS Developer Guide
+site_url: 'http://developer.jwplayer.com/sdk/ios/docs/developer-guide/'
+site_favicon: favicon.png
+extra:
+  noindex: true
+  product: ios
+nav:
+- Welcome:
+  - 'Introduction': 'index.md'
+  - '2.x Documentation': '2x-redirect.md'
+- Get Started:
+  - 'System Requirements': 'intro/requirements.md'
+  - 'Library and Project Setup': 'intro/getting-started.md'
+- Create a JW Player:
+  - 'Basic Embedding': 'embedding/embedding.md'
+  - 'Advanced Features': 'embedding/features.md'
+- Interact with JW Player:
+  - 'Classes': 'api/classes.md'
+  - 'Callbacks': 'api/callbacks.md'
+- Customize:
+  - 'Custom Skins': 'customization/building-skins.md'
+  - 'Captions': 'customization/captions.md'
+- Casting:
+  - 'AirPlay': 'casting/airplay.md'
+  - 'Chromecast': 'casting/chromecast.md'
+- Ads:
+  - 'Basic Ad Embed': 'monetization/ad-configuration.md'
+  - 'Ad Scheduling': 'monetization/ad-schedules.md'
+  - 'Tag Waterfall': 'monetization/ad-waterfall.md'
+  - 'Ad tag variables': 'monetization/ad-tag-variables.md'
+  - 'Non linear ads': 'monetization/nonlinear-ads.md'
+  - 'Google IMA': 'monetization/ad-google_ima.md'
+  - 'FreeWheel': 'monetization/freewheel.md'
+  - 'Ad Rules': 'monetization/ad-rules.md'
+- Migration:
+  - 'To 3.x from 2.x': 'migration/v3.md'
+  - 'To 2.8.0 from 2.7.x': 'migration/v2dot8.md'
+- 3rd Party Integration:
+  - 'Analytics': 'integration/analytics.md'
+- Troubleshooting:
+  - 'Q&A' : 'troubleshooting/troubleshooting.md'
+- About:
+  - 'License': 'about/license.md'
+  - 'Release Notes': 'about/release-notes.md'
+theme:
+  name: null
+  custom_dir: node_modules/mkdocs-jwplayer/jwplayer
+  include_search_page: true
+  search_index_only: false
+docs_dir: dev-guide-markdown
+site_dir: developer-guide
+markdown_extensions:
+   - markdown_fenced_code_tabs
