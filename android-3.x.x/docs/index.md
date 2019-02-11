@@ -1,7 +1,5 @@
 # JW Player SDK for Android
 
-Last Updated: #date#<br> SDK version: #sdk_version#
-
 The JW Player SDK for Android is a media player for the Android Operating System that supports Apple HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (DASH), Smooth Streaming, WebM and MP4 playback. The SDK has video specific methods / classes to aid developers in creating custom video applications for Android mobile devices.
 
 The SDK package includes a demo application to demonstrate functionality to non-developers.
