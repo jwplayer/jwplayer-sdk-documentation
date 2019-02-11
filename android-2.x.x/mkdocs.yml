@@ -5,18 +5,18 @@ docs_dir: docs
 site_dir: developer-guide
 theme:
   name: null
-  custom_dir: node_modules/mkdocs-jwplayer/jwplayer
+  custom_dir: ../node_modules/mkdocs-jwplayer/jwplayer
   include_search_page: true
   search_index_only: false
 extra:
   noindex: true
   product: android
-nav:
-- Getting Started:
+pages:
+- Welcome:
   - 'Introduction': 'index.md'
-  - 'Download SDK': 'getting-started/download-sdk.md'
-  - 'Configure ProGuard': 'getting-started/configure-proguard.md'
-  - 'Configure project': 'getting-started/configure-project.md'
+  - '3.x Documentation': '3x-redirect.md'
+- Getting Started:
+  - 'Library and Project Setup': 'getting-started/library-project-setup.md'
 - Creating a JWPlayer:
   - 'JWPlayerFragment': 'usage/jwplayer-fragment.md'
   - 'JWPlayerView': 'usage/jwplayer-view.md'
@@ -26,15 +26,12 @@ nav:
   - 'Google IMA': 'advertising/google-ima.md'
   - 'FreeWheel': 'advertising/freewheel.md'
 - Interacting with the JW Player:
-  - 'ExoPlayer API': 'interaction/exoplayer.md'
   - 'Playback API': 'interaction/playback.md'
   - 'Playlists': 'interaction/playlists.md'
   - 'Quality API': 'interaction/quality.md'
   - 'Audio API': 'interaction/audio.md'
   - 'Captions API': 'interaction/captions.md'
   - 'Related Feed API' : 'interaction/related.md'
-  - 'Advertising API': 'interaction/advertising.md'
-  - 'Multi-Window Mode': 'interaction/multiwindow.md'
   - 'JavaDocs': 'interaction/javadocs.md'
 - Customization:
   - 'XML Options and PlayerConfig': 'customization/xml-options-and-playerconfig.md'
@@ -51,9 +48,6 @@ nav:
 - Migration Guides:
   - 'Migration from v1.x to v2.x (Nov 17 2015)': 'migration/v2.md'
   - 'Migration from v2.7 to v2.8 (Feb 22 2018)': 'migration/v2-8.md'
-  - 'Migration from v2.x to v3.x': 'migration/v3.md'
-- 3rd Party Integration:
-  - 'Analytics': 'integration/analytics.md'
 - About:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'

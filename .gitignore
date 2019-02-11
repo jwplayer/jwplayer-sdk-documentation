@@ -1,2 +1,13 @@
-/android/node_modules
-/ios/node_modules
+/android-2.x.x/node_modules
+/android-2.x.x/developer-guide
+
+/android-3.x.x/node_modules
+/android-3.x.x/developer-guide
+
+/ios-2.x.x/node_modules
+/ios-2.x.x/developer-guide
+
+/ios-3.x.x/node_modules
+/ios-3.x.x/developer-guide
+
+/node_modules

@@ -682,10 +682,6 @@ mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-"mkdocs-jwplayer@github:jwplayer/mkdocs-jwplayer":
-  version "0.0.3"
-  resolved "git+ssh://git@github.com/jwplayer/mkdocs-jwplayer.git#0259a58eb360a94d9325f34147ee1422cdf13a24"
-
 morgan@^1.6.1:
   version "1.9.1"
   resolved "https://npm-registry.longtailvideo.com/morgan/-/morgan-1.9.1.tgz#0a8d16734a1d9afbc824b99df87e738e58e2da59"

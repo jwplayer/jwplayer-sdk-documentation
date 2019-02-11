@@ -1,8 +1,6 @@
 {
   "name": "jwplayer-android-sdk-bishop",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-mkdocs-jwplayer": "github:jwplayer/grunt-mkdocs-jwplayer",
     "mkdocs-jwplayer": "github:jwplayer/mkdocs-jwplayer"
   }
 }
