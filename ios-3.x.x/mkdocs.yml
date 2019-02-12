@@ -15,12 +15,11 @@ extra:
   noindex: true
   product: ios
 nav:
-- Welcome:
+- Getting Started:
   - 'Introduction': 'index.md'
-  - '2.x Documentation': '2x-redirect.md'
-- Get Started:
   - 'System Requirements': 'intro/requirements.md'
-  - 'Library and Project Setup': 'intro/getting-started.md'
+  - 'Download the SDK': 'getting-started/download-the-sdk.md'
+  - 'Configure your project': 'getting-started/configure-your-project.md'
 - Create a JW Player:
   - 'Basic Embedding': 'embedding/embedding.md'
   - 'Advanced Features': 'embedding/features.md'
