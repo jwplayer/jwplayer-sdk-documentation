@@ -133,7 +133,9 @@ public void onFullscreen(boolean state) {
 Fullscreen in ListView or RecyclerView
 --------------------------------------
 
-Due to the way `ListView` and `RecyclerView` manage their own pools of views we do not currently support fullscreen for players that are inside a `ListView` or `RecyclerView`.  We recommend that you disable fullscreen by setting up the player to use a `FullscreenHandler` that does not perform any actions.  For example:
+Due to the way `ListView` and `RecyclerView` manage their own pools of views, we do not currently support fullscreen for players that are inside a `ListView` or `RecyclerView`.  We recommend that you disable fullscreen by setting up the player to use a `FullscreenHandler` that does not perform any actions.
+
+For example:
 
 ```
 FullscreenHandler fullscreenDisabledHandler = new FullscreenHandler() {
@@ -182,4 +184,4 @@ JWPlayerFragment fragment = (JWPlayerFragment) getFragmentManager().findFragment
 fragment.setFullscreenHandler(fullscreenDisabledHandler);
 ```
 
-If you need fullscreen in your application a good pattern to follow is to have a single player instance outside the `RecyclerView` or `ListView` and use the `RecyclerView`/`ListView` to display thumbnails of your content.
+If you need fullscreen in your application, a good pattern to follow is to have a single player instance outside the `RecyclerView` or `ListView` and use the `RecyclerView`/`ListView` to display thumbnails of your content.
