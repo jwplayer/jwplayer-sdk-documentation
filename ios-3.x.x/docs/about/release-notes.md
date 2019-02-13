@@ -2,6 +2,7 @@
 
 ##### Major Version Releases
 
+* [Version 3.2.0 (Jan 23, 2019)](#3-2-0)
 * [Version 3.1.0 (Aug 23, 2018)](#3-1-0)
 * [Version 3.0.0 (Jul 2, 2018)](#3-0-0)
 * [Version 2.9.0 (Jun 18, 2018)](#2-9-0)
@@ -17,8 +18,49 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-2-1"></a>
+## Version 3.2.1 (Build 82 - Feb 5, 2019)
+### Bug Fixes
+* Fixed an issue where omitting ad rules would disable ad schedules after the first playlist item
+
+<a name="3-2-0"></a>
+## Version 3.2.0 (Build 81 - Jan 23, 2019)
+### Bug Fixes
+* Fixed an issue where IMA VMAP with the same tag for mid-roll and post-roll causes buffering at the end of the video
+* Fixed an issue where IMA VMAP mid-roll plays as a pre-roll when video is replayed
+* Fixed an issue where cue points for FreeWheel mid-rolls are not shown and they don't play for mp4 streams
+* Fixed an issue where playback rate resets to default after VAST ad
+* Fixed an issue where exiting fullscreen mode when iPad is in landscape mode causes a device to go into portrait mode
+* Fixed an issue where clickout from VPAID ad doesn't occur
+* Fixed an issue where DVR stream shows wrong current position
+* Fixed an issue where the Live button for DVR streams redirects to the very beginning
+* Fixed an issue where UI becomes non-responsive when device is rotated from portrait orientation to landscape orientation
+* Fixed an issue where empty VAST causes an error if a stream is DRM protected
+* Fixed an issue where post-ad infinite spinner shows after some ads
+* Fixed an issue where callbacks fire for the first ad instance in an ad pod only
+* Fixed an issue where manual switch between playlist items cannot be performed
+* Fixed an issue where source switching is broken
+* Fixed an issue where FreeWheel mid-roll does not show ad counter (1 of X) when two or more ads are in a pod
+* Fixed an issue where the player does not force portrait orientation when exiting fullscreen
+* Fixed an issue where seeking over two cue points causes the ads within both cue points to play
+* Fixed a random crash issue which may occur after a few minutes of playback
+* Fixed an issue where local CSS cannot be loaded
+* Fixed an issue where DVR reports a positive number of seconds
+* Fixed an issue where controls for DVR stream show 00:00 once configured
+
+### Features
+* Added the ability to set custom parameters to FreeWheel ad configurations. This allows publishers to better target their campaigns. Please refer to the [FreeWheel section](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/monetization/freewheel/) for the example of usage.
+
+### Enhancements
+* Upgraded SDK to use JW Player 8.7.1
+
+<a name="3-1-4"></a>
+## Version 3.1.4 (Build 74 - Dec 07, 2018)
+### Bug Fixes
+* Fixed an issue where the player fails to initialize with error code `100012` when target name has spaces or special characters.
+
 <a name="3-1-3"></a>
-## Version 3.1.3 (Build #sdk_build_number# - #date_short_month#)
+## Version 3.1.3 (Build 73 - Oct 17, 2018)
 ### Bug Fixes
 * Fixed an issue that prevents `seek` from accepting a negative value during DVR stream playback.
 * Fixed an issue that shows an incorrect, current position during DVR stream playback.
