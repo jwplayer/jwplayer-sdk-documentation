@@ -20,8 +20,13 @@
 * [Version 2.0.129 (Nov 17, 2015)](#2-0-129)
 * [Version 1.x](#1-x) 
 
+<a name="3-4-3"></a>
+## Version 3.4.3 (Build 69 - Feb 11, 2019)
+### Bug fixes
+* Fixed an issue where the player buffers infinitely if there is an ad error received for IMA pre-roll
+
 <a name="3-4-2"></a>
-## Version 3.4.2 (Build #sdk_build_number# - #date_short_month#)
+## Version 3.4.2 (Build 68 - Jan 22, 2019)
 ### Enhancements
 * Added support for Developer license
 
