@@ -129,3 +129,55 @@ public void onFullscreen(boolean state) {
     ((CoordinatorLayout)findViewById({ID_OF_ROOT_LAYOUT})).setFitsSystemWindows(!state);
 }
 ```
+
+Fullscreen in ListView or RecyclerView
+--------------------------------------
+
+Due to the way `ListView` and `RecyclerView` manage their own pools of views we do not currently support fullscreen for players that are inside a `ListView` or `RecyclerView`.  We recommend that you disable fullscreen by setting up the player to use a `FullscreenHandler` that does not perform any actions.  For example:
+
+```
+FullscreenHandler fullscreenDisabledHandler = new FullscreenHandler() {
+  @Override
+  public void onFullscreenRequested() {
+
+  }
+
+  @Override
+  public void onFullscreenExitRequested() {
+
+  }
+
+  @Override
+  public void onResume() {
+  }
+
+  @Override
+  public void onPause() {
+
+  }
+
+  @Override
+  public void onDestroy() {
+
+  }
+
+  @Override
+  public void onAllowRotationChanged(boolean allowRotation) {
+
+  }
+
+  @Override
+  public void updateLayoutParams(ViewGroup.LayoutParams layoutParams) {
+
+  }
+
+  @Override
+  public void setUseFullscreenLayoutFlags(boolean flags) {
+
+  }
+};
+
+playerView.setFullscreenHandler(fullscreenDisabledHandler);
+```
+
+If you need fullscreen in your application a good pattern to follow is to have a single player instance outside the `RecyclerView` or `ListView` and use the `RecyclerView`/`ListView` to display thumbnails of your content.
