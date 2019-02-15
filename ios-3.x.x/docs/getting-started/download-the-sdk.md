@@ -75,7 +75,7 @@ end
 1. At the terminal prompt of your project directory, enter `$ pod install` to install the JW Player SDK for iOS.
 2. Open the **.xcworkspace** file for your project to launch Xcode.
 
-You have retrieved your JW Player license key and imported the JW Player SDK for iOS into your project. You can now [configure your project](../getting-started/configure-your-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for iOS into your project. You can now [configure your project](../configure-your-project).
 
 ---
 
@@ -117,7 +117,7 @@ Now that you have the required items listed in the previous subsection, you can 
 6. Select **JWPlayer_iOS_SDK.framework** from the **jwplayer-ios-sdk/Framework** folder on your computer.
 7. Click **Open**.
 
-You have retrieved your JW Player license key and imported the JW Player SDK for iOS into your project. You can now [configure your project](../getting-started/configure-your-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for iOS into your project. You can now [configure your project](../configure-your-project).
 
 ---
 
@@ -139,7 +139,7 @@ Before you can start experimenting with the JW Player SDK for iOS Open Source D
 |Xcode| Download and install <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode<a/>.|
 |JW Player SDK for iOS Open Source Demo and license key | 1. Download the <a href="https://github.com/jwplayer/jwplayer-sdk-ios-demo" target="_blank">SDK repository</a>. <br/>2. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **PUBLISH > Tools**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
 
-You have retrieved your JW Player license key and downloaded the JW Player SDK for iOS Open Source Demo. You can now [configure your project](../getting-started/configure-your-project).
+You have retrieved your JW Player license key and downloaded the JW Player SDK for iOS Open Source Demo. You can now [configure your project](../configure-your-project).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
