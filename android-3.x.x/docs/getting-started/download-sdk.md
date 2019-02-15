@@ -76,7 +76,7 @@ dependencies {
 }
 ```
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](configure-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](../configure-project).
 
 ---
 
@@ -127,7 +127,7 @@ Now that you have the required items listed in the previous subsection, you can 
 4. Select jwplayer-core-#sdk_version_simple# and jwplayer-common-#sdk_version_simple#.
 5. Click **OK**.
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](configure-project). If necessary, you can also [configure ProGuard](configure-proguard).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](../configure-project). If necessary, you can also [configure ProGuard](../configure-proguard).
 
 ---
 
@@ -149,7 +149,7 @@ Before you can start experimenting with the JW Player SDK for Android Open Sour
 |Android Studio| 1. Download <a href="https://developer.android.com/studio/" target="_blank">Android Studio<a/>.<br/>2. <a href="https://developer.android.com/studio/install" target="_blank">Install Android Studio</a>.|
 |JW Player SDK for Android Open Source Demo and license key | 1. Clone the repository into your Android Studio workspace: <br/><br/>`git clone git@github.com:jwplayer/jwplayer-sdk-android-demo.git`.<br/><br/>2. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **PUBLISH > Tools**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android Open Source Demo into Android Studio. You can now [configure your project](configure-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android Open Source Demo into Android Studio. You can now [configure your project](../configure-project).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
