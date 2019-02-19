@@ -1,5 +1,5 @@
 # SDK Version 2.9 Requirements
-* [iOS version 10 and above](https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html)
+* [iOS version 9+](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW1)
 * [Google IMA SDK version 3.7.0](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history)
 * [Google Chromecast SDK version 2.10.0.4070](https://developers.google.com/cast/docs/release-notes#october-19-2015)
 * FreeWheel AdManager. You must download it yourself from [FreeWheel Hub Portal](https://hub.freewheel.tv/pages/viewpage.action?spaceKey=techdocs&title=MRM+Integration+SDK+Downloads)
