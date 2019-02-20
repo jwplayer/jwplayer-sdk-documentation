@@ -18,6 +18,12 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-2-2"></a>
+## Version 3.2.2 (Build 83 - Feb 25, 2019)
+### Enhancements
+* Added support for Developer license
+* We added support for iOS 9 and iOS 10 back by using previous DRM API for those platfrom
+
 <a name="3-2-1"></a>
 ## Version 3.2.1 (Build 82 - Feb 5, 2019)
 ### Bug Fixes
@@ -53,6 +59,7 @@
 
 ### Enhancements
 * Upgraded SDK to use JW Player 8.7.1
+* Moved to new DRM API. As a result the latest supported iOS version is 11
 
 <a name="3-1-4"></a>
 ## Version 3.1.4 (Build 74 - Dec 07, 2018)
