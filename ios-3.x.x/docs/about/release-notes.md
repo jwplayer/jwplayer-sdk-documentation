@@ -18,11 +18,16 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-2-3"></a>
+## Version 3.2.3 (Build 86 - Feb 25, 2019)
+### Enhancements
+* Updated the podspec file with iOS 9 as the lowest supported version, so that the library can be retrived via cocoapods for projects that support iOS 9 and iOS 10
+
 <a name="3-2-2"></a>
 ## Version 3.2.2 (Build 84 - Feb 25, 2019)
 ### Enhancements
 * Added support for the Developer license
-* Added a condition to use the previous DRM API to support iOS 9 and iOS10
+* Added a condition to use the previous DRM API to support iOS 9 and iOS 10
 
 <a name="3-2-1"></a>
 ## Version 3.2.1 (Build 83 - Feb 5, 2019)
