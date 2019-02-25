@@ -21,7 +21,7 @@
 <a name="3-2-3"></a>
 ## Version 3.2.3 (Build 86 - Feb 25, 2019)
 ### Enhancements
-* Updated the podspec file with iOS 9 as the lowest supported version, so that the library can be retrived via cocoapods for projects that support iOS 9 and iOS 10
+* Enabled support for iOS 9 and 10 when using CocoaPods
 
 <a name="3-2-2"></a>
 ## Version 3.2.2 (Build 84 - Feb 25, 2019)
