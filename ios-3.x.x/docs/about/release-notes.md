@@ -19,13 +19,13 @@
 * [Version 1.x](#1-x)
 
 <a name="3-2-2"></a>
-## Version 3.2.2 (Build 83 - Feb 25, 2019)
+## Version 3.2.2 (Build 84 - Feb 25, 2019)
 ### Enhancements
 * Added support for the Developer license
 * Added a condition to use the previous DRM API to support iOS 9 and iOS10
 
 <a name="3-2-1"></a>
-## Version 3.2.1 (Build 82 - Feb 5, 2019)
+## Version 3.2.1 (Build 83 - Feb 5, 2019)
 ### Bug Fixes
 * Fixed an issue where omitting ad rules would disable ad schedules after the first playlist item
 
