@@ -54,6 +54,8 @@ dependencies {
 
 Now that you have added the Google Cast dependency, you must configure your app:
 
+<br/>
+
 **1.** Implement the `OptionsProvider` interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
 
 This interface also creates an instance of `CastOptions` that defines the behavior of the framework. For example, `setReceiverApplicationId()` allows you to filter discovery results and to launch the receiver app when a cast session starts.
@@ -77,6 +79,8 @@ public class CastOptionsProvider implements OptionsProvider {
 }
 ```
 
+<br/>
+
 **2.** In the **AndroidManifest.xml** of the sender app, use a `<meta-data/>` element to declare the fully-qualified name of the implemented `OptionsProvider`.
 
 ```groovy
@@ -88,6 +92,8 @@ public class CastOptionsProvider implements OptionsProvider {
 
 </application>
 ```
+
+<br/>
 
 **3.**  Get a reference to your `CastContext` within the casting activity.
 
@@ -146,6 +152,8 @@ The following sections illustrate two approaches to complete the previous steps:
 
 As mentioned above, if you use this approach, you should include the `MediaRouteButton` in the layout of the Activity since the ActionBar is usually hidden when in fullscreen mode. This allows your viewers to begin a casting session when in fullscreen mode.
 
+<br/>
+
 **1.** Add a `MediaRouteButton` to the layout of an Activity.
 
 ```groovy
@@ -178,6 +186,7 @@ protected void onCreate(Bundle savedInstanceState) {
     mCastContext = CastContext.getSharedInstance(this);
 }
 ```
+<br/>
 
 **2.** Add a menu item to **menu_main.xml** to add the `MediaRouteButton` to the ActionBar.
 
@@ -188,6 +197,8 @@ protected void onCreate(Bundle savedInstanceState) {
     app:showAsAction="always"
 />
 ```
+
+<br/>
 
 **3.** In the Activity, override `onCreateOptionsMenu()`.
 
