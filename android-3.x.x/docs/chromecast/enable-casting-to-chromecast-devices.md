@@ -116,7 +116,7 @@ The `MediaRouteButton` allows your viewers to select a Chromecast-enabled device
 
 To add a cast button to your app, use the following steps:
 
-1. Add a menu item or a <a href="https://developer.android.com/reference/android/support/v7/app/MediaRouteButton.html" target-="_blank">MediaRouteButton</a> in the .xml file that defines your menu.
+1. Add a menu item or a <a href="https://developer.android.com/reference/android/support/v7/app/MediaRouteButton.html" target="_blank">MediaRouteButton</a> in the .xml file that defines your menu.
 2. Use <a href="https://developers.google.com/cast/docs/reference/android/com/google/android/gms/cast/framework/CastButtonFactory" target="_blank">CastButtonFactory</a> to wire it up with the framework. 
 
 The following sections illustrate two approaches to complete the previous steps: 
@@ -227,5 +227,5 @@ Add [JWPlayerFragment](../../usage/jwplayer-fragment), [JWPlayerSupportFragment]
 
 ## Additional resources
 
-Visit [Google Cast](https://developers.google.com/cast/docs/android_sender/) to discover additional feature and customization options.
+Visit <a href="https://developers.google.com/cast/docs/android_sender" target="_blank">Google Cast</a> to discover additional feature and customization options.
 
