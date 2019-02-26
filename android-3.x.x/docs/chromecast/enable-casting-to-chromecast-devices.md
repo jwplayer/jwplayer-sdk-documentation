@@ -221,7 +221,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 ## Next step
 
-Add [JWPlayerFragment](../../usage/jwplayer-fragment), [JWPlayerSupportFragment](../../usage/jwplayer-fragment), or [JWPlayerView](../../jwplayer-view) to an activity. Be sure that the activity is a descendant of `FragmentActivity` of the android.support.v4 support library.
+Add [JWPlayerFragment](../../usage/jwplayer-fragment), [JWPlayerSupportFragment](../../usage/jwplayer-fragment), or [JWPlayerView](../../usage/jwplayer-view) to an activity. Be sure that the activity is a descendant of `FragmentActivity` of the android.support.v4 support library.
 
 <br/>
 
