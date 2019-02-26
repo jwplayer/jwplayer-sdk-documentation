@@ -5,7 +5,7 @@
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content on a Chromecast-enabled device. The viewer's device must be on the same network as a Chromecast-enabled device.
 
 !!!important
-&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.<br/><br/>DVR capabilities are currently not supported.
+&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.<br/><br/>&bull; DVR capabilities are currently not supported.
 !!!
 
 The following sections explain how to enable the Google Cast framework for your Android app:
