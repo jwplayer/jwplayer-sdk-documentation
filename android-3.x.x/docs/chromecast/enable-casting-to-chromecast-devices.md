@@ -83,7 +83,8 @@ public class CastOptionsProvider implements OptionsProvider {
 
 **2.** In the **AndroidManifest.xml** of the sender app, use a `<meta-data/>` element to declare the fully-qualified name of the implemented `OptionsProvider`.
 
-```java
+
+```xml
 <application>
     ...
     <meta-data
