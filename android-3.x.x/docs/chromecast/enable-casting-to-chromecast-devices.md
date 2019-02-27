@@ -25,7 +25,7 @@ To use the Google Cast framework, you must add a dependency to your app. You can
 ### Use Maven
 
 1. In Android Studio, open the **build.gradle** file for your app.
-2. Add the `com.longtailvideo.jwplayer:jwplayer-chromecast:x.x.x` dependency.
+2. Add the `com.longtailvideo.jwplayer:jwplayer-chromecast:x.x.x` dependency. Be sure the version number of the module (`x.x.x`) matches the version number you use for the `jwplayer-core` and `jwplayer-common` dependencies.
 3. Sync Gradle.
 
 ```groovy
