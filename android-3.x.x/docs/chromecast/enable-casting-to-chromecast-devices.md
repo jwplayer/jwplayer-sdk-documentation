@@ -5,7 +5,7 @@
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content on a Chromecast-enabled device. The viewer's device must be on the same network as a Chromecast-enabled device.
 
 !!!important
-&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.<br/><br/>&bull; DVR capabilities are currently not supported.
+&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.<br/><br/>&bull; DVR and live streaming capabilities are currently not supported.
 !!!
 
 The following sections explain how to enable the Google Cast framework for your Android app:
@@ -60,7 +60,7 @@ Now that you have added the Google Cast dependency, you must configure your app:
 
 This interface also creates an instance of `CastOptions` that defines the behavior of the framework. For example, `setReceiverApplicationId()` allows you to filter discovery results and to launch the receiver app when a cast session starts.
 
-```groovy
+```java
 public class CastOptionsProvider implements OptionsProvider {
 
     @Override
@@ -83,7 +83,7 @@ public class CastOptionsProvider implements OptionsProvider {
 
 **2.** In the **AndroidManifest.xml** of the sender app, use a `<meta-data/>` element to declare the fully-qualified name of the implemented `OptionsProvider`.
 
-```groovy
+```java
 <application>
     ...
     <meta-data
@@ -97,7 +97,7 @@ public class CastOptionsProvider implements OptionsProvider {
 
 **3.**  Get a reference to your `CastContext` within the casting activity.
 
-```groovy
+```java
 public class CastActivity extends AppCompatActivity {
 
     @Override
@@ -156,7 +156,7 @@ As mentioned above, if you use this approach, you should include the `MediaRoute
 
 **1.** Add a `MediaRouteButton` to the layout of an Activity.
 
-```groovy
+```xml
 // activity_layout.xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -190,7 +190,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 **2.** Add a menu item to **menu_main.xml** to add the `MediaRouteButton` to the ActionBar.
 
-```groovy
+```xml
 <item android:id="@+id/media_route_menu_item"
     android:title="@string/media_route_menu_title"
     app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
@@ -202,7 +202,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 **3.** In the Activity, override `onCreateOptionsMenu()`.
 
-```groovy
+```java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
     super.onCreateOptionsMenu(menu);
