@@ -127,7 +127,7 @@ The following sections illustrate two approaches to complete the previous steps:
 
 ### Approach 1: Add a MediaRouteButton to the ActionBar
 
-```groovy
+```xml
 // To add a Cast button, add the following snippet.
 // menu.xml
 <item
@@ -135,6 +135,9 @@ The following sections illustrate two approaches to complete the previous steps:
     android:title="@string/media_route_menu_title"
     app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
     app:showAsAction="always" />
+```
+
+```java
 
 // Then override the onCreateOptionMenu() for each of your activities.
 // CastActivity.java
@@ -172,7 +175,9 @@ As mentioned above, if you use this approach, you should include the `MediaRoute
         android:layout_weight="1"
         android:mediaRouteTypes="user"
         android:visibility="gone" />
+```
 
+```java
 </LinearLayout>
 
 // CastActivity.java
