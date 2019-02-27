@@ -6,45 +6,63 @@ DVR functionality allows viewers to pause, play, and rewind live events. If view
 
 ## Background Audio
 
-If you have not enabled the "Audio, AirPlay and Picture in Picture" setting in the Background Modes of your project's capabilities list, add the UIBackgroundModes key in your app's Info.plist and set its value to an array containing the string "audio". Import the AVFoundation framework and add the following code to your app:
+All iOS apps have a default audio session that comes preconfigured. 
+Although the default audio session provides useful behavior, it doesn't provide the general audio behavior you need when building a media playback app. To change the default behavior, you configure your app’s audio session category.
 
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+Of the seven categories, the one most playback apps need is called `AVAudioSessionCategoryPlayback` / `playback`. This category indicates that audio playback is a central feature of your app. When you specify this category, your app’s audio continues with the Ring/Silent switch set to silent mode. With this category, your app can also play background audio if you're using the Audio, AirPlay, and Picture in Picture background mode.
 
-    NSError *setCategoryError = nil;
-    BOOL success = [audioSession setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
+*- adapted from [AVAudioSession Docs, Overview](https://developer.apple.com/documentation/avfoundation/avaudiosession)*
 
-    NSError *activationError = nil;
-    success = [audioSession setActive:YES error:&activationError];
+!!!tip
+If you have not enabled the "Audio, AirPlay and Picture in Picture" setting in the Background Modes of your project's capabilities list, add the UIBackgroundModes key in your app's info.plist and set its value to an array containing the string "audio".
+!!!
 
-In a Swift based project, please follow these steps to achieve the background audio capability:
+To set the category, add the following code to your app, conventionally in the AppDelegate's `didFinishLaunchingWithOptions` method:
 
-Step 1- Add a key in your Info.plist called 'Required background modes'. Under this key, add a value called 'App plays audio or streams audio/video using AirPlay'.
-Step 2- In your AppDelegate, import AVFoundation
-Step 3- In your didFinishLaunchingWithOptions method add this:
-    do
-        { try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback) }
-    catch
-        { print("error coming back from background") }
+```objc
+AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+
+NSError *setCategoryError = nil;
+BOOL success = [audioSession setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
+
+NSError *activationError = nil;
+success = [audioSession setActive:YES error:&activationError];
+```
+
+```swift
+ do { try AVAudioSession.sharedInstance()
+     .setCategory(.playback, mode: .moviePlayback, options: [])
+     
+     do { try AVAudioSession.sharedInstance()
+         .setActive(true, options: [])} // options include Airplay, Bluetooth, etc. See Apple docs.
+     
+     catch { print("Error: \(error.localizedDescription)") }
+ }
+ catch { print("Error: \(error.localizedDescription)") }
+```
 
 Note: Per [Apple's documentation](https://developer.apple.com/library/ios/qa/qa1668/_index.html), adding the audio string to the UIBackgroundModes array in your Info.plist will also enable streaming via AirPlay.
 
 ## Lock Screen Controls
 
 An application reproducing content with JW Player will display controls on the device's lockscreen by default as long as background audio is enabled.
-* Play/Pause will always be displayed, and can be toggled with the Apple EarPod headphones.
-* Previous and next will appear greyed out when playing single items and ads.
-* Previous will be greyed out for the first item of a playlist.
-* Next will **Not** be greyed out for the last item of a playlist; tapping next will load the first item of the playlist.
+
+* Play/Pause will always be displayed, and can be toggled with the Apple AirPod headphones.
+* 'Previous' and 'Next' will appear grayed out when playing single items and ads.
+* 'Previous' will be grayed out for the first item of a playlist.
+* 'Next' will **not** be grayed out for the last item of a playlist; tapping 'Next' will 'wrap around' to load the *first* item of the playlist.
 
 Additionally, information about the content being reproduced will be displayed:
+
 * Information set to a JWPlaylistItem (title and image) will be displayed.
 * If absent from the JWPlaylistItem, respective information from the JWConfig will be displayed. 
 * If a title is not specified, the name of the application will be displayed as a title.
 * When Google IMA ads are in reproduction, the title switches to "Advertisement".
 
-If you wish to disable this feature and/or override it with your own settings, set the JWPlayerController's displayLockScreenControls property to NO.
+If you wish to disable this feature and/or override it with your own settings, set the JWPlayerController's `displayLockScreenControls` property to NO.
 
-Note: In order for Lock Screen controls to appear, the audioSession's categoryOptions property must include AVAudioSessionCategoryOptionDefaultToSpeaker or AVAudioSessionCategoryOptionAllowBluetooth, or return 0.
+!!!note
+In order for Lock Screen controls to appear, the audioSession's categoryOptions property must include `AVAudioSessionCategoryOptionDefaultToSpeaker` / `defaultToSpeaker` or `AVAudioSessionCategoryOptionAllowBluetooth` / `allowBluetooth`, or return 0. !!!
 
 ##Custom asset options
 
@@ -65,6 +83,10 @@ For example:
 
 FairPlay Streaming (FPS) securely delivers keys to Apple mobile devices, enabling the playback of encrypted video content. FPS allows a content provider to securely deliver an AES 128-bit content key from the provider’s key server. The content provider encrypts the H.264 video content with the content key. Then, FPS decrypts the encrypted video content with the content key. 
 
+!!!important
+The JW Player SDK does not encrypt streams for you, and does not implement a key server.
+!!!
+
 The JW Player SDK does not encrypt streams for you, and does not implement a key server. The JW Player SDK detects when a stream is FairPlay encrypted and asks your app to provide the necessary information and key to decrypt the content. This approach gives you the flexibility to encrypt your content and manage your keys the way you prefer.
 
 In order for you to be FPS compliant you must:
@@ -82,18 +104,25 @@ In order to play FairPlay encrypted HLS, the class in your app which communicate
     self.player.drmDataSource = self;
 ```
 When an FPS-specific tag is included in the playlist of a media stream that the Apple device is asked to play, the JW Player SDK will ask your application for the necessary information to prepare an encrypted key request:
+
 * the fetchContentIdentifierForRequest: delegate method gets called, requesting that the content identifier (also known as Asset ID) be passed in through its completion block.
-``` 
-    - (void)fetchContentIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
-    {
-        if(encryption == JWFairPlay) {
-            NSString *assetId; // obtain asset Id here.
-            NSData *assetIdData = [NSData dataWithBytes:[assetId cStringUsingEncoding:NSUTF8StringEncoding] length:[assetId lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
-            completion(assetIdData);
-        }
+
+
+   ```objc
+- (void)fetchContentIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
+{
+    if(encryption == JWFairPlay) {
+        NSString *assetId; // obtain asset Id here.
+        NSData *assetIdData = [NSData dataWithBytes:
+                               [assetId cStringUsingEncoding:NSUTF8StringEncoding] length:
+                               [assetId lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
+        completion(assetIdData);
     }
+}
 ```
+
 * the fetchAppIdentifierForRequest: delegate method is called, prompting for an Application Certificate which must get passed via the completion block. The Application Certificate must be encoded with the X.509 standard with distinguished encoding rules (DER). It is obtained when registering an FPS playback app with Apple, by supplying an X.509 Certificate Signing Request linked to your private key.
+* 
 ```
     - (void)fetchAppIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
     {
@@ -103,11 +132,14 @@ When an FPS-specific tag is included in the playlist of a media stream that the 
         }
     }
 ```
+
 When the key request is ready:
+
 * the fetchContentKeyWithRequest: delegate method is called, providing you with the key request data (also known as SPC - Server Playback Context message) which you need to retrieve the CKC (Content Key Context) message from your key server. The CKC message must be returned via the completion block, under the response parameter. When your app sends the request to the server, the FPS code on the server wraps the required key in an encrypted message and sends it to the app. Your app then provides the JW Player SDK with the encrypted message, which is used to unwrap the message and decrypt the stream, so the iOS device can play the media. 
-        * For resources that may expire, you can specify a renewal date in the completion block.
-        * We suggest also specifying the content type (the UTI indicating the type of data contained by the response) when a renewal date is set.
-```        
+	* For resources that may expire, you can specify a renewal date in the completion block.
+	* We suggest also specifying the content type (the UTI indicating the type of data contained by the response) when a renewal date is set.
+
+```objc
     - (void)fetchContentKeyWithRequest:(NSData *)requestBytes forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *, NSDate *, NSString *))completion
     {
         if(encryption == JWFairPlay) {
@@ -118,4 +150,7 @@ When the key request is ready:
         } 
     }
 ```    
-Note: FairPlay decryption only works on devices; it will not work on a simulator.
+
+!!!
+FairPlay decryption only works on a physical device; it will not work on a simulator.
+!!!

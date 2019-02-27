@@ -1,9 +1,16 @@
 # Troubleshooting
 
-
 !!!important
 Use of the iOS SDK v3 requires a JW Player Enterprise license. Please [contact our team](https://www.jwplayer.com/contact-us/?utm_source=developer&amp;utm_medium=CTA&amp;utm_campaign=player-docs) if you would like to upgrade your account.
 !!!
+
+## Known issues
+* Unintended behavior may appear during Fullscreen on iPad devices if upside down orientation is enabled. For optimal behavior please disable the upside down device orientation.
+![Disabling Upside Down](./images/disableUpsideDown.png)
+
+For more information about JW Player Ads Edition features, see [http://support.jwplayer.com/customer/portal/articles/1403727-what-is-jw-player-](http://support.jwplayer.com/customer/portal/articles/1403727-what-is-jw-player-)
+
+## FAQ
 
 ### Where can I find the JW Player demo app?
 
