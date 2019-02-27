@@ -175,10 +175,11 @@ As mentioned above, if you use this approach, you should include the `MediaRoute
         android:layout_weight="1"
         android:mediaRouteTypes="user"
         android:visibility="gone" />
+
+</LinearLayout>
 ```
 
 ```java
-</LinearLayout>
 
 // CastActivity.java
 @Override
