@@ -10,7 +10,7 @@ Yes. Below is a list of features that are disabled during a casting session with
 * DVR and live streaming capabilities
 
 <br/>
-!!!tip
+!!!
 Learn how to <a href="../../casting/chromecast">enable Chromecast for your iOS mobile app</a>.
 !!!
 
