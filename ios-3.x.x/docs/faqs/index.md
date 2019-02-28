@@ -9,5 +9,5 @@
 </table>
 <br/>
 !!!tip
-Learn how to [enable Chromecast for your iOS mobile app](../casting/chromecast).
+Learn how to <a href="../casting/chromecast">enable Chromecast for your iOS mobile app</a>.
 !!!
