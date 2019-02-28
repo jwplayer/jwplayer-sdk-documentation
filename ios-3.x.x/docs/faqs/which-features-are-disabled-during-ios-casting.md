@@ -7,6 +7,11 @@ Yes. Below is a list of features that are disabled during a casting session with
 * In-manifest WebVTT captions
 * DVR and live streaming capabilities
 
+<br/>
+!!!tip
+Learn how to <a href="../casting/chromecast">enable Chromecast for your iOS mobile app</a>.
+!!!
+
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
 Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
