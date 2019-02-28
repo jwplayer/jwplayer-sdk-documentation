@@ -58,5 +58,3 @@ nav:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'
   - 'System Requirements': 'about/requirements.md'
-- FAQ:
-  - 'Frequently asked questions': 'faqs/index.md'
