@@ -8,6 +8,3 @@
   </tr>
 </table>
 <br/>
-!!!tip
-Learn how to <a href="../casting/chromecast">enable Chromecast for your iOS mobile app</a>.
-!!!

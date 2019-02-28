@@ -1,5 +1,7 @@
 # Are any features disabled when casting with an iOS SDK player?
 
+---
+
 Yes. Below is a list of features that are disabled during a casting session with an iOS SDK player:
 
 * Google IMA ads
@@ -11,6 +13,8 @@ Yes. Below is a list of features that are disabled during a casting session with
 !!!tip
 Learn how to <a href="../../casting/chromecast">enable Chromecast for your iOS mobile app</a>.
 !!!
+
+<sup>Last Updated: February 28, 2019</sup>
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
