@@ -82,13 +82,37 @@ The `JWPlayerController` API controls the playback of the video being casted, an
 The <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps" target="_blank">JW Player iOS Best Practice Apps repository</a> contains several best practice apps, including an example of the code necessary for a casting experience. The target containing relevant code is named **JWCasting**.<br/><br/>Additionally, you can learn more about the Google Cast <a href="https://developers.google.com/cast/docs/ux_guidelines" target="_blank">User Experience</a> guidelines.
 !!!
 
+<br/>
 
 ## FAQ
 
 **Are any features disabled when casting with an iOS SDK player?**
+<br/><br/>
 Yes. The following features are disabled during a casting session with an iOS SDK player:
 
 * Google IMA ads
 * Multiple-audio tracks or AudioTrack switching
 * In-manifest WebVTT captions
 * DVR and live streaming capabilities
+
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
