@@ -1,42 +1,91 @@
-# Google Cast Setup
+# Enable casting to Chromecast devices
 
-To enable casting to Chromecast with the JW Player iOS SDK, you must import the Google Cast Framework and its dependent frameworks. For a list of necessary frameworks, please visit [https://developers.google.com/cast/docs/ios_sender_setup#xcode_setup](https://developers.google.com/cast/docs/ios_sender_setup#xcode_setup) and follow the steps under the "Xcode setup" subsection of the "Setup" section.
+<sup>Last Updated: March 14, 2019
 
-To begin casting, create a JWCastController object and set its delegate; the delegate must adhere to the JWCastingDelegate protocol and implement its delegate methods.
+The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content on a Chromecast-enabled device. The viewer's device must be on the same network as a Chromecast-enabled device.
 
-    - (void)setUpCastController
-    {
-        self.castController = [[JWCastController alloc] initWithPlayer:self.player];
-        self.castController.chromeCastReceiverAppID = kGCKMediaDefaultReceiverApplicationID;
-        self.castController.delegate = self;
-    }
+!!!important
+&bull; The JW Player iOS SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, set a media receiver app ID to the `chromeCastReceiverAppID` property of the `JWCastController`.
+!!!
 
-Once your JWCastController is setup, scan for devices by calling the `scanForDevices` method:
-    `[self.castController scanForDevices];`
+**1.** In a text editor, open **Podfile**.
 
-When devices become available, the JWCastingDelegate method `onCastingDevicesAvailable:` will be called and will provide an array of JWCastingDevices. Connect to a device by calling `connectToDevice:`.
+<br/>
 
-    -(void)onCastingDevicesAvailable:(NSArray *)devices
-    {
-        JWCastingDevice *chosenDevice = devices[0];
-        [self.castController connectToDevice:chosenDevice];
-    }
+**2.** If you are using CocoaPods to add dependencies, add `google-cast-sdk` to your **Podfile**, as shown in the following code example. You can specify any Google Cast version that is greater or equal to 4.3, but less than 5.0.  
 
-When connection is established, the JWCastingDelegate method `onConnectedToCastingDevice:` will be called, signaling the ability to cast the video being reproduced by the JWPlayerController. To cast, call the `cast` method on your JWCastController.
+If you are manually adding dependencies to your project, follow these <a href="https://developers.google.com/cast/docs/ios_sender/#manual_setup" target="_blank">manual setup instructions</a>.
 
-    -(void)onConnectedToCastingDevice:(JWCastingDevice *)device
-    {
-        [self.castController cast];
-    }
+```groovy
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
 
-The JWPlayerController API controls the playback of the video being casted, and the JWPlayerDelegate will provide you with the playback callbacks while casting.
+target 'MyAwesomeProject' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    use_frameworks!
 
-A best practice sample application demonstrating the code necessary for a proper casting experience can be found on [https://github.com/jwplayer/jwplayer-ios-bestPracticeApps](https://github.com/jwplayer/jwplayer-ios-bestPracticeApps). This repository contains several basic best practice apps that use the JW Player iOS SDK. The target containing the relevant code is named JWCasting. 
+    # Pods for MyAwesomeProject
+    pod 'JWPlayer-SDK', '~> 3.0'
+    pod 'google-cast-sdk', '~> 4.3' 
+end
+```
 
-The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers. Custom Receivers are not yet officially supported, but may work if the video playback implements the same interface used in the Default Media Receiver. To specify a receiver, set the receiver's app ID to the `chromeCastReceiverAppID` property of the JWCastController.
+<br/>
 
-## Known Issues
-* Our implementation of Google Cast is handled at the player level, not at the application-level recommended by Google's [Casting UI/UX guidelines](https://developers.google.com/cast/docs/ux_guidelines). For more involved casting requirements, we recommend implementing Google's Cast SDK directly at the application-level instead.
-* Google IMA ads are not supported when casting.
-* Multiple AudioTracks or AudioTrack switching is not supported when casting.
-* Only WebVTT captions are supported.
+**3.** If you are using Xcode 10 and targeting iOS 12+, click the app target **> Capabilities > Access WiFi Information**. Click the toggle to **ON** to enable **Access Wifi Information**.
+
+<br/>
+
+**4.** In your app, create a `JWCastController` object and set its delegate. The delegate must adhere to the [JWCastingDelegate](https://developer.jwplayer.com/sdk/ios/reference/Protocols/JWCastingDelegate.html) protocol and implement its delegate methods.
+
+```Objective-C
+- (void)setUpCastController
+{
+    self.castController = [[JWCastController alloc] initWithPlayer:self.player];
+    self.castController.chromeCastReceiverAppID = kGCKMediaDefaultReceiverApplicationID;
+    self.castController.delegate = self;
+}
+```
+
+<br/>
+
+**5.** Call the `scanForDevices` method to scan for devices: `[self.castController scanForDevices];`. When devices become available, the `JWCastingDelegate` method, `onCastingDevicesAvailable:`, is called and returns an array of `JWCastingDevices`.
+
+<br/>
+
+**6.** Call the `connectToDevice:` method to connect to a device.  When a connection is established, the `JWCastingDelegate` method, `onConnectedToCastingDevice:`, is called. This signals the ability to cast the video that is reproduced by the `JWPlayerController`.
+
+```Objective-C
+-(void)onCastingDevicesAvailable:(NSArray *)devices
+{
+    JWCastingDevice *chosenDevice = devices[0];
+    [self.castController connectToDevice:chosenDevice];
+}
+```
+
+<br/>
+
+**7.** Call the `cast` method on your `JWCastController`.
+
+```Objective-C
+-(void)onConnectedToCastingDevice:(JWCastingDevice *)device
+{
+    [self.castController cast];
+}
+```
+
+The `JWPlayerController` API controls the playback of the video being casted, and the JWPlayerDelegate will provide you with the playback callbacks while casting.
+
+!!!tip
+The <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps" target="_blank">JW Player iOS Best Practice Apps repository</a> contains several best practice apps, including an example of the code necessary for a casting experience. The target containing relevant code is named **JWCasting**.<br/><br/>Additionally, you can learn more about the Google Cast <a href="https://developers.google.com/cast/docs/ux_guidelines" target="_blank">User Experience</a> guidelines.
+
+
+## FAQ
+
+**Are any features disabled when casting with an iOS SDK player?**
+Yes. The following features that are disabled during a casting session with an iOS SDK player:
+
+* Google IMA ads
+* Multiple-audio tracks or AudioTrack switching
+* In-manifest WebVTT captions
+* DVR and live streaming capabilities
