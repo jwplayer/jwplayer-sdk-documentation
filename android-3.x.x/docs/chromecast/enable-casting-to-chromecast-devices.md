@@ -1,6 +1,6 @@
 # Enable casting to Chromecast devices
 
-<sup>Last Updated: March 14, 2019</sup>
+<sup>Last Updated: March 14, 2019 </sup>
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content on a Chromecast-enabled device. The viewer's device must be on the same network as a Chromecast-enabled device.
 
