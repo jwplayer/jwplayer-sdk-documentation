@@ -74,6 +74,8 @@ end
 }
 ```
 
+<br/>
+
 The `JWPlayerController` API controls the playback of the video being casted, and the JWPlayerDelegate will provide you with the playback callbacks while casting.
 
 !!!tip
