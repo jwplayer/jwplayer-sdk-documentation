@@ -44,7 +44,7 @@ nav:
   - 'Playing secure content': 'drm/drm-protected-playback.md'
   - 'Custom HTTP headers': 'drm/custom-http-headers.md'
 - Chromecast:
-  - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-device.md'
+  - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
   - 'Customization': 'chromecast/customization.md'
   - 'Supported Media': 'chromecast/supported-media.md'
   - 'Known issues': 'chromecast/known-issues.md'
