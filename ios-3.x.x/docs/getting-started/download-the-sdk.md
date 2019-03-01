@@ -67,7 +67,7 @@ target 'MyAwesomeProject' do
   use_frameworks!
 
   # Pods for MyAwesomeProject
-pod 'JWPlayer-SDK', '~> 3.0'
+  pod 'JWPlayer-SDK', '~> 3.0'
 end
 ```
 #### Install the SDK
