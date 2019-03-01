@@ -78,6 +78,7 @@ The `JWPlayerController` API controls the playback of the video being casted, an
 
 !!!tip
 The <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps" target="_blank">JW Player iOS Best Practice Apps repository</a> contains several best practice apps, including an example of the code necessary for a casting experience. The target containing relevant code is named **JWCasting**.<br/><br/>Additionally, you can learn more about the Google Cast <a href="https://developers.google.com/cast/docs/ux_guidelines" target="_blank">User Experience</a> guidelines.
+!!!
 
 
 ## FAQ
