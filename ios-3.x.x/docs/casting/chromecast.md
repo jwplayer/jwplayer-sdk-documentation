@@ -86,14 +86,17 @@ The <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps" target="
 
 ## FAQ
 
-**Are any features disabled when casting with an iOS SDK player?**
+**Are any features not supported when casting with an iOS SDK player?**
 <br/><br/>
-Yes. The following features are disabled during a casting session with an iOS SDK player:
+Yes. The following features are not supported during a casting session with an iOS SDK player:
 
 * Google IMA ads
-* Multiple-audio tracks or AudioTrack switching
-* In-manifest WebVTT captions
+* Multiple-audio tracks or AudioTrack switching<sup>1</sup>
+* In-manifest WebVTT captions<sup>1</sup>
+* 608 captions
 * DVR and live streaming capabilities
+
+<sup>1</sup>Chromecast does not support these features natively.
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
