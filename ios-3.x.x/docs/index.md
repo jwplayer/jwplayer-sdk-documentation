@@ -8,7 +8,7 @@ The product also includes a demo application that you can install on your iOS de
 The JW Player SDK for iOS supports all the features of the JW Player Ads Edition for web, with the following **exceptions**:
 
 * RTMP streaming  
-* Playback Vorbis or WebM formats  
+* Playback of FLV, Vorbis or WebM formats  
 * Google Analytics    
 * Adobe SiteCatalyst  
 * YouTube integration  
@@ -16,7 +16,7 @@ The JW Player SDK for iOS supports all the features of the JW Player Ads Edition
 
 We also do not support:
 
-*  Picture in Picture representation for ads played using Google IMA.
+*  Picture in Picture representation.
 
 ## Intended Audience
 This guide assumes that you have the necessary Objective C or Swift and iOS development skills to build and compile advanced iOS applications using XCode. It also assumes that you are familiar with online media technologies such as Apple HTTP Live Streaming (HLS), MP4, and H.264/AAC.
