@@ -22,7 +22,7 @@
 ## Version 3.2.4 (Build 87 - March 6, 2019)
 ### Bug Fixes
 * Fixed an issue where ad clickthrough on iOS 9 would not open Safari
-* Fixed an issue where buffered or local video would stop playing in case of connectivity issues
+* Fixed an issue where buffered or local video stops playing when connectivity issues occur
 
 <a name="3-2-3"></a>
 ## Version 3.2.3 (Build 86 - Feb 25, 2019)
