@@ -18,6 +18,12 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-2-4"></a>
+## Version 3.2.4 (Build 87 - March 6, 2019)
+### Bug Fixes
+* Fixed an issue where ad clickthrough on iOS 9 would not open Safari
+* Fixed an issue where buffered or local video would stop playing in case of connectivity issues
+
 <a name="3-2-3"></a>
 ## Version 3.2.3 (Build 86 - Feb 25, 2019)
 ### Enhancements
