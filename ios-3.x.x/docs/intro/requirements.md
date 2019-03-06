@@ -16,18 +16,21 @@
 
 # SDK Version 2.9 Requirements
 * [iOS version 10 and above](https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html)
-* [Google IMA SDK version 3.7.0](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history)
-* [Google Chromecast SDK version 2.10.0.4070](https://developers.google.com/cast/docs/release-notes#october-19-2015)
-* FreeWheel AdManager. You must download it yourself from [FreeWheel Hub Portal](https://hub.freewheel.tv/pages/viewpage.action?spaceKey=techdocs&title=MRM+Integration+SDK+Downloads)
 * Includes [JW Player version 7.12](https://developer.jwplayer.com/release-notes/jw-player/#7388776)
+
+##### Conditional Requirements
+* If using our SDK's integration with Google Interactive Media Ads ad server:
+  * [Google IMA SDK version 3.7.0](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history)
+* If implementing Chromecast functionality:
+  * [Google Chromecast SDK version 2.10.0.4070](https://developers.google.com/cast/docs/release-notes#october-19-2015)
 
 ---
 ####Comparison Table
 
 | SDK version | iOS ver required | IMA SDK ver required | Chromecast SDK ver required | Freewheel SDK required | (JWP ver included) |
 |:-----------:|:----------------:|:--------------------:|:---------------------------:|:----------------------:|:------------------:|
-|  **3.2.3**  |       9.0+       |         3.8.1        |         2.10.0.4070*        |     bitcode-enabled    |        8.7.1       |
-|   **2.9**   |       10.0+      |         3.7.0        |         2.10.0.4070         |     bitcode-enabled    |        7.12        |
+|  **3.2.3**  |       9.0+       |         3.8.1        |         2.10.0.4070*        | dynamic/<br/>bitcode-enabled|   8.7.1       |
+|   **2.9**   |       10.0+      |         3.7.0        |         2.10.0.4070         |      not supported     |        7.12        |
 
 
 *Chromecast SDK v4.x support coming soon!

@@ -1,6 +1,6 @@
 # Basic Embed
 
-This section includes samples for basic player operations such as configuration. All examples given in Objective C (1) and Swift (2). For additional examples, see the [sample application](https://github.com/jwplayer/jwplayer-sdk-ios-demo)
+This section includes samples for basic player operations such as configuration. All numbered examples given refer to either Objective C (1) or Swift (2). For additional examples, see the [sample application](https://github.com/jwplayer/jwplayer-sdk-ios-demo)
 
 **Declaring a player variable**
 
@@ -55,10 +55,19 @@ All the data needed to create a player should be populated in the configuration 
 
 Additional player configuration params:
 
-	config.image    = @"/image.jpg";    //title image
-	config.title    = @"JWPlayer Demo";	// video title
-	config.controls = YES;       		//show/hide controls
-	config.repeat   = NO;               //repeat after completion
+```objc
+config.image    = @"/image.jpg";    //title image
+config.title    = @"JWPlayer Demo";	// video title
+config.controls = YES;       		//show/hide controls
+config.repeat   = NO;               //repeat after completion
+```
+	
+```swift
+config.image = "/image.jpg" 		//title image
+config.title = "JWPlayer Demo" 		// video title
+config.controls = true 				//show/hide controls
+config.repeat = false 				//repeat after completion
+```
 
 **Local file playback**
 
@@ -84,9 +93,13 @@ var path = URL(string: pathNoScheme)?.absoluteString
 ## Offline handling
 You may specify a poster image to display when the device goes offline by setting a UIImage to the offlinePoster property of JWConfig, and you may specify a message to be displayed on top of the image by setting an NSString to the offlineMessage property of JWConfig.  
 
-```
-config.offlinePoster = [UIImage imageNamed:@"my_Image's_Name.png"];
+```objc
+config.offlinePoster = [UIImage imageNamed:@"my_Image_Name.png"];
 config.offlineMessage = @"my offline message";
+```
+```swift
+config.offlinePoster = UIImage(named: "my_Image_Name.png")
+config.offlineMessage = "my offline message"
 ```
 
 If the offlinePoster property is nil, the player will display the thumbnail image set to the image property of JWConfig. If both properties are nil, the player will display a black screen.
@@ -96,12 +109,11 @@ If the offlineMessage property is nil, the player will display its standard mess
 To create a player with multiple-source MP4 files, config.sources should be populated with an array of JWSource objects representing different MP4 objects, such as:
 
 ```objc
-config.sources = @[[JWSource sourceWithFile:@"/example_low.mp4"
-label:@"180p Streaming" isDefault:YES],  
-	[JWSource sourceWithFile:@"/example_med.mp4"
-label:@"270p Streaming"],  
-	[JWSource sourceWithFile:@"/example_hi.mp4"
-label:@"720p Streaming"]];
+config.sources = @[
+    [JWSource sourceWithFile:@"/example_low.mp4" label:@"180p Streaming" isDefault:YES],
+    [JWSource sourceWithFile:@"/example_med.mp4" label:@"270p Streaming"],  
+    [JWSource sourceWithFile:@"/example_hi.mp4"  label:@"720p Streaming"]
+];
 ```
 
 ```swift
@@ -109,14 +121,14 @@ config.sources = [
 	JWSource(file: "/example_low.mp4", label: "180p Streaming", isDefault: true),
 	JWSource(file: "/example_med.mp4", label: "270p Streaming"),
 	JWSource(file: "/example_hi.mp4", label: "720p Streaming")
-	]
+]
 ```
 
 ## Playlists
 
 To create a playlist, an array of JWPlaylistItem objects called playlist is passed to the player.
 
-```obj
+```objc
 JWPlaylistItem *item1 = [[JWPlaylistItem alloc] init];
 item1.file            = @”http ://example.com/hls.m3u8”;
 item1.tracks          = @[caption1, caption2];
@@ -173,10 +185,4 @@ player = JWPlayerController(config: config)
 
 !!!
 Please note that certain streams' playback speed can only be decreased. Also note that audio pitch is currently not adjusted.
-!!!
-
-## Casting
-
-!!!warning
-Section under construction
 !!!
