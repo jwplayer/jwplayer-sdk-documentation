@@ -18,5 +18,6 @@ We also do not support:
 
 *  Picture in Picture representation.
 
-## Intended Audience
-This guide assumes that you have the necessary Objective C or Swift and iOS development skills to build and compile advanced iOS applications using XCode. It also assumes that you are familiar with online media technologies such as Apple HTTP Live Streaming (HLS), MP4, and H.264/AAC.
+!!!
+This guide assumes that you have the necessary development skills to build advanced iOS applications.
+!!!
