@@ -40,32 +40,4 @@ This error is most likely due to XCode not being able to find the path of the SD
 and
 ### (b) Why is my app playing another app's audio at the same time as mine? 
 
-(a) This could be for a number of reasons, but check to see if your device is on silent mode, and if sound is restored when silent mode is off. If so, and also for issue (b), you just need to add a couple of lines of code to your project to let iOS know to handle your app for media playback – where your app is not silenced by the ring/silent switch or screen locking, and by default it interrupts a 'nonmixable' app's audio. Specifically, set the audio session's category to 'playback', and set your audio session to be the active one, as in the snippet below (or see our [iOS SDK Developer's Guide](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/embedding/features/#background-audio)).
-
-!!!tip
-Since updating the session is a blocking operation, best practice is to perform this operation on a background concurrent thread (not shown).!!!
-
-!!!note
-The snippets below do not implement error handling for the sake of clarity.!!!
-
-In your AppDelegate, add:
-
-```swift
-	// Swift < 4.2
-	try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-	try? AVAudioSession.sharedInstance().setActive(true)
-	
-	// Swift 4.2
-	try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
-	try? AVAudioSession.sharedInstance().setActive(true, options: [])
-
-```
-
-```objc
-    NSError *error;
-    [AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:&error];
-    [AVAudioSession.sharedInstance setActive:YES error:&error];
-```
-
-as the case may be. (For more on this topic, such as AVAudioSession options allowing AirPlay and Bluetooth, see the Apple docs [System Audio Interaction](https://developer.apple.com/documentation/avfoundation/system_audio_interaction), and especially
-[Audio Session Categories and Modes](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html#//apple_ref/doc/uid/TP40007875-CH10).)
+(a) This could be for a number of reasons, but check to see if your device is on silent mode, and if sound is restored when silent mode is off. If so, and also for issue (b), you just need to add a couple of lines of code to your project to let iOS know to handle your app for media playback – where your app is not silenced by the ring/silent switch or screen locking, and by default it interrupts a 'nonmixable' app's audio. Specifically, set the audio session's category to 'playback', and set your audio session to be the active one. See the overview and snippets on the  [Advanced Features](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/embedding/features/#background-audio) page in this guide.
