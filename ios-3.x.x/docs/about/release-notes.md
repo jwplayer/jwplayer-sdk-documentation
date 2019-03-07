@@ -19,7 +19,7 @@
 * [Version 1.x](#1-x)
 
 <a name="3-2-4"></a>
-## Version 3.2.4 (Build 87 - March 6, 2019)
+## Version 3.2.4 (Build 87 - March 7, 2019)
 ### Bug Fixes
 * Fixed an issue where ad clickthrough on iOS 9 does not open Safari
 * Fixed an issue where `onBufferChange` passes the wrong values for bufferPercent
