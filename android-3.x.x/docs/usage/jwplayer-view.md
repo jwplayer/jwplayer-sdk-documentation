@@ -64,8 +64,6 @@ In order to properly handle the Activity Lifecycle and release the player from m
 - `onStart()`
 - `onStop()`
 
-Review the code example below.
-
 ```java
  @Override
 protected void onStart() {
