@@ -12,7 +12,7 @@ The Google Cast framework enables a viewer to stream video and audio content to 
 
 <br/>
 
-**2.** If you are using CocoaPods to add dependencies, add `google-cast-sdk` to your **Podfile**, as shown in the following code example. You can specify any Google Cast version that is greater or equal to 4.3, but less than 5.0.  
+**2.** If you are using CocoaPods to add dependencies, add `google-cast-sdk` to your **Podfile**, as shown in the following code example. You can specify any Google Cast version that is greater than or equal to 4.3, but less than 5.0.  
 
 If you are manually adding dependencies to your project, follow these <a href="https://developers.google.com/cast/docs/ios_sender/#manual_setup" target="_blank">manual setup instructions</a>.
 
@@ -46,6 +46,14 @@ end
     self.castController.delegate = self;
 }
 ```
+```Swift
+func setUpCastController() {
+    castController = JWCastController(player: player)
+    castController?.chromeCastReceiverAppID = kGCKMediaDefaultReceiverApplicationID
+    castController?.delegate = self
+}
+```
+
 
 <br/>
 
@@ -62,6 +70,13 @@ end
     [self.castController connectToDevice:chosenDevice];
 }
 ```
+```Swift
+func onCastingDevicesAvailable(_ devices: [JWCastingDevice]!) 
+{
+    let chosenDevice = devices.first
+    castController?.connect(to: chosenDevice)
+}
+```
 
 <br/>
 
@@ -71,6 +86,11 @@ end
 -(void)onConnectedToCastingDevice:(JWCastingDevice *)device
 {
     [self.castController cast];
+}
+```
+```Swift
+func onConnected(to device: JWCastingDevice?) {
+    castController?.cast()
 }
 ```
 
