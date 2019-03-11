@@ -1,6 +1,7 @@
 # JW SDK for Android Release Notes
 
 ##### Major Version Releases
+* [Version 3.5.0 (Mar 14, 2019)](#3-5-0)
 * [Version 3.4.0 (Jan 03, 2019)](#3-4-0)
 * [Version 3.3.0 (Nov 29, 2018)](#3-3-0)
 * [Version 3.2.0 (Sep 07, 2018)](#3-2-0)
@@ -20,6 +21,30 @@
 * [Version 2.0.129 (Nov 17, 2015)](#2-0-129)
 * [Version 1.x](#1-x) 
 
+<a name="3-5-0"></a>
+## Version 3.5.0 (Build 70 - Mar 14, 2019)
+### Enhancements
+* Upgraded SDK to use JW Player 8.7.3
+* Upgraded IMA dependency to 3.10.6
+* Migrated the Chromecast implementation to the latest version of cast library. The implementation details have changed, so please refer to the [Chromecast section](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/getting-started/) for more details.
+
+### Bug fixes
+* Fixed an issue where some VPAID ad would continue working in background after it was skipped
+* Fixed an issue where spinner would be showing during content playback after VPAID ad
+* Fixed an issue where player controls would not hide automatically when pausing and then playing after VPAID ad
+* Fixed an issue where onAdComplete event would not fire for FreeWheel VPAID ads
+* Fixed an issue where onPause event would not fire on Android 5.1 if playback was interrupted by extrnal actions such as phone call
+* Fixed an issue where a playlist with IMA VMAP would not switch to next items automatically
+* Fixed a regression issue where it was not possible to localize error messages
+* Fixed an issue where onAdRequest would not fire for the first ad instance starting from the second ad pod or in case of inline IMA VMAP ad usafe
+* Fixed an issue where ad instances within one ad pod would miss their controls if configured using IMA VMAP
+* Fixed an issue where content would be shown as '00:00' for a moment right after IMA ad
+* Fixed an issue where only one onAdRequest would fire for IMA VMAP ad pod with multiple instances
+* Fixed an issue where the replay button would show before IMA VMAP post-roll
+* Fixed an issue where FreeWheel with relative offset plays as a pre-roll for the second playlist item of after replay
+* Fixed an issue where AdRequestEvent would not have an offset param when ad is requested manually during stream playback
+
+ 
 <a name="3-4-3"></a>
 ## Version 3.4.3 (Build 69 - Feb 11, 2019)
 ### Bug fixes
