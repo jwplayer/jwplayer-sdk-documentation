@@ -106,9 +106,9 @@ The <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps" target="
 
 ## FAQ
 
-**Are any features not supported when casting with an iOS SDK player?**
+**Which features not supported when casting with an iOS SDK player?**
 <br/><br/>
-Yes. The following features are not supported during a casting session with an iOS SDK player:
+The following features are not supported during a casting session with an iOS SDK player:
 
 * Google IMA ads
 * Multiple-audio tracks or AudioTrack switching<sup>1</sup>
