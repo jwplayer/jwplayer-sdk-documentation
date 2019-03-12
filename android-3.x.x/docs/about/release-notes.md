@@ -42,6 +42,7 @@
 * Fixed an issue where the replay button shows before IMA VMAP post-roll
 * Fixed an issue where FreeWheel ad with relative offset plays as a pre-roll for the second playlist item or after video replay
 * Fixed an issue where `AdRequestEvent` does not have an `offset` parameter when ad is manually requested during video playback
+* Fixed an issue where callbacks fire for the first ad instance in an ad pod only
  
 <a name="3-4-3"></a>
 ## Version 3.4.3 (Build 69 - Feb 11, 2019)
