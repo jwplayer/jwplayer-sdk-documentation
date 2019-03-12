@@ -29,7 +29,7 @@
 * Migrated the Chromecast implementation to the latest Google Cast library (version 16.1.2). Please refer to the [Chromecast documentation](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/getting-started/) for implementation details.
 
 ### Bug fixes
-* Fixed an issue where some VPAID ads continue playing in background after it is skipped
+* Fixed an issue where some VPAID ads continue playing in background after having been skipped
 * Fixed an issue where spinner shows during content playback after VPAID ad
 * Fixed issue where player controls do not automatically hide during video playback if user clicks the pause button and then the play button after the completion of a VPAID ad
 * Fixed an issue where `onAdComplete` event does not fire for FreeWheel VPAID ads
@@ -42,7 +42,7 @@
 * Fixed an issue where the replay button shows before IMA VMAP post-roll
 * Fixed an issue where FreeWheel ad with relative offset plays as a pre-roll for the second playlist item or after video replay
 * Fixed an issue where `AdRequestEvent` does not have an `offset` parameter when ad is manually requested during video playback
-* Fixed an issue where callbacks fire for the first ad instance in an ad pod only
+* Fixed an issue where callbacks fire only for the first ad instance in an ad pod
  
 <a name="3-4-3"></a>
 ## Version 3.4.3 (Build 69 - Feb 11, 2019)
