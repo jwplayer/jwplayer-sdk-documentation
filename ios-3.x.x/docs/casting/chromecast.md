@@ -12,7 +12,7 @@ The Google Cast framework enables a viewer to stream video and audio content to 
 
 <br/>
 
-**2.** If you are using CocoaPods to add dependencies, add `google-cast-sdk` to your **Podfile**, as shown in the following code example. You can specify any Google Cast version that is greater than or equal to 4.3, but less than 5.0.  
+**2.** If you are using CocoaPods manage dependencies, add `google-cast-sdk` to your **Podfile**, as shown in the following code example. You can specify any Google Cast version that is greater than or equal to 4.3, but less than 5.0.  
 
 If you are manually managing dependencies for your project, follow these <a href="https://developers.google.com/cast/docs/ios_sender/#manual_setup" target="_blank">manual setup instructions</a>.
 
