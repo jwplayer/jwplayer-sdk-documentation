@@ -26,7 +26,7 @@
 ### Enhancements
 * Upgraded SDK to use JW Player [8.7.3](https://developer.jwplayer.com/release-notes/jw-player/?id=14373250)
 * Upgraded to [Google IMA version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history)
-* Migrated the Chromecast implementation to the latest Google Cast library (version 16.1.2). Please refer to the [Chromecast documentation](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/getting-started/) for implementation details for more details.
+* Migrated the Chromecast implementation to the latest Google Cast library (version 16.1.2). Please refer to the [Chromecast documentation](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/getting-started/) for implementation details.
 
 ### Bug fixes
 * Fixed an issue where some VPAID ads continue playing in background after it is skipped
