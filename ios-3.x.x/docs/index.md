@@ -1,23 +1,32 @@
 # Introduction
 
-The JW Player SDK for iOS includes classes and methods to enable developers to add HLS and MP4 video playback functionality to iOS applications. The SDK also supports inclusion of VAST 4.0 video advertising in your applications, as well as reporting playback analytics to your JW Player dashboard, customizing video players using JW Player custom skins, and more.
+<sup>Last Updated: March 14, 2019</sup>
 
-The product also includes a demo application that you can install on your iOS device to illustrate the functionality that the SDK provides. 
+The JW Player SDK for iOS (JW Player SDK) is built upon the native iOS player framework, AVFoundation. This allows you to create a custom video experience that accesses the speed and performance of the native OS in conjunction with JW Player features.
 
-## Supported Features
-The JW Player SDK for iOS supports all the features of the JW Player Ads Edition for web, with the following **exceptions**:
+- Customize the player to match your in-app branding
+- Configure player behaviors to support your app experience
+- Add curated playlists
+- Stream encrypted live feeds
+- Incorporate advertising
 
-* RTMP streaming  
-* Playback of FLV, Vorbis or WebM formats  
-* Google Analytics    
-* Adobe SiteCatalyst  
-* YouTube integration  
-* VPAID 1.0 ads  
+Apps built with the JW Player SDK integrate with video hosting, streaming, and analytics services. These services allow you to incorporate a video experience, monetize your app, and discover ways to increase viewer engagement. You can also use the JW Player SDK with video content that is hosted with non-JW Player services.
 
-We also do not support:
+<br/>
 
-*  Picture in Picture representation.
+## Requirements
+
+JW Player SDK for iOS requires the following:
+
+- JW Player Enterprise or Developer license
+- iOS version 9.0+
+
+<br/>
+
+## Getting started
+
+To add the iOS SDK to your app, start by [downloading the SDK](getting-started/download-the-sdk).
 
 !!!
-This guide assumes that you have the necessary development skills to build advanced iOS applications.
+By adding the JW Player SDK to your app, you acknowledge that you have the necessary development skills to build advanced iOS applications and agree to the [JW Player Terms of Service](https://www.jwplayer.com/tos/).
 !!!

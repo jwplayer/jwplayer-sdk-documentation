@@ -17,7 +17,6 @@ extra:
 nav:
 - Getting Started:
   - 'Introduction': 'index.md'
-  - 'System Requirements': 'intro/requirements.md'
   - 'Download the SDK': 'getting-started/download-the-sdk.md'
   - 'Configure your project': 'getting-started/configure-your-project.md'
 - Create a JW Player:
