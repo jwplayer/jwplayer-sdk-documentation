@@ -179,7 +179,8 @@ When the key request is ready:
             completion(key, renewalDate, contentType);
         } 
     }
-```    
+```  
+
 ```swift
 func fetchContentKey(withRequest requestBytes: Data?, for encryption: JWEncryption, withCompletion completion: @escaping (Data?, Date?, String?) -> Void) 
 {
