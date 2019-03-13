@@ -2,11 +2,11 @@
 
 <img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
 
-<sup>Last Updated: March 14, 2019</sup>
-
 !!!important
 The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
 !!!
+
+<sup>Last Updated: March 14, 2019</sup>
 
 <strong>SDK version</strong>: 2.9.2+2
 
