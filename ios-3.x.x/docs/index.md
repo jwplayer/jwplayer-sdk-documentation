@@ -20,7 +20,7 @@ JW Player SDK for iOS requires the following:
 
 ## Getting started
 
-To add the iOS SDK to your app, start by [downloading the SDK](../getting-started/download-the-sdk).
+To add the iOS SDK to your app, start by [downloading the SDK](getting-started/download-the-sdk).
 
 !!!
 By adding the JW Player SDK to your app, you acknowledge that you have the necessary development skills to build advanced iOS applications and agree to the [JW Player Terms of Service](https://www.jwplayer.com/tos/).
