@@ -1,5 +1,7 @@
 # Fullscreen Handler
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 It is possible to override the default fullscreen behavior. To do this simply implement the `FullscreenHandler` interface or extend the `DefaultFullscreenHandler` class and override any or all of these methods:
 
 | Method                                     | Description                                                                                                                         |

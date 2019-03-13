@@ -1,5 +1,7 @@
 # Examples
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 These examples assume that you have a reference to a `JWPlayerView` called player.
 
 ## Loading a Single Stream

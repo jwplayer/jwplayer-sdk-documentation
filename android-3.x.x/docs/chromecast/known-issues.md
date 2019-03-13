@@ -1,5 +1,7 @@
 # Known Issues
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Current Limitations
 
 Chromecast support was added in version 2.1 of the JW Player SDK for Android. At this moment the Chromecast support is still in beta and the API for Chromecast will be subject to changes in the future.

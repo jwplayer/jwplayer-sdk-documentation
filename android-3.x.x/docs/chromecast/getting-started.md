@@ -1,5 +1,7 @@
 # Chromecast
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Overview
 Enabling Chromecast functionality for your Android application using the JW Player SDK is simple. 
 

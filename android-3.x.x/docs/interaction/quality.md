@@ -1,5 +1,7 @@
 # QualityLevel
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 The `QualityLevel` class represents a quality variant in a HLS or DASH stream. Quality levels are sent to the developer via the `onQualityLevels()` callback.
 
 ## Quality API Methods

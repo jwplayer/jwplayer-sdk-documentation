@@ -1,5 +1,11 @@
 # Google IMA
 
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
+
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
+
 ## Overview
 The JW Player SDK for Android is integrated with Google's IMA SDK v#ima_sdk_version# and supports VAST and VMAP advertising. In this document we will set up your project with Google Play Services Ads and demonstrate all supported features of the Google IMA implementation.
 

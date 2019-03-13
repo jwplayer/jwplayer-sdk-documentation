@@ -1,5 +1,7 @@
 # Digital Rights Management
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 On Android 4.3 and higher the JW Player SDK for Android supports Digital Rights
 Management (DRM) protected playback.
 

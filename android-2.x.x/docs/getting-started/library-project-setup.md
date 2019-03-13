@@ -1,11 +1,14 @@
 # Library and project setup
 
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
+
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
+
 ## Overview
 
 In this document we'll cover how to add the JW Player SDK to your Android Studio project and its initial configuration.
-
-### Oct 18, 2017
-**Free, Premium, and Platinum edition** customers please note: the JW Player SDK for Android will no longer be included in these editions beginning **OCT 18th 2018**. This provides our Free, Premium, and Platinum edition customers one (1) year to find an alternative to our SDK. Enterprise customers will continue to have access to the JW Player SDK for Android and will not be impacted. Please contact support+sdk@jwplayer.com if you have additional questions.
 
 ## Importing the JW Player SDK into your project
 

@@ -1,5 +1,7 @@
 # Google IMA
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Overview
 The JW Player SDK for Android is integrated with Google's IMA SDK v#ima_sdk_version# and supports VAST and VMAP advertising. In this document we will set up your project with Google Play Services Ads and demonstrate all supported features of the Google IMA implementation.
 
