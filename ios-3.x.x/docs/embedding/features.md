@@ -118,7 +118,7 @@ When an FPS-specific tag is included in the playlist of a media stream that the 
 * the fetchContentIdentifierForRequest delegate method gets called, requesting that the content identifier (also known as Asset ID) be passed in through its completion block.
 
 
-   ```objc
+```objc
 - (void)fetchContentIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
 {
         if(encryption == JWEncryptionFairPlay) {
@@ -143,8 +143,8 @@ func fetchContentIdentifier(forRequest loadingRequestURL: URL?, for encryption: 
 ```
 
 * the fetchAppIdentifierForRequest delegate method is called, prompting for an Application Certificate which must get passed via the completion block. The Application Certificate must be encoded with the X.509 standard with distinguished encoding rules (DER). It is obtained when registering an FPS playback app with Apple, by supplying an X.509 Certificate Signing Request linked to your private key.
-* 
-```
+ 
+```objc
     - (void)fetchAppIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
     {
         if (encryption == JWEncryptionFairPlay) {
@@ -191,6 +191,7 @@ func fetchContentKey(withRequest requestBytes: Data?, for encryption: JWEncrypti
         }
 }
 ```
+
 !!!
 FairPlay decryption only works on a physical device; it will not work on a simulator.
 !!!

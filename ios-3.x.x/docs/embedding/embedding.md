@@ -47,7 +47,7 @@ After the player is instantiated, the player.view property represents the player
 
 !!!tip
 It is strongly recommended to add the player view to the view hierarchy in or after the viewDidAppear method of the embedding view controller.
-!!!tip
+!!!
 
 **Configuration object**
 
