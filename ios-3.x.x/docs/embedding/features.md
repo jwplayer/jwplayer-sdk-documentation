@@ -163,13 +163,14 @@ func fetchAppIdentifier(forRequest loadingRequestURL: URL?, for encryption: JWEn
         }
 }
 ```
+
 When the key request is ready:
 
 * the fetchContentKeyWithRequest delegate method is called, providing you with the key request data (also known as SPC - Server Playback Context message) which you need to retrieve the CKC (Content Key Context) message from your key server. The CKC message must be returned via the completion block, under the response parameter. When your app sends the request to the server, the FPS code on the server wraps the required key in an encrypted message and sends it to the app. Your app then provides the JW Player SDK with the encrypted message, which is used to unwrap the message and decrypt the stream, so the iOS device can play the media. 
 	* For resources that may expire, you can specify a renewal date in the completion block.
 	* We suggest also specifying the content type (the UTI indicating the type of data contained by the response) when a renewal date is set.
 
- ```objc
+```objc
     - (void)fetchContentKeyWithRequest:(NSData *)requestBytes forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *, NSDate *, NSString *))completion
     {
         if(encryption == JWEncryptionFairPlay) {
