@@ -142,7 +142,7 @@ item2.title           = @"Playlist Video With Ads";
 config.playlist       = @[item1, item2];
 ```
 
-```
+```swift
 var item1    = JWPlaylistItem()
 item1.file   = "http ://example.com/hls.m3u8"
 item1.tracks = [caption1, caption2]
