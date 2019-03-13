@@ -12,11 +12,16 @@ The JW Player SDK for iOS (JW Player SDK) is built upon the native iOS player fr
 
 Apps built with the JW Player SDK integrate with video hosting, streaming, and analytics services. These services allow you to incorporate a video experience, monetize your app, and discover ways to increase viewer engagement. You can also use the JW Player SDK with video content that is hosted with non-JW Player services.
 
+<br/>
+
 ## Requirements
 
 JW Player SDK for iOS requires the following:
+
 - JW Player Enterprise or Developer license
 - iOS version 9.0+
+
+<br/>
 
 ## Getting started
 
