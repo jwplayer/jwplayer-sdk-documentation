@@ -1,6 +1,6 @@
 # JW Player SDK for Android
 
-<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray"> [Upgrade now to v3!](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html)
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
 
 <sup>Last Updated: March 14, 2019</sup>
 

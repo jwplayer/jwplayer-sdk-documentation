@@ -2,7 +2,9 @@
 
 <img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
 
-<sup>[Upgrade now to v3!](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html)</sup>
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
 
 The [`JWPlayerView`](https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/JWPlayerView.html) is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback via the Playback API and register multiple event listeners that could help you with custom analytics or error handling.
 
