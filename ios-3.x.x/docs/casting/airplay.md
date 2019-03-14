@@ -1,5 +1,7 @@
 # AirPlay
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 The JW Player iOS SDK supports playback via AirPlay. In order to cast via AirPlay your Apple device must be connected to an AirPlay receiver (i.e. Apple TV). Connecting to an AirPlay receiver can be done in the Control Center or by adding an AirPlay button in your app. The following code can be used to layer an AirPlay button on your JWPlayerController's view.
 
     - (void)setUpAirPlayButton

@@ -1,5 +1,7 @@
 # FreeWheel
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 ## Overview
 The JW Player SDK for iOS is integrated with FreeWheel Ad Manager and supports VAST and VPAID advertising. In this document we will set up your project with FreeWheel and demonstrate all supported features of the FreeWheel implementation.
 
@@ -44,7 +46,9 @@ To configure Freewheel ads you have to use `JWConfig`, `JWAdConfig` and `JWFreew
 
 **Code Example:**
 
-    // Create JWFreewheelConfig instance and set up FreeWheel parameters
+    // Create JWFreewheelConfig instance and 
+    
+    set up FreeWheel parameters
     JWFreewheelConfig *fwConf = [[JWFreewheelConfig alloc] init];
     fwConf.mediaId = @"DemoVideoGroup.01";
     fwConf.serverId = @"http://demo.v.fwmrm.net/ad/g/1";
@@ -53,6 +57,7 @@ To configure Freewheel ads you have to use `JWConfig`, `JWAdConfig` and `JWFreew
     fwConf.networkId = 96749;
 
     // Create JWAdConfig, then assign ad client and JWFreewheelConfig instance created previously. Other parameters available.
+
     JWAdConfig *advertising = [[JWAdConfig alloc] init];
     advertising.client = JWAdClientFreewheel;
     advertising.adMessage = @"Ad message xx";
@@ -62,6 +67,7 @@ To configure Freewheel ads you have to use `JWConfig`, `JWAdConfig` and `JWFreew
     advertising.freewheel = fwConf;
 
     // Assign JWAdConfig (with FreeWheel configuration) to JWConfig instance for player
+
     JWConfig *conf = [[JWConfig alloc] init];
     conf.advertising = advertising;
 

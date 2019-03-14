@@ -1,5 +1,7 @@
 # Advanced Features
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 ## DVR
 
 DVR functionality allows viewers to pause, play, and rewind live events. If viewers begin watching an event past the initial broadcast time, and do not want to miss any important content, this allows them to start at an earlier position. If DVR is supported and enabled on the streaming server, add "?DVR" to the video url (eg. http://mydomain.com/video.m3u8?DVR) to indicate to the player that the HLS Playlist is a DVR stream. JW Player will in turn adjust the visual elements on the control bar to support DVR and make it clear to the viewer that the live stream can be paused or rewound to a point in the past.

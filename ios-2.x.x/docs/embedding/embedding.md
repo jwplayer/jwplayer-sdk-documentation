@@ -1,5 +1,11 @@
 # Basic Embed
 
+<img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
+
+!!!important
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+!!!
+
 This section includes samples for basic player operations such as configuration. All examples given in Objective C (1) and Swift (2). For additional examples, see the [sample application](https://github.com/jwplayer/jwplayer-sdk-ios-demo)
 
 **Declaring a player variable**

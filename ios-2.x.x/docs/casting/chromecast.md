@@ -1,5 +1,11 @@
 # Google Cast Setup
 
+<img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
+
+!!!important
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+!!!
+
 To enable casting to Chromecast with the JW Player iOS SDK, you must import the Google Cast Framework and its dependent frameworks. For a list of necessary frameworks, please visit [https://developers.google.com/cast/docs/ios_sender_setup#xcode_setup](https://developers.google.com/cast/docs/ios_sender_setup#xcode_setup) and follow the steps under the "Xcode setup" subsection of the "Setup" section.
 
 To begin casting, create a JWCastController object and set its delegate; the delegate must adhere to the JWCastingDelegate protocol and implement its delegate methods.

@@ -1,5 +1,11 @@
 # Google IMA
 
+<img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
+
+!!!important
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+!!!
+
 In order to play ads using Google Interactive Media Ads (Google IMA) you must import the Google IMA framework into your project ( Installing Google IMA ) and set your JWAdConfig’s adClient to googIMA.
 
     adConfig.adClient = googIMA;
