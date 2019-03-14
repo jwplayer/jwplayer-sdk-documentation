@@ -1,5 +1,7 @@
 # JWPlayerFragment
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 Instead of directly adding the `JWPlayerView` to your layout we encourage you to add a`JWPlayerFragment` (or `JWPlayerSupportFragment` if you are using the support package) to your `ViewGroup`.
 
 The JWPlayerFragment makes it easier to get started with using the JWPlayer, it offers all the features that the JWPlayerView offers and on top of that it takes care of the JWPlayerView's lifecycle. Using the JWPlayerFragment is recommended, but for more control over the JWPlayerView lifecycle (eg. onResume) the JWPlayerView can be used directly.

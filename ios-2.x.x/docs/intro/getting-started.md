@@ -1,5 +1,11 @@
 # Getting Started
 
+<img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
+
+!!!important
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+!!!
+
 ## Downloading the SDK Software
 
 1. Sign in to your JW Player dashboard at [https://dashboard.jwplayer.com](https://dashboard.jwplayer.com).

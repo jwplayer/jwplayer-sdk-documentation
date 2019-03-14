@@ -1,5 +1,9 @@
 # JWPlayerView
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
+<sup>Last Updated: March 14, 2019</sup>
+
 The [`JWPlayerView`](https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/JWPlayerView.html) is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback via the Playback API and register multiple event listeners that could help you with custom analytics or error handling.
 
 ## Adding a JWPlayerView to your XML layout
@@ -54,9 +58,21 @@ jwPlayerViewContainer.addView(playerView);
 
 ## Activity Lifecycle Handling 
 
-In order to properly handle the Activity Lifecycle and release the player from memory when necessary, you **must** override the `onPause()`, `onResume()` and `onDestroy()` methods of the Activity containing the JWPlayerView as shown below. This configuration is not necessary when using `JWPlayerFragment` or `JWPlayerSupportFragment` since we already handle the lifecycle methods in those scenarios.
+In order to properly handle the Activity Lifecycle and release the player from memory when necessary, you **must** override the following methods of the Activity containing the `JWPlayerView`:
+
+- `onDestroy()`
+- `onPause()`
+- `onResume()`
+- `onStart()`
+- `onStop()`
 
 ```java
+ @Override
+protected void onStart() {
+    super.onStart();
+    playerView.onStart();
+}
+
 @Override
 protected void onResume() {
     // Let JW Player know that the app has returned from the background
@@ -70,6 +86,12 @@ protected void onPause() {
     playerView.onPause();
     super.onPause();
 }
+
+@Override
+protected void onStop() {
+    playerView.onStop();
+    super.onStop();
+}
 	
 @Override
 protected void onDestroy() {
@@ -78,6 +100,10 @@ protected void onDestroy() {
     super.onDestroy();
 }
 ```
+
+!!!
+This configuration is not necessary when using `JWPlayerFragment` or `JWPlayerSupportFragment` since we already handle the lifecycle methods in those scenarios.
+!!!
 
 ## Orientation Changes and Fullscreen Handling
 

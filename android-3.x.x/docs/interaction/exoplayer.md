@@ -1,5 +1,7 @@
 # ExoPlayer customization
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 To customize the `ExoPlayer`, use the `ExoPlayerSettings` reference that can be retrieved from `JWPlayerView`.
 
 ## Look-Ahead buffer customization

@@ -1,5 +1,7 @@
 # JW SDK for iOS Release Notes
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 ##### Major Version Releases
 
 * [Version 3.2.0 (Jan 23, 2019)](#3-2-0)

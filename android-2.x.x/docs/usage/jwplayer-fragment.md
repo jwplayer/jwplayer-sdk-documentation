@@ -1,5 +1,11 @@
 # JWPlayerFragment
 
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
+
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
+
 Instead of directly adding the `JWPlayerView` to your layout we encourage you to add a`JWPlayerFragment` (or `JWPlayerSupportFragment` if you are using the support package) to your `ViewGroup`.
 
 The JWPlayerFragment makes it easier to get started with using the JWPlayer, it offers all the features that the JWPlayerView offers and on top of that it takes care of the JWPlayerView's lifecycle. Using the JWPlayerFragment is recommended, but for more control over the JWPlayerView lifecycle (eg. onResume) the JWPlayerView can be used directly.

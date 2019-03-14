@@ -1,4 +1,7 @@
 # Methods
+
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Playback
 These methods are used to retrieve and change the current playback state of the Player: is the Player idle, buffering, playing or paused.
 

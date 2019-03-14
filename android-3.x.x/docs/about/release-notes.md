@@ -1,5 +1,7 @@
 # JW SDK for Android Release Notes
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ##### Major Version Releases
 * [Version 3.4.0 (Jan 03, 2019)](#3-4-0)
 * [Version 3.3.0 (Nov 29, 2018)](#3-3-0)

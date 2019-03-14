@@ -1,5 +1,7 @@
 # Analytics
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 JW Player enables plugin developers to listen for media playback and VAST/VPAID native ads analytics events.
 
 !!!important

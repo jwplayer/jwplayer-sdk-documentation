@@ -1,5 +1,7 @@
 # Ad Rules
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 The JW Player iOS SDK supports the JW8 Ad Rules. For more information about Ad Rules please visit the [JW8 Ad Rules reference](https://support.jwplayer.com/articles/ad-rules-reference).
 
 To set ad rules:

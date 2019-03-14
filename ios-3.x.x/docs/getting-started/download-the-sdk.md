@@ -1,4 +1,7 @@
 # Download the SDK
+
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 <sup>Last updated: February 12, 2019</sup>
 
 !!!important
@@ -67,7 +70,7 @@ target 'MyAwesomeProject' do
   use_frameworks!
 
   # Pods for MyAwesomeProject
-pod 'JWPlayer-SDK', '~> 3.0'
+  pod 'JWPlayer-SDK', '~> 3.0'
 end
 ```
 #### Install the SDK
@@ -135,9 +138,9 @@ Before you can start experimenting with the JW Player SDK for iOS Open Source D
 
 |Item|Acquisition process|
 |---|---|
-|Enterprise or Developer license|JW Player SDK for Android requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
+|Enterprise or Developer license|JW Player Open Source Demo for iOS. requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Xcode| Download and install <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode<a/>.|
-|JW Player SDK for iOS Open Source Demo and license key | 1. Download the <a href="https://github.com/jwplayer/jwplayer-sdk-ios-demo" target="_blank">SDK repository</a>. <br/>2. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **PUBLISH > Tools**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
+|JW Player SDK for iOS Open Source Demo and license key | 1. Download the <a href="https://github.com/jwplayer/jwplayer-sdk-ios-demo" target="_blank">JW Player Open Source Demo for iOS</a>. <br/>2. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **PUBLISH > Tools**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
 
 You have retrieved your JW Player license key and downloaded the JW Player SDK for iOS Open Source Demo. You can now [configure your project](../configure-your-project).
 

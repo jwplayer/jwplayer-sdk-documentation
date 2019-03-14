@@ -1,5 +1,7 @@
 # Related Content Overlay
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 As of JW Player SDK for Android 2.5.+ related content overlay is supported. Read more about [Related Videos](https://support.jwplayer.com/customer/portal/articles/1483102).
 
 ## Related Overlay API Methods

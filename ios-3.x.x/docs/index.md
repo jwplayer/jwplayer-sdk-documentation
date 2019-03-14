@@ -1,29 +1,34 @@
 # Introduction
 
-The JW Player SDK for iOS includes classes and methods to enable developers to add HLS and MP4 video playback functionality to iOS applications. The SDK also supports inclusion of VAST 3.0 video advertising in your applications, as well as reporting playback analytics to your JW Player dashboard, customizing video players using JW Player custom skins, and more.
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-The product also includes a demo application that you can install on your iOS device to illustrate the functionality that the SDK provides. 
+<sup>Last Updated: March 14, 2019</sup>
 
-## Oct 18, 2017
+The JW Player SDK for iOS (JW Player SDK) is built upon the native iOS player framework, AVFoundation. This allows you to create a custom video experience that accesses the speed and performance of the native OS in conjunction with JW Player features.
 
-**Free, Premium, and Platinum edition** customers please note: the JW Player SDK for iOS will no longer be included in these editions beginning **OCT 18th 2018**. This provides our Free, Premium, and Platinum edition customers one (1) year to find an alternative to our SDK. Enterprise customers will continue to have access to the JW Player SDK for iOS and will not be impacted. Please contact support+sdk@jwplayer.com if you have additional questions.
+- Customize the player to match your in-app branding
+- Configure player behaviors to support your app experience
+- Add curated playlists
+- Stream encrypted live feeds
+- Incorporate advertising
 
-## Supported Features
-The JW Player SDK for iOS supports all the features of the JW Player Ads Edition for web, with the following **exceptions**:
+Apps built with the JW Player SDK integrate with video hosting, streaming, and analytics services. These services allow you to incorporate a video experience, monetize your app, and discover ways to increase viewer engagement. You can also use the JW Player SDK with video content that is hosted with non-JW Player services.
 
-* RTMP streaming  
-* Playback of FLV, Vorbis or WebM formats  
-* Google Analytics    
-* Adobe SiteCatalyst  
-* YouTube integration  
-* VPAID 1.0 ads  
+<br/>
 
-## Known issues
-* We do not support Picture in Picture representation for ads played using Google IMA.
-* Unintended behavior may appear during Fullscreen on iPad devices if upside down orientation is enabled. For optimal behavior please disable the upside down device orientation.
-![Disabling Upside Down](./images/disableUpsideDown.png)
+## Requirements
 
-For more information about JW Player Ads Edition features, see [http://support.jwplayer.com/customer/portal/articles/1403727-what-is-jw-player-](http://support.jwplayer.com/customer/portal/articles/1403727-what-is-jw-player-)
+JW Player SDK for iOS requires the following:
 
-## Intended Audience
-This guide assumes that you have the necessary Objective C or Swift and iOS development skills to build and compile advanced iOS applications using XCode. It also assumes that you are familiar with online media technologies such as Apple HTTP Live Streaming (HLS), MP4, and H.264/AAC.
+- JW Player Enterprise or Developer license
+- iOS version 9.0+
+
+<br/>
+
+## Getting started
+
+To add the iOS SDK to your app, start by [downloading the SDK](getting-started/download-the-sdk).
+
+!!!
+By adding the JW Player SDK to your app, you acknowledge that you have the necessary development skills to build advanced iOS applications and agree to the [JW Player Terms of Service](https://www.jwplayer.com/tos/).
+!!!

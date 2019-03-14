@@ -1,4 +1,7 @@
 # Multi-window mode
+
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 To ensure that your app supports multi-window mode, make the following changes to your code:
 
 *  Add `JWPlayerView#onStart()` / `JWPlayerView#onResume()` / `JWPlayerView#onPause()` / `JWPlayerView#onStop()` invocations into your `Activity`'s or `Fragment`'s lifecycle.

@@ -1,5 +1,7 @@
 # Migration from older SDK versions
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 ## Migrating from 2.7.x to 2.8.0
 Beginning with version 2.8.0, the JW Player SDK for iOS will be a [dynamic library](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html). If you are updating from version 2.7.x to 2.8.0+ you should follow the migration process below.
 

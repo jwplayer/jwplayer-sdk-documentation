@@ -1,5 +1,11 @@
 # Migration from older SDK versions
 
+<img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
+
+!!!important
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+!!!
+
 ## Migrating from 2.7.x to 2.8.0
 Beginning with version 2.8.0, the JW Player SDK for iOS will be a [dynamic library](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/OverviewOfDynamicLibraries.html). If you are updating from version 2.7.x to 2.8.0+ you should follow the migration process below.
 

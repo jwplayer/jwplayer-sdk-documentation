@@ -1,5 +1,7 @@
 # Localization Overview
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 The JW Player SDK for Android supports localizing error strings and setting the language in the IMA SDK.
 
 ## Localized Error Messages

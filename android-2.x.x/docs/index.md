@@ -1,15 +1,18 @@
 # JW Player SDK for Android
 
-SDK version: 2.9.2+2
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
+
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
+
+<strong>SDK version</strong>: 2.9.2+2
 
 The JW Player SDK for Android is a media player for the Android Operating System that supports Apple HTTP Live Streaming (HLS), Dynamic Adaptive Streaming over HTTP (DASH), Smooth Streaming, WebM and MP4 playback. The SDK has video specific methods / classes to aid developers in creating custom video applications for Android mobile devices.
 
 The SDK package includes a demo application to demonstrate functionality to non-developers.
 
 Source code for a simple sample application to help you get started is available on [GitHub](https://github.com/jwplayer/jwplayer-sdk-android-demo).
-
-## Oct 18, 2017
-**Free, Premium, and Platinum edition** customers please note: the JW Player SDK for Android will no longer be included in these editions beginning **OCT 18th 2018**. This provides our Free, Premium, and Platinum edition customers one (1) year to find an alternative to our SDK. Enterprise customers will continue to have access to the JW Player SDK for Android and will not be impacted. Please contact support+sdk@jwplayer.com if you have additional questions.
 
 ## Supported Features
 
