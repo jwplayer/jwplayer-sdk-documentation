@@ -57,7 +57,7 @@ All the data needed to create a player should be populated in the configuration 
 
 Additional player configuration params:
 
-```objc
+```Objective-C
 config.image    = @"/image.jpg";    //title image
 config.title    = @"JWPlayer Demo";	// video title
 config.controls = YES;       		//show/hide controls
@@ -77,7 +77,7 @@ The JW Player SDK for iOS supports playback of local files of the following form
 
 To play a local file you need to specify path to the file including `file://` protocol.
 
-```objc
+```Objective-C
 NSString *pathNoScheme = [[NSBundle mainBundle] pathForResource:@"sintel" ofType:@"mp4"]];
 NSString *path = [NSString stringWithFormat:@"file://%@", pathNoScheme];
 // OR
@@ -95,7 +95,7 @@ var path = URL(string: pathNoScheme)?.absoluteString
 ## Offline handling
 You may specify a poster image to display when the device goes offline by setting a UIImage to the offlinePoster property of JWConfig, and you may specify a message to be displayed on top of the image by setting an NSString to the offlineMessage property of JWConfig.  
 
-```objc
+```Objective-C
 config.offlinePoster = [UIImage imageNamed:@"my_Image_Name.png"];
 config.offlineMessage = @"my offline message";
 ```
@@ -110,7 +110,7 @@ If the offlineMessage property is nil, the player will display its standard mess
 ## Setting Multiple Sources
 To create a player with multiple-source MP4 files, config.sources should be populated with an array of JWSource objects representing different MP4 objects, such as:
 
-```objc
+```Objective-C
 config.sources = @[
     [JWSource sourceWithFile:@"/example_low.mp4" label:@"180p Streaming" isDefault:YES],
     [JWSource sourceWithFile:@"/example_med.mp4" label:@"270p Streaming"],  
@@ -130,7 +130,7 @@ config.sources = [
 
 To create a playlist, an array of JWPlaylistItem objects called playlist is passed to the player.
 
-```objc
+```Objective-C
 JWPlaylistItem *item1 = [[JWPlaylistItem alloc] init];
 item1.file            = @”http ://example.com/hls.m3u8”;
 item1.tracks          = @[caption1, caption2];
@@ -163,7 +163,7 @@ Note that you can set an adSchedule for each JWPlaylistItem.
 ## Playback Rate
 Our SDK allows you to set a playback speed, in a range between 0.25 to 4.
 
-```objc
+```Objective-C
 JWConfig *config            = [JWConfig new];
 config.playbackRateControls = YES;
 

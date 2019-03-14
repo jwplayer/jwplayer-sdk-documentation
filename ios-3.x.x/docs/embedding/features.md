@@ -37,7 +37,7 @@ try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback
 try? AVAudioSession.sharedInstance().setActive(true, options: [])
 ```
 
-```objc
+```Objective-C
 NSError *error;
 [AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:&error];
 [AVAudioSession.sharedInstance setActive:YES error:&error];
@@ -79,7 +79,7 @@ The AVURLAsset customization options are described in [AVURLAsset documentation]
 
 For example:
 
-```objc
+```Objective-C
 JWConfig *config = [[JWConfig alloc] initWithContentUrl:@"your url"];
 config.assetOptions = @{@"AVURLAssetHTTPHeaderFieldsKey":@{@"cookie": @"cookie data"}};
 ```
@@ -120,7 +120,7 @@ When an FPS-specific tag is included in the playlist of a media stream that the 
 * the fetchContentIdentifierForRequest delegate method gets called, requesting that the content identifier (also known as Asset ID) be passed in through its completion block.
 
 
-```objc
+```Objective-C
 - (void)fetchContentIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
 {
         if(encryption == JWEncryptionFairPlay) {
@@ -146,7 +146,7 @@ func fetchContentIdentifier(forRequest loadingRequestURL: URL?, for encryption: 
 
 * the fetchAppIdentifierForRequest delegate method is called, prompting for an Application Certificate which must get passed via the completion block. The Application Certificate must be encoded with the X.509 standard with distinguished encoding rules (DER). It is obtained when registering an FPS playback app with Apple, by supplying an X.509 Certificate Signing Request linked to your private key.
  
-```objc
+```Objective-C
     - (void)fetchAppIdentifierForRequest:(NSURL *)loadingRequestURL forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *))completion
     {
         if (encryption == JWEncryptionFairPlay) {
@@ -172,7 +172,7 @@ When the key request is ready:
 	* For resources that may expire, you can specify a renewal date in the completion block.
 	* We suggest also specifying the content type (the UTI indicating the type of data contained by the response) when a renewal date is set.
 
-```objc
+```Objective-C
     - (void)fetchContentKeyWithRequest:(NSData *)requestBytes forEncryption:(JWEncryption)encryption withCompletion:(void (^)(NSData *, NSDate *, NSString *))completion
     {
         if(encryption == JWEncryptionFairPlay) {

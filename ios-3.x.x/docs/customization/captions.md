@@ -8,7 +8,7 @@
 
 Closed captions tracks are provided as an array of `JWTrack` objects:
 
-```objc
+```Objective-C
 	config.tracks = @[[JWTrack trackWithFile:@"/sintel-en.srt" label:@"English" isDefault:YES],
 	[JWTrack trackWithFile:@"/sintel-sp.srt" label:@"Spanish"],
 	[JWTrack trackWithFile:@"/sintel-ru.srt" label:@"Russian"]];
@@ -24,7 +24,7 @@ Closed captions tracks are provided as an array of `JWTrack` objects:
 
 In order to reproduce CEA-608 Captions in HLS and HLS In-Manifest WebVTT subtitles, simply set a stream containing either CEA-608 Captions in HLS or HLS In-Manifest WebVTT subtitles to the JWConfig's file property.
 
-```objc
+```Objective-C
     config.file = @”http://example.com/hlsWith608orInManifestWebVTT.m3u8”; 
 ```
 
@@ -37,7 +37,7 @@ In order to reproduce CEA-608 Captions in HLS and HLS In-Manifest WebVTT subtitl
 
 To customize captions, a `JWCaptionStyling` object called `captionStyling` is passed to the player. This object enables the customization of the caption’s font, font color, window color, background color, and edge style.
 
-```objc
+```Objective-C
 	JWCaptionStyling *captionStyling = [JWCaptionStyling alloc]init];
 	captionStyling.font = [UIFont fontWithName:@"Zapfino" size:20];
 	captionStyling.color = [UIColor blueColor];

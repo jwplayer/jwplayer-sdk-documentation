@@ -8,7 +8,7 @@ Ads can be scheduled in two ways:
 
 Set an array of AdBreak objects to the schedule property of the config's advertising object:
 
-```objc
+```Objective-C
 	config.advertising.schedule = @[[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"pre"],
 	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"0:00:05"],
 	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"50%"],
