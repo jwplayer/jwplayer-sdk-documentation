@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/%20-iOS%20v2%20DEPRECATED-FFBA43.svg?logo=apple">
 
 !!!important
-The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure your viewers benefit from the improvements that are made to the mobile video experience, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
+The JW Player SDK for iOS v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for iOS soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for iOS v3](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/). Please contact your JW Player representative if you have additional questions.
 !!!
 
 The JW Player SDK for iOS includes classes and methods to enable developers to add HLS and MP4 video playback functionality to iOS applications. The SDK also supports inclusion of VAST 3.0 video advertising in your applications, as well as reporting playback analytics to your JW Player dashboard, customizing video players using JW Player custom skins, and more.
