@@ -1,5 +1,7 @@
 # Creating a Playlist
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 Multiple pieces of content can be sent into the player as a playlist as shown below.
 
 ```java

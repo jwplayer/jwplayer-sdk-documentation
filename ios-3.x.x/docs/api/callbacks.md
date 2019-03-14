@@ -1,5 +1,7 @@
 # Callbacks
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 In order to get notified about any player-related callbacks, you can either adhere to the new JWPlayerDelegate Protocol, or sign up for notifications using NSNotificationCenter.
 
 The Protocol provides delegate methods for each callback; for more information please review the [JWPlayerDelegate.h](https://developer.jwplayer.com/sdk/ios/reference/Protocols/JWPlayerDelegate.html) file in the SDK package.

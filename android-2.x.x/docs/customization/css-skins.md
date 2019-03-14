@@ -1,5 +1,11 @@
 # Skinning Overview
 
+<img src="https://img.shields.io/badge/%20-Android%20v2%20DEPRECATED-FFBA43.svg?logo=android&logoColor=gray">
+
+!!!important
+The JW Player SDK for Android v2 is available only to customers with an Enterprise license. JW Player plans to deprecate support for this version of the SDK for Android soon. To ensure that your viewers benefit from ongoing SDK improvements, upgrade to [JW Player SDK for Android v3](https://developer.jwplayer.com/sdk/android/docs/developer-guide/index.html). Please contact your JW Player representative if you have additional questions.
+!!!
+
 JW Player skins change the appearance of the player, adding a customizable interactive layer to your player. All visual components of the player (the controlbar, display, tooltip, dock and playlist) can be skinned in accordance to our [Skin Reference](https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/css-skinning/skins_reference/) page.
 
 If you would like to build your own skin please follow our [guide](https://developer.jwplayer.com/jw-player/docs/developer-guide/jw7/skins_creating/) on the Support Portal.

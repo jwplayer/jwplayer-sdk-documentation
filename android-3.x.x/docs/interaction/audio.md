@@ -1,5 +1,7 @@
 # AudioTrack
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 The `AudioTrack` class represents an audio track in an HLS, SmoothStreaming, or DASH stream. Audio tracks are sent to the developer via the `onAudioTracks()` callback.
 
 At this moment Audio Track switching is only supported for DASH and SmoothStreaming streams.

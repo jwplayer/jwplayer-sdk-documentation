@@ -1,5 +1,7 @@
 # Custom HTTP Headers
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 The JW Player SDK for Android supports passing through custom HTTP headers 
 along with the requests for manifests and media.  In order to configure a 
 stream to use custom HTTP headers follow the example below.

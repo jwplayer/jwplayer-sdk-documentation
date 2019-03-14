@@ -1,5 +1,7 @@
 # Captions
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 The `Caption` class represents a caption track. Caption tracks can be attached to a `PlaylistItem` as detailed below.
 
 ## Adding Captions to PlaylistItem

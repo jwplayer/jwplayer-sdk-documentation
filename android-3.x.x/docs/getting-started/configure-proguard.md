@@ -1,5 +1,7 @@
 # Configure ProGuard
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 <sup>Last updated: January 8, 2019</sup>
 
 !!!

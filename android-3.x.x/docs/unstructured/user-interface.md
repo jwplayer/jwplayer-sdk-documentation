@@ -1,4 +1,7 @@
 # User Interface
+
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Player States
 
 The following screens show the various playback states of the JW Player SDK for Android.

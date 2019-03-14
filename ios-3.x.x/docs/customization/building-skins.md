@@ -1,5 +1,7 @@
 # Skinning
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 The nine complimentary skins offered in version 2.x have been deprecated in 3.x, but customizing JW Player is easy with JW Player 8's CSS-based skinning model.
 
 To customize the player's skin you must set a `JWSkinStyling` instance to your config.

@@ -1,5 +1,7 @@
 # FreeWheel
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 ## Overview
 The JW Player SDK for Android is integrated with FreeWheel Ad Manager and supports VAST and VPAID advertising. In this document we will set up your project with FreeWheel and demonstrate all supported features of the FreeWheel implementation.
 

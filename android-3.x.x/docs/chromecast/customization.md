@@ -1,4 +1,7 @@
 # Customize Chromecast Dialog
+
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 You can customize the appearance of the `VideoMediaRouteControllerDialog` which appears when you click on the `MediaRouteButton` when casting.
 
 You can do this by overriding the `custom_media_route_controller_controls_dialog.xml` layout file.

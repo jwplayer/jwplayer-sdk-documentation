@@ -1,24 +1,26 @@
 # Ad Scheduling
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 Ads can be scheduled in two ways:
 
-## An adSchedule Object##
+## An adSchedule Object
 
 Set an array of AdBreak objects to the schedule property of the config's advertising object:
 
-Objective C:
-
+```objc
 	config.advertising.schedule = @[[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"pre"],
 	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"0:00:05"],
 	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"50%"],
 	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"post"]];
+```
 
-Swift:
-
+```swift
 	config.advertising.schedule = [JWAdBreak(tag: "/vast.xml", offset:"pre"),
 	JWAdBreak(tag: "/vast.xml", offset:"5"),
 	JWAdBreak(tag: "/vast.xml", offset:"50%"),
 	JWAdBreak(tag: "/vast.xml", offset:"post")]
+```
 
 ## VMAP Advertisements##
 

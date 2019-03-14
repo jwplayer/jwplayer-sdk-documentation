@@ -1,5 +1,7 @@
 # JWPlayerView
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 <sup>Last Updated: March 14, 2019</sup>
 
 The [`JWPlayerView`](https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/JWPlayerView.html) is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback via the Playback API and register multiple event listeners that could help you with custom analytics or error handling.

@@ -1,5 +1,7 @@
 # Basic Embed
 
+<img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
+
 This section includes samples for basic player operations such as configuration. All numbered examples given refer to either Objective C (1) or Swift (2). For additional examples, see the [sample application](https://github.com/jwplayer/jwplayer-sdk-ios-demo)
 
 **Declaring a player variable**

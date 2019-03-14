@@ -1,5 +1,7 @@
 # Loading a file into JW Player
 
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
 There are several ways to create a `PlaylistItem` or list of `PlaylistItem`s as shown below:
 
 ## Simple Playback
