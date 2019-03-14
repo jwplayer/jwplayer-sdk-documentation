@@ -88,7 +88,7 @@
 ### Features
 * Added the ability to set custom parameters to FreeWheel and IMA ad configurations, so that publishers can target their campaigns better. Please refer to the [FreeWheel](https://developer.jwplayer.com/sdk/android/docs/developer-guide/advertising/freewheel/) and [IMA](https://developer.jwplayer.com/sdk/android/docs/developer-guide/advertising/google-ima/) sections for the examples of usage.
 * Added the ability to customize Look-Ahead HLS buffer time. Please refer to [this section](https://developer.jwplayer.com/sdk/android/docs/developer-guide/interaction/exoplayer/) for the example.
-* Introduced a separate version of the SDK for Amazon tablets. The ExoPlayer is replaced with its Amazon fork. It can be accessed through Maven. Please refer to the [Amazon section](https://developer.jwplayer.com/sdk/android/docs/developer-guide/getting-started/amazon/) for more details.
+* Introduced a separate version of the SDK for Amazon tablets. The ExoPlayer is replaced with its Amazon fork. It can be accessed through Maven. Please refer to the [Amazon section](https://developer.jwplayer.com/sdk/android/docs/developer-guide/getting-started/download-sdk/#gradle) for more details.
 
 <a name="3-2-2"></a>
 ## Version 3.2.2 (Build 63 - Oct 24, 2018)
