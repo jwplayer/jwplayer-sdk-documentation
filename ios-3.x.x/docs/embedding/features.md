@@ -27,6 +27,12 @@ The snippets below do not implement error handling for the sake of clarity.
 
 To set the category, add the following code to your app, conventionally in the AppDelegate's `didFinishLaunchingWithOptions` method:
 
+```Objective-C
+NSError *error;
+[AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:&error];
+[AVAudioSession.sharedInstance setActive:YES error:&error];
+```
+
 ```swift
 // Swift < 4.2
 try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -35,12 +41,6 @@ try? AVAudioSession.sharedInstance().setActive(true)
 // Swift 4.2
 try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
 try? AVAudioSession.sharedInstance().setActive(true, options: [])
-```
-
-```Objective-C
-NSError *error;
-[AVAudioSession.sharedInstance setCategory:AVAudioSessionCategoryPlayback error:&error];
-[AVAudioSession.sharedInstance setActive:YES error:&error];
 ```
 
 as the case may be. (For more on this topic, such as AVAudioSession options allowing AirPlay and Bluetooth, see the Apple docs [System Audio Interaction](https://developer.apple.com/documentation/avfoundation/system_audio_interaction), and especially
