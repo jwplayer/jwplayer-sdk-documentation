@@ -23,7 +23,7 @@ Be sure that your iOS app is written in Objective-C.
 When submitting a support ticket for an iOS SDK issue, follow these steps:
 
 1. Download the [JW Player Open Source Demo for iOS](https://github.com/jwplayer/jwplayer-sdk-ios-demo).
-2. Using Xcode, replicate the issue in the JW Player Demo app.
+2. Using <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode</a>, replicate the issue in the JW Player Demo app.
 3. Zip the entire Xcode project.
 4. Upload the zipped project to your server. 
 
