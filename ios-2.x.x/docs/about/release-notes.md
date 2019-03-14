@@ -28,7 +28,7 @@ The JW Player SDK for iOS v2 is available only to customers with an Enterprise l
 <a name="2-9-0"></a>
 ## Version 2.9.0 (Build 50 - Jun 18, 2018)
 ### Features
-* We have integrated support for the FreeWheel ad-serving platform. Configure your FreeWheel Ad Manager settings in our new FreeWheel ad client to serve pre-rolls and mid-rolls with other features such as ad-skip and ad-click. Please refer to the new FreeWheel advertising section in our [developer guide documentation](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/advertising/freewheel/) to get started.
+* We have integrated support for the FreeWheel ad-serving platform. Configure your FreeWheel Ad Manager settings in our new FreeWheel ad client to serve pre-rolls and mid-rolls with other features such as ad-skip and ad-click. Please refer to the new FreeWheel advertising section in our [developer guide documentation](https://developer.jwplayer.com/sdk/ios/docs/v2/developer-guide/advertising/freewheel/) to get started.
 
 <a name="2-8-11"></a>
 ## Version 2.8.11 (Build 49 - May 21, 2018)
