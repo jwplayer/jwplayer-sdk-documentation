@@ -47,6 +47,7 @@ nav:
   - 'Analytics': 'integration/analytics.md'
 - Troubleshooting:
   - 'Q&A' : 'troubleshooting/troubleshooting.md'
+  - 'Create an iOS reproduction app': 'troubleshooting/create-an-ios-reproduction-app.md'
 - About:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'
