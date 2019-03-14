@@ -17,9 +17,6 @@ The unzipped package contains the following folders:
 * **Framework**: The JW Player SDK software.  
 * **Documentation**: inline API reference documentation for the JW Player framework for use in XCode.
 
-### Oct 18, 2017
-**Free, Premium, and Platinum edition** customers please note: the JW Player SDK for iOS will no longer be included in these editions beginning **OCT 18th 2018**. This provides our Free, Premium, and Platinum edition customers one (1) year to find an alternative to our SDK. Enterprise customers will continue to have access to the JW Player SDK for iOS and will not be impacted. Please contact support+sdk@jwplayer.com if you have additional questions.
-
 ## Setting up your XCode Environment
 
 1. Add the JW Player framework to your XCode project
@@ -46,7 +43,7 @@ Alternatively, In your **info.plist** properties file, create a string entry nam
 
 ## Installing Google IMA
 
-In order to use our Google IMA Ad Client, you must install the Google IMA framework version [3.7.0](https://developer.jwplayer.com/sdk/ios/docs/developer-guide/intro/requirements/). Visit https://developers.google.com/interactive-media-ads/docs/sdks/ios/download to download the Google IMA iOS SDK. The zip file contains two folders; you will need the Google IMA folder (GoogleInteractiveMediaAds-GoogleIMA3), **NOT** the Google IMA for Ad Mobs folder (GoogleInteractiveMediaAds-GoogleIMA3ForAdMob). 
+In order to use our Google IMA Ad Client, you must install the Google IMA framework version 3.7.0. Visit https://developers.google.com/interactive-media-ads/docs/sdks/ios/download to download the Google IMA iOS SDK. The zip file contains two folders; you will need the Google IMA folder (GoogleInteractiveMediaAds-GoogleIMA3), **NOT** the Google IMA for Ad Mobs folder (GoogleInteractiveMediaAds-GoogleIMA3ForAdMob). 
 To link the library, open XCode, select your project, and proceed to the Targets Section. Under the General tab, proceed to “Linked Framework and Libraries” and tap the plus sign. 
 
 ![Step 5](../images/ima_step_1.png)

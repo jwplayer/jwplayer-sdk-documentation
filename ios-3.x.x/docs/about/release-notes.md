@@ -20,6 +20,13 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-2-4"></a>
+## Version 3.2.4 (Build 87 - March 7, 2019)
+### Bug Fixes
+* Fixed an issue where ad clickthrough on iOS 9 does not open Safari
+* Fixed an issue where `onBufferChange` passes the wrong values for bufferPercent
+* Fixed an issue where buffered or local video stops playing when connectivity issues occur
+
 <a name="3-2-3"></a>
 ## Version 3.2.3 (Build 86 - Feb 25, 2019)
 ### Enhancements
