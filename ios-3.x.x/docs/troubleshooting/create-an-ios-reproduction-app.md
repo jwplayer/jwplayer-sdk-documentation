@@ -16,6 +16,8 @@ Reproduction apps reduce the time necessary to resolve your issue in several way
 Be sure that your iOS app is written in Objective-C.
 !!!
 
+<br/>
+
 ## Create a reproduction app
 
 When submitting a support ticket for an iOS SDK issue, follow these steps:

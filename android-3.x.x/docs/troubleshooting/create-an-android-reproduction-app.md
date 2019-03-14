@@ -16,6 +16,8 @@ Reproduction apps reduce the time necessary to resolve your issue in several way
 Be sure that your Android app is written in Java.
 !!!
 
+<br/>
+
 ## Create a reproduction app
 When submitting a support ticket for an Android SDK issue, follow these steps:
 
