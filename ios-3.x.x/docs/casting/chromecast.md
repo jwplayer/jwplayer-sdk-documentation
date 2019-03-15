@@ -101,7 +101,7 @@ func onConnected(to device: JWCastingDevice?) {
 The `JWPlayerController` API controls the playback of the video being casted, and the JWPlayerDelegate will provide you with the playback callbacks while casting.
 
 !!!tip
-The JW Player iOS Best Practice Apps repository an <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps/tree/master/JWBestPracticeApps/JWCasting" target="_blank">example casting implementation</a>.contains several best practice apps, including an example of the code necessary for a casting experience.<br/><br/>Additionally, you can learn more about the Google Cast <a href="https://developers.google.com/cast/docs/ux_guidelines" target="_blank">User Experience</a> guidelines.
+The JW Player iOS Best Practice Apps repository has an <a href="https://github.com/jwplayer/jwplayer-ios-bestPracticeApps/tree/master/JWBestPracticeApps/JWCasting" target="_blank">example casting implementation</a>.<br/><br/>Additionally, you can learn more about the Google Cast <a href="https://developers.google.com/cast/docs/ux_guidelines" target="_blank">User Experience</a> guidelines.
 !!!
 
 <br/>
