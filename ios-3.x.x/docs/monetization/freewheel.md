@@ -18,6 +18,12 @@ The JW Player SDK for iOS is integrated with FreeWheel Ad Manager and supports V
 
 ### Building with the Framework
 1. Add the FreeWheel `AdManager.framework` to your project. This can be downloaded from your [FreeWheel Hub](https://hub.freewheel.tv/) account (sign-in required). 
+
+ !!!important
+Presently, there is a Known Issue which prevents the [FreeWheel Hub](https://hub.freewheel.tv/) downloaded Freewheel SDK from working with the JW Player iOS SDK.
+**FreeWheel should provide you with a compatible version of their SDK** (bitcode-enabled, with *dynamic* libraries) **upon request.** !!!
+
+
 2. Place `AdManager.framework` in your project directory.
 3. In **Build Phases > Link Binary With Libraries**, add `AdManager.framework`.
 ![Importing FW](../images/fw_intergration.png)

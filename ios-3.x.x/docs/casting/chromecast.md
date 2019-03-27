@@ -4,11 +4,23 @@
 
 <sup>Last Updated: March 14, 2019
 
+### Introduction
+
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
 !!!important
 &bull; The JW Player iOS SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, set a media receiver app ID to the `chromeCastReceiverAppID` property of the [JWCastController](https://developer.jwplayer.com/sdk/ios/reference/Classes/JWCastController.html).
 !!!
+
+<br/>
+
+### Requirements
+
+* The JW Player iOS SDK's integration with Google's Chromecast SDK requires you to download and integrate [Google Chromecast SDK version 2.10.0.4070](https://developers.google.com/cast/docs/release-notes#october-19-2015) into your project.
+
+<br/>
+
+### Instructions
 
 **1.** In a text editor, open **Podfile**.
 
