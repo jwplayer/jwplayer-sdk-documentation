@@ -46,8 +46,6 @@ nav:
 - Chromecast:
   - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
   - 'Customization': 'chromecast/customization.md'
-  - 'Supported Media': 'chromecast/supported-media.md'
-  - 'Known issues': 'chromecast/known-issues.md'
 - Migration Guides:
   - 'Migration from v1.x to v2.x (Nov 17 2015)': 'migration/v2.md'
   - 'Migration from v2.7 to v2.8 (Feb 22 2018)': 'migration/v2-8.md'
