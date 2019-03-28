@@ -143,7 +143,7 @@ You may use CocoaPods to update to SDK 3.x, or you can download the SDK 3 packag
 * Fixed an issue where the app would crash if there was a problem with local player related files creation
 
 ### Enhancements
-* Upgraded to support Google IMA SDK v3.7.0
+* Upgraded to support Google IMA SDK v3.3.1
 
 <a name="2-8-9"></a>
 ## Version 2.8.9 (Build 47 - Apr 16, 2018)
