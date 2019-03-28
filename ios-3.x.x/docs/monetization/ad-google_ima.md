@@ -10,7 +10,11 @@
 
 ### Requirements
 
-* To play ads using Google Interactive Media Ads (Google IMA), you must download and integrate [Google IMA SDK version 3.8.1](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history) into your project.
+* To play ads using Google Interactive Media Ads (Google IMA), you must download and integrate [Google IMA SDK version 3.3.1](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history) into your project.
+
+!!!
+We are currently upgrading our integration for the most current IMA SDK (3.9.x as of this writing), so check back with your JW Player point of contact for updates!
+!!!
 
 <br/>
 
