@@ -34,6 +34,9 @@
 ### Bug Fixes
 * Fixed an issue where the `onAdSchedule` callback would not fire for VMAPs
 
+### Known Issues
+* Caption tracks with the `defaultTrack` property set to true will not appear when casting via Google Cast
+
 <a name="3-2-4"></a>
 ## Version 3.2.4 (Build 87 - March 7, 2019)
 ### Bug Fixes
