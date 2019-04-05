@@ -25,8 +25,8 @@
 ## Version 3.3.0 (Build 88 - April 5, 2019)
 ### Enhancements
 * Upgraded to support Google Cast SDK v4.3.5
-* Upgraded our fullscreen implementation to use AutoLayout
-* Changed our Enums to NS_ENUM for better type-checking
+* Upgraded the fullscreen implementation to use AutoLayout
+* Changed the Enums to NS_ENUM for better type-checking
 
 ### Features
 * Added support for Fairplay DRM when casting via Airplay
