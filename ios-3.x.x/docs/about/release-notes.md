@@ -30,6 +30,7 @@
 ### Features
 * Added support for Fairplay DRM when casting via Airplay
 * Enabled pinch-to-zoom on Fullscreen for the iPhone X series
+* Added the `onWarning` callback. Warnings are non-fatal errors, meaning that they do not prevent video playback from continuing and do not set the player in an Error state
 
 ### Bug Fixes
 * Fixed an issue where the `onAdSchedule` callback would not fire for VMAPs
