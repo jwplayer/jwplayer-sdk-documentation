@@ -26,17 +26,18 @@
 ### Enhancements
 * Upgraded to support Google Cast SDK v4.3.5
 * Upgraded our fullscreen implementation to use AutoLayout
+* Changed our Enums to NS_ENUM for better type-checking
 
 ### Features
 * Added support for Fairplay DRM when casting via Airplay
 * Enabled pinch-to-zoom on Fullscreen for the iPhone X series
-* Added the `onWarning` callback. Warnings are non-fatal errors, meaning that they do not prevent video playback from continuing and do not set the player in an Error state
+* Added the `onWarning` callback. Warnings are non-fatal errors; they provide useful feedback for debugging or troubleshooting purposes, but do not disrupt playback or result in an error screen.
 
 ### Bug Fixes
 * Fixed an issue where the `onAdSchedule` callback would not fire for VMAPs
 
 ### Known Issues
-* Caption tracks with the `defaultTrack` property set to true will not appear when casting via Google Cast
+* Caption tracks with the `defaultTrack` property set to true will not be rendered when casting via Google Cast
 
 <a name="3-2-4"></a>
 ## Version 3.2.4 (Build 87 - March 7, 2019)
