@@ -4,6 +4,7 @@
 
 ##### Major Version Releases
 
+* [Version 3.3.0 (Apr 08, 2019)](#3-3-0)
 * [Version 3.2.0 (Jan 23, 2019)](#3-2-0)
 * [Version 3.1.0 (Aug 23, 2018)](#3-1-0)
 * [Version 3.0.0 (Jul 2, 2018)](#3-0-0)
@@ -19,6 +20,22 @@
 * [Version 2.0.33 (Dec 01, 2015)](#2-0-33)
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
+
+<a name="3-3-0"></a>
+## Version 3.3.0 (Build 88 - April 8, 2019)
+### Updates
+* Upgraded Google Cast SDK library to v4.3.5 
+* Improved fullscreen implementation to use AutoLayout 
+* Enable pinch-to-zoom on Fullscreen for iPhone X series
+* Added Fairplay DRM support for Airplay
+* Changed the Enums to NS_ENUM for better type-checking
+* Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes
+
+### Fixes
+* Fixed an issue where the `onAdSchedule` callback would not fire for VMAP ads
+
+### Known Issue
+* Caption tracks with the `defaultTrack` property set to true will not be rendered when casting via Google Cast
 
 <a name="3-2-4"></a>
 ## Version 3.2.4 (Build 87 - March 7, 2019)
