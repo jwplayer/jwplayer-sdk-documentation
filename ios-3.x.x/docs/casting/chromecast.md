@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last Updated: March 14, 2019
+<sup>Last Updated: April 9, 2019
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
@@ -113,6 +113,7 @@ The JW Player iOS Best Practice Apps repository has an <a href="https://github.c
 The following features are not supported during a casting session with an iOS SDK player:
 
 * Google IMA ads
+* FreeWheel ads
 * Multiple-audio tracks or AudioTrack switching<sup>1</sup>
 * In-manifest WebVTT captions<sup>1</sup>
 * 608 captions
