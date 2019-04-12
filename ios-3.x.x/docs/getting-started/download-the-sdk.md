@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: February 12, 2019</sup>
+<sup>Last updated: April 15, 2019</sup>
 
 !!!important
 Use of the iOS SDK v3 requires a JW Player Enterprise license. Please [contact our team](https://www.jwplayer.com/contact-us/?utm_source=developer&utm_medium=CTA&utm_campaign=player-docs) if you would like to upgrade your account.<br/><br/>
