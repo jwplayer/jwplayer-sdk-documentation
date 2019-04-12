@@ -16,7 +16,7 @@ The Google Cast framework enables a viewer to stream video and audio content to 
 
 ### Requirements
 
-* The JW Player iOS SDK's integration with Google's Chromecast SDK requires you to download and integrate [Google Chromecast SDK version 2.10.0.4070](https://developers.google.com/cast/docs/release-notes#october-19-2015) into your project.
+* As of JW Player iOS SDK version 3.3.0, the integration with Google's Chromecast SDK requires you to download and integrate [Google Chromecast SDK version 4.3.5](https://developers.google.com/cast/docs/developers) into your project.
 
 <br/>
 
