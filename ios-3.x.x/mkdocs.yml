@@ -19,19 +19,17 @@ nav:
   - 'Introduction': 'index.md'
   - 'Download the SDK': 'getting-started/download-the-sdk.md'
   - 'Configure your project': 'getting-started/configure-your-project.md'
-- Create a JW Player:
   - 'Basic Embedding': 'embedding/embedding.md'
-  - 'Advanced Features': 'embedding/features.md'
-- Interact with JW Player:
-  - 'Classes': 'api/classes.md'
-  - 'Callbacks': 'api/callbacks.md'
-- Customize:
-  - 'Custom Skins': 'customization/building-skins.md'
+- Content:
   - 'Captions': 'customization/captions.md'
-- Casting:
+- Branding:
+  - 'Custom Skins': 'customization/building-skins.md'
+- Behavior:
+  - 'Advanced Features': 'embedding/features.md'
+  - 'Callbacks': 'api/callbacks.md'
   - 'AirPlay': 'casting/airplay.md'
   - 'Chromecast': 'casting/chromecast.md'
-- Ads:
+- Advertising:
   - 'Basic Ad Embed': 'monetization/ad-configuration.md'
   - 'Ad Scheduling': 'monetization/ad-schedules.md'
   - 'Tag Waterfall': 'monetization/ad-waterfall.md'
@@ -40,14 +38,16 @@ nav:
   - 'Google IMA': 'monetization/ad-google_ima.md'
   - 'FreeWheel': 'monetization/freewheel.md'
   - 'Ad Rules': 'monetization/ad-rules.md'
-- Migration:
-  - 'To 3.x from 2.x': 'migration/v3.md'
-  - 'To 2.8.0 from 2.7.x': 'migration/v2dot8.md'
-- 3rd Party Integration:
+- Analytics:
   - 'Analytics': 'integration/analytics.md'
 - Troubleshooting:
   - 'Q&A' : 'troubleshooting/troubleshooting.md'
   - 'Create an iOS reproduction app': 'troubleshooting/create-an-ios-reproduction-app.md'
+- References:
+  - 'Classes': 'api/classes.md'
+- Migration:
+  - 'To 3.x from 2.x': 'migration/v3.md'
+  - 'To 2.8.0 from 2.7.x': 'migration/v2dot8.md'
 - About:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'
