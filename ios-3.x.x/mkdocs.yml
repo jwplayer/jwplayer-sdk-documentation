@@ -43,7 +43,7 @@ nav:
 - Troubleshooting:
   - 'Q&A' : 'troubleshooting/troubleshooting.md'
   - 'Create an iOS reproduction app': 'troubleshooting/create-an-ios-reproduction-app.md'
-- References:
+- Reference:
   - 'Classes': 'api/classes.md'
 - Migration:
   - 'To 3.x from 2.x': 'migration/v3.md'
