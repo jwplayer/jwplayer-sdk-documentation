@@ -26,7 +26,7 @@
 ### Updates
 * Upgraded Google Cast SDK library to v4.3.5 
 * Improved fullscreen implementation to use AutoLayout 
-* Enable pinch-to-zoom on Fullscreen for iPhone X series
+* Enabled pinch-to-zoom on Fullscreen for iPhone X series
 * Added Fairplay DRM support for Airplay
 * Changed the Enums to NS_ENUM for better type-checking
 * Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes

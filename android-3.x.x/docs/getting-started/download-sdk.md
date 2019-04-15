@@ -1,7 +1,7 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: January 8, 2019</sup>
+<sup>Last updated: April 15, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
@@ -39,7 +39,7 @@ Before you begin the Gradle approach to add the SDK to your project, you need th
 |---|---|
 |Enterprise or Developer license|JW Player SDK for Android requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Android Studio| 1. Download <a href="https://developer.android.com/studio/" target="_blank">Android Studio<a/>.<br/>2. <a href="https://developer.android.com/studio/install" target="_blank">Install Android Studio</a>.|
-|License key | 1. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **PUBLISH > Tools**.<br/>2. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
+|License key | 1. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **Players > PLAYER DOWNLOADS & KEYS**.<br/>2. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
 
 
 <a name="gradle-import"></a>
@@ -104,7 +104,7 @@ Before you begin the Local approach to add the SDK to your project, you need the
 |---|---|
 |Enterprise or Developer license|JW Player SDK for Android requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Android Studio| 1. Download <a href="https://developer.android.com/studio/" target="_blank">Android Studio<a/>.<br/>2. <a href="https://developer.android.com/studio/install" target="_blank">Install Android Studio</a>.|
-|JW Player SDK for Android and license key | 1. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **PUBLISH > Tools**.<br/>2. In the **Downloads** section, select a **VERSION** of the Android SDK from the dropdown menu.<br/>3. Click the **DOWNLOAD** icon.<br/>4. Copy the **LICENSE KEY** for the Android SDK.<br/>5. On your computer, unzip the SDK ZIP file.|
+|JW Player SDK for Android and license key | 1. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **Players > PLAYER DOWNLOADS & KEYS**.<br/>2. In the **Downloads** section, select a **VERSION** of the Android SDK from the dropdown menu.<br/>3. Click the icon in the **DOWNLOAD** column.<br/>4. Copy the **LICENSE KEY** for the Android SDK.<br/>5. On your computer, unzip the SDK ZIP file.|
 
 <a name="local-import"></a>
 
@@ -149,7 +149,7 @@ Before you can start experimenting with the JW Player SDK for Android Open Sour
 |---|---|
 |Enterprise or Developer license|JW Player SDK for Android requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Android Studio| 1. Download <a href="https://developer.android.com/studio/" target="_blank">Android Studio<a/>.<br/>2. <a href="https://developer.android.com/studio/install" target="_blank">Install Android Studio</a>.|
-|JW Player SDK for Android Open Source Demo and license key | 1. Clone the repository into your Android Studio workspace: <br/><br/>`git clone git@github.com:jwplayer/jwplayer-sdk-android-demo.git`.<br/><br/>2. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **PUBLISH > Tools**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
+|JW Player SDK for Android Open Source Demo and license key | 1. Clone the repository into your Android Studio workspace: <br/><br/>`git clone git@github.com:jwplayer/jwplayer-sdk-android-demo.git`.<br/><br/>2. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **Players > PLAYER DOWNLOADS & KEYS**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
 
 You have retrieved your JW Player license key and imported the JW Player SDK for Android Open Source Demo into Android Studio. You can now [configure your project](../configure-project).
 
