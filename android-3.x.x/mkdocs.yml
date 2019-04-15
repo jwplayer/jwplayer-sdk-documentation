@@ -17,43 +17,42 @@ nav:
   - 'Download SDK': 'getting-started/download-sdk.md'
   - 'Configure ProGuard': 'getting-started/configure-proguard.md'
   - 'Configure project': 'getting-started/configure-project.md'
-- Creating a JWPlayer:
   - 'JWPlayerFragment': 'usage/jwplayer-fragment.md'
   - 'JWPlayerView': 'usage/jwplayer-view.md'
+- Content:
+  - 'Playlists': 'interaction/playlists.md'
+  - 'Captions API': 'interaction/captions.md'
+  - 'Playing secure content': 'drm/drm-protected-playback.md'
+  - 'Custom HTTP headers': 'drm/custom-http-headers.md'
+- Branding:
+  - 'XML Options and PlayerConfig': 'customization/xml-options-and-playerconfig.md'
+  - 'CSS Skins': 'customization/css-skins.md'
+  - 'Localization': 'customization/localization.md'
+- Behavior:
+  - 'ExoPlayer API': 'interaction/exoplayer.md'
+  - 'Playback API': 'interaction/playback.md'
+  - 'Quality API': 'interaction/quality.md'
+  - 'Audio API': 'interaction/audio.md'
+  - 'Related Feed API' : 'interaction/related.md'
+  - 'Multi-Window Mode': 'interaction/multiwindow.md'
+  - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
+  - 'Customization': 'chromecast/customization.md'
 - Advertising:
   - 'Advertising Overview': 'advertising/overview.md'
   - 'VAST': 'advertising/vast.md'
   - 'Google IMA': 'advertising/google-ima.md'
   - 'FreeWheel': 'advertising/freewheel.md'
-- Interacting with the JW Player:
-  - 'ExoPlayer API': 'interaction/exoplayer.md'
-  - 'Playback API': 'interaction/playback.md'
-  - 'Playlists': 'interaction/playlists.md'
-  - 'Quality API': 'interaction/quality.md'
-  - 'Audio API': 'interaction/audio.md'
-  - 'Captions API': 'interaction/captions.md'
-  - 'Related Feed API' : 'interaction/related.md'
   - 'Advertising API': 'interaction/advertising.md'
-  - 'Multi-Window Mode': 'interaction/multiwindow.md'
+- Analytics:
+  - 'Analytics': 'integration/analytics.md'
+- Troubleshooting:
+  - 'Create an Android reproduction app': 'troubleshooting/create-an-android-reproduction-app.md'
+- Reference:
   - 'JavaDocs': 'interaction/javadocs.md'
-- Customization:
-  - 'XML Options and PlayerConfig': 'customization/xml-options-and-playerconfig.md'
-  - 'CSS Skins': 'customization/css-skins.md'
-  - 'Localization': 'customization/localization.md'
-- Digital Rights Management:
-  - 'Playing secure content': 'drm/drm-protected-playback.md'
-  - 'Custom HTTP headers': 'drm/custom-http-headers.md'
-- Chromecast:
-  - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
-  - 'Customization': 'chromecast/customization.md'
 - Migration Guides:
   - 'Migration from v1.x to v2.x (Nov 17 2015)': 'migration/v2.md'
   - 'Migration from v2.7 to v2.8 (Feb 22 2018)': 'migration/v2-8.md'
   - 'Migration from v2.x to v3.x': 'migration/v3.md'
-- 3rd Party Integration:
-  - 'Analytics': 'integration/analytics.md'
-- Troubleshooting:
-  - 'Create an Android reproduction app': 'troubleshooting/create-an-android-reproduction-app.md'
 - About:
   - 'License': 'about/license.md'
   - 'Release Notes': 'about/release-notes.md'
