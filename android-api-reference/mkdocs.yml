@@ -2,7 +2,7 @@ site_name: iOS Developer Guide
 site_url: 'http://developer.jwplayer.com/sdk/ios/docs/developer-guide/'
 site_favicon: favicon.png
 docs_dir: docs
-site_dir: developer-guide
+site_dir: api-reference
 theme:
   name: null
   custom_dir: ../node_modules/mkdocs-jwplayer/jwplayer

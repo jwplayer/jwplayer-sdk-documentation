@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 
   // look for and compile custom markdown
   grunt.registerTask('compile-custom-markdown', function() {
-    grunt.file.recurse('developer-guide', function callback(absPath, rootDir, subDir, filename) {
+    grunt.file.recurse('api-reference', function callback(absPath, rootDir, subDir, filename) {
       if (filename.substr(filename.length - 4) == 'html') {
         var html = grunt.file.read(absPath);
         html = html.replace(/<\w+>\s?\^{3}([\s\S]*?)\^{3}\s?<\/\w+>/g, function(match, cg1, offset, str) {
