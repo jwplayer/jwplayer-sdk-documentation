@@ -46,30 +46,56 @@ To configure Freewheel ads you have to use `JWConfig`, `JWAdConfig` and `JWFreew
 
 **Code Example:**
 
-    // Create JWFreewheelConfig instance and 
-    
-    set up FreeWheel parameters
-    JWFreewheelConfig *fwConf = [[JWFreewheelConfig alloc] init];
-    fwConf.mediaId = @"DemoVideoGroup.01";
-    fwConf.serverId = @"http://demo.v.fwmrm.net/ad/g/1";
-    fwConf.profileId = @"96749:global-cocoa";
-    fwConf.sectionId = @"DemoSiteGroup.01";
-    fwConf.networkId = 96749;
+```objc
+ // Create JWFreewheelConfig instance and set up FreeWheel parameters
+ 
+JWFreewheelConfig *fwConfig = [[JWFreewheelConfig alloc] init];
+fwConfig.mediaId   = @"DemoVideoGroup.01";
+fwConfig.serverId  = @"http://demo.v.fwmrm.net/ad/g/1";
+fwConfig.profileId = @"96749:global-cocoa";
+fwConfig.sectionId = @"DemoSiteGroup.01";
+fwConfig.networkId = 96749;
 
-    // Create JWAdConfig, then assign ad client and JWFreewheelConfig instance created previously. Other parameters available.
+// Create JWAdConfig, then assign ad client and JWFreewheelConfig instance created previously. Other parameters available.
 
-    JWAdConfig *advertising = [[JWAdConfig alloc] init];
-    advertising.client = JWAdClientFreewheel;
-    advertising.adMessage = @"Ad message xx";
-    advertising.skipMessage = @"Skip in xx";
-    advertising.skipText = @"Move on";
-    advertising.skipOffset = 3;
-    advertising.freewheel = fwConf;
+JWAdConfig *advertising = [[JWAdConfig alloc] init];
+advertising.client      = JWAdClientFreewheel;
+advertising.adMessage   = @"Ad message xx";
+advertising.skipMessage = @"Skip in xx";
+advertising.skipText    = @"Move on";
+advertising.skipOffset  = 3;
+advertising.freewheel   = fwConf;
 
-    // Assign JWAdConfig (with FreeWheel configuration) to JWConfig instance for player
+// Assign JWAdConfig (with FreeWheel configuration) to JWConfig instance for player
 
-    JWConfig *conf = [[JWConfig alloc] init];
-    conf.advertising = advertising;
+JWConfig *conf   = [[JWConfig alloc] init];
+conf.advertising = advertising;
+```
+```swift
+// Create JWFreewheelConfig instance and set up FreeWheel parameters
+
+var fwConfig        = JWFreewheelConfig()
+fwConfig?.mediaId   = "DemoVideoGroup.01"
+fwConfig?.serverId  = "http://demo.v.fwmrm.net/ad/g/1"
+fwConfig?.profileId = "96749:global-cocoa"
+fwConfig?.sectionId = "DemoSiteGroup.01"
+fwConfig?.networkId = 96749
+
+// Create JWAdConfig, then assign ad client and JWFreewheelConfig instance created previously. Other parameters available.
+
+var advertising         = JWAdConfig()
+advertising.client      = JWAdClientFreewheel
+advertising.adMessage   = "Ad message xx"
+advertising.skipMessage = "Skip in xx"
+advertising.skipText    = "Move on"
+advertising.skipOffset  = 3
+advertising.freewheel   = fwConfig
+
+// Assign JWAdConfig (with FreeWheel configuration) to JWConfig instance for player
+
+var config         = JWConfig()
+config.advertising = advertising
+```
 
 
 ## Assign an Ad Schedule to a Playlist Item
@@ -77,18 +103,34 @@ Set up an ad schedule for FreeWheel ads using the `JWAdBreak` API and assign it 
 
 **Code Example:**
 
-    // Creating ad breaks: preroll + two midrolls
-    JWAdBreak *prerollBreak = [JWAdBreak adBreakWithTag:@"custom_preroll_1" offset:@"pre"];
-    JWAdBreak *midrollBreak_1 = [JWAdBreak adBreakWithTag:@"custom_midroll_1" offset:@"12"];
-    JWAdBreak *midrollBreak_2 = [JWAdBreak adBreakWithTag:@"custom_midroll_2" offset:@“50%”];
-    JWAdBreak *midrollBreak_3 = [JWAdBreak adBreakWithTag:@"custom_midroll_3" offset:@“00:00:45”];
+```obj
+// Creating ad breaks: preroll + two midrolls
+JWAdBreak *prerollBreak   = [JWAdBreak adBreakWithTag:@"custom_preroll_1" offset:@"pre"];
+JWAdBreak *midrollBreak_1 = [JWAdBreak adBreakWithTag:@"custom_midroll_1" offset:@"12"];
+JWAdBreak *midrollBreak_2 = [JWAdBreak adBreakWithTag:@"custom_midroll_2" offset:@"50%"];
+JWAdBreak *midrollBreak_3 = [JWAdBreak adBreakWithTag:@"custom_midroll_3" offset:@"00:00:45"];
 
-    JWConfig *conf = [JWConfig alloc init];
+JWConfig *config = [JWConfig alloc init];
 
-    // Freewheel config goes here (described previously)
+// Freewheel config goes here (described previously)
 
-    // Adding JWAdBreak instances into adSchedule array
-    conf.advertising.schedule = @[prerollBreak, midrollBreak_1, midrollBreak_2, midrollBreak_3];
+// Adding JWAdBreak instances into adSchedule array
+config.advertising.schedule = @[prerollBreak, midrollBreak_1, midrollBreak_2, midrollBreak_3];
+```
+```swift
+// Creating ad breaks: preroll + two midrolls
+var prerollBreak   = JWAdBreak(tag: "custom_preroll_1", offset: "pre")
+var midrollBreak_1 = JWAdBreak(tag: "custom_midroll_1", offset: "12")
+var midrollBreak_2 = JWAdBreak(tag: "custom_midroll_2", offset: "50%")
+var midrollBreak_3 = JWAdBreak(tag: "custom_midroll_3", offset: "00:00:45")
+
+var config = JWConfig()
+
+// Freewheel config goes here (described previously)
+
+// Adding JWAdBreak instances into adSchedule array
+config.advertising.schedule = [prerollBreak, midrollBreak_1, midrollBreak_2, midrollBreak_3]
+```
 
 Note: While creating the `JWAdBreak` instance you must to pass two parameters - tag and offset:
 - `tag` - for FreeWheel it can be any string with any content - it is used for determining a particular ad break in the FreeWheel plugin internally. If you have multiple ad breaks placed in the ad schedule array, the tag value should be unique for each ad break.
@@ -109,8 +151,11 @@ Use the `custom` property of `JWFreewheelConfig` object to customize your FreeWh
 
 **Code Example:**
 
+```objc
+fwConfig.custom = @{@"key1": @"val1", @"key2": @"val2"};
 ```
-fwConf.custom = @{@"key1": @"val1", @"key2": @"val2"};
+```swift
+fwConfig.custom = ["key1": "val1", "key2": "val2"]
 ```
 
 ## VPAID
