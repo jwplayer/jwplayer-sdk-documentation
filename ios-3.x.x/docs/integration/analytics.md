@@ -12,7 +12,7 @@ To receive analytics events, include the `JWAVPlayerAnalyticsDelegate` in a clas
 
 **Code Example:**
 
-```
+```objc
 @interface JWAVPlayerAnalyticsObserver : NSObject <JWAVPlayerAnalyticsDelegate>
 
 // implement the methods
@@ -24,4 +24,24 @@ To receive analytics events, include the `JWAVPlayerAnalyticsDelegate` in a clas
 
 //set the class as a delegate into the player
 self.player.analyticsDelegate = [JWAVPlayerAnalyticsObserver new];
+```
+```swift
+// Note: The protocol in the snippet below does not actually exist in Swift.
+// It is what the actual Objective-C protocol would look like, if written
+// in Swift, for illlustration only. 
+protocol JWAVPlayerAnalyticsDelegate: NSObjectProtocol {
+    func playbackRateDidChange(_ rate: CGFloat)
+    func playerStatusDidChange(_ status: AVPlayer.Status)
+    func playerItemDidChange(_ item: AVPlayerItem?)
+    func playerErrorDidChange(_ error: Error?)
+    func playerLayerVideoRectDidChange(_ videoRect: CGRect)
+}
+
+// A class that conforms to the protocol
+class JWAVPlayerAnalyticsObserver: NSObject, JWAVPlayerAnalyticsDelegate {
+    // implements the methods
+}
+
+//set the class as a delegate into the player
+player.analyticsDelegate = JWAVPlayerAnalyticsObserver()
 ```
