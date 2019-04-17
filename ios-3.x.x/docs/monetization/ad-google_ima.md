@@ -4,7 +4,12 @@
 
 In order to play ads using Google Interactive Media Ads (Google IMA) you must import the Google IMA framework into your project ( Installing Google IMA ) and set your `JWAdConfig`’s `client` to `JWAdClientGoogima`.
 
-    config.advertising.client = JWAdClientGoogima;
+```objc
+config.advertising.client = JWAdClientGoogima;
+```
+```swift
+config.advertising.client = .googima
+```
 
 Ads are scheduled for Google IMA the same way they are scheduled using our default ad client (vastPlugin). The VMAP control ad insertion also overrides any adSchedule arrays when using Google IMA. Customization of ad messages and skipping are not handled with Google IMA at the moment, but can be done when creating an ad tag.
 
