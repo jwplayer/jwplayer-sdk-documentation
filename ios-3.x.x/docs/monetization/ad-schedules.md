@@ -9,24 +9,29 @@ Ads can be scheduled in two ways:
 Set an array of AdBreak objects to the schedule property of the config's advertising object:
 
 ```Objective-C
-	config.advertising.schedule = @[[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"pre"],
-	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"0:00:05"],
-	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"50%"],
-	[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"post"]];
+config.advertising.schedule = @[[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"pre"],
+[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"0:00:05"],
+[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"50%"],
+[JWAdBreak adBreakWithTag:@"/vast.xml" offset:@"post"]];
 ```
 
 ```swift
-	config.advertising.schedule = [JWAdBreak(tag: "/vast.xml", offset:"pre"),
-	JWAdBreak(tag: "/vast.xml", offset:"5"),
-	JWAdBreak(tag: "/vast.xml", offset:"50%"),
-	JWAdBreak(tag: "/vast.xml", offset:"post")]
+config.advertising.schedule = [JWAdBreak(tag: "/vast.xml", offset:"pre"),
+JWAdBreak(tag: "/vast.xml", offset:"5"),
+JWAdBreak(tag: "/vast.xml", offset:"50%"),
+JWAdBreak(tag: "/vast.xml", offset:"post")]
 ```
 
 ## VMAP Advertisements##
 
 Set the VMAP tag to the adVmap property in your configuration's advertising object:
- 
-	config.advertising.adVmap = "http://adserver.example/vmap.xml";
+
+```objc
+config.advertising.adVmap = @"http://adserver.example/vmap.xml";
+```
+```swift
+config.advertising.adVmap = "http://adserver.example/vmap.xml"
+```
 
 Note that if you set both an adVmap and an ad schedule, the schedule array will be ignored. 
 AdConfig properties specifying custom ad messages, skip offsets, and other properties are compatible with VMAPs.
