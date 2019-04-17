@@ -6,10 +6,19 @@ The JW Player iOS SDK supports the JW8 Ad Rules. For more information about Ad R
 
 To set ad rules:
 
-    JWAdRules *adRules = [JWAdRules new];
-    adRules.startOn = 2;
-    adRules.frequency = 5;
-    adRules.timeBetweenAds = 30;
-    adRules.startOnSeek = JWAdShownPre;
-    config.advertising.adRules = adRules;
-    
+```objc
+JWAdRules *adRules         = [JWAdRules new];
+adRules.startOn            = 2;
+adRules.frequency          = 5;
+adRules.timeBetweenAds     = 30;
+adRules.startOnSeek        = JWAdShownPre;
+config.advertising.adRules = adRules;
+```
+```swift
+var adRules                = JWAdRules()
+adRules.startOn            = 2
+adRules.frequency          = 5
+adRules.timeBetweenAds     = 30
+adRules.startOnSeek        = .pre
+config.advertising.adRules = adRules
+```
