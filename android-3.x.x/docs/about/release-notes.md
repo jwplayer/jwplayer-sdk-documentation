@@ -23,6 +23,24 @@
 * [Version 2.0.129 (Nov 17, 2015)](#2-0-129)
 * [Version 1.x](#1-x) 
 
+<a name="3-5-1"></a>
+## Version 3.5.1 (April 24, 2019)
+### Updates
+* Registered video controls overlay obstructions for IAB’s Open Measurement SDK (OMSDK) integration in Google IMA. The JW Player Android SDK 3.5.0 release included an Android Google IMA library upgrade to version 3.10.6 which includes the OM SDK for IMA ads only. Learn more about Google IMA’s OM SDK integration [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
+* Improved expired JW Player license key user experience. Now if a JW Player license key is expired an error message is sent and the player in the app will not start/setup.
+* Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes.
+
+### Fixes
+* Fixed issue where video content would restart from the beginning after ad playback if two midrolls were scheduled for the same time position. 
+* Fixed issue where video was shortly displayed before IMA VMAP preroll in playlist.
+* Fixed issue where Google IMA ads would play with sound even when the player configuration was set to mute. Information on advertising player configuration options can be found [here](https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/configuration-reference/#advertising).
+* Fixed issue where the app would crash if related items file was not found. 
+_Chromecast_
+* Fixed issue where players with Chromecast buttons using `Fragments` would not stay connected to casting session.
+* Fixed issue where the title and image were not available for playlists with related videos when casting.
+* Fixed issue where the parent video would be casted when the user selected a related video.
+* Fixed issue where audio would play on the sender when the casting session was started when a VAST or Freewheel ad was in progress.
+
 <a name="3-5-0"></a>
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
 ### Enhancements
