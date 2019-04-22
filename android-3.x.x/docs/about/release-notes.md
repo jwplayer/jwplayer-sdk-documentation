@@ -26,7 +26,7 @@
 <a name="3-5-1"></a>
 ## Version 3.5.1 (April 24, 2019)
 ### Updates
-* Registered video controls overlay obstructions for IAB’s Open Measurement SDK (OMSDK) integration in Google IMA. The JW Player Android SDK 3.5.0 release included an Android Google IMA library upgrade to version 3.10.6 which includes the OM SDK for IMA ads only. Learn more about Google IMA’s OM SDK integration [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
+* * Added a new "Experimental API" class that exposes an API to register "video controls overlay obstructions." Developers must use this API to register their "video controls overlay obstructions" in order to use IAB’s Open Measurement SDK (OMSDK) which is now integrated in Google IMA. The JW Player Android SDK 3.5.0 release included an Android Google IMA library upgrade to [version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history) which includes the OM SDK for IMA ads only. Learn more about Google IMA’s OM SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
 * Improved expired JW Player license key user experience. Now if a JW Player license key is expired an error message is sent and the player in the app will not start/setup.
 * Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes.
 
