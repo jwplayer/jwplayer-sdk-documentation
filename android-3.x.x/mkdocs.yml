@@ -16,9 +16,8 @@ nav:
   - 'Introduction': 'index.md'
   - 'Download SDK': 'getting-started/download-sdk.md'
   - 'Configure ProGuard': 'getting-started/configure-proguard.md'
-  - 'Configure project': 'getting-started/configure-project.md'
-  - 'JWPlayerFragment': 'usage/jwplayer-fragment.md'
-  - 'JWPlayerView': 'usage/jwplayer-view.md'
+  - 'Configure the manifest': 'getting-started/configure-the-manifest.md'
+  - 'Add a player to an activity':'getting-started/add-a-player-to-an-activity.md'
 - Content:
   - 'Playlists': 'interaction/playlists.md'
   - 'Captions API': 'interaction/captions.md'
