@@ -25,7 +25,7 @@ To complete the SDK import process, you must configure **AndroidManifest.xml**.
 3. In all `<activity>` elements that will contain a player, add `android:configChanges="keyboard|keyboardHidden|orientation|screenSize"`.  This prevents the Activity from being destroyed when rotated. If you are using the Demo app, this is already included.
 4. (Optional) If your app reads media content from the user's device, add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`. <a href="https://developer.android.com/training/permissions/requesting" target="_blank">Request App Permissions</a> explains how requesting permissions works.
 
-You have configured the manifest.
+You have configured the manifest. You can now [add the player to your activity](../add-a-player-to-an-activity).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
