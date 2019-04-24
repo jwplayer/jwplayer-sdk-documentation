@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         playlist.add(playlistItem);
         PlayerConfig config = new PlayerConfig.Builder()
             .playlist(playlist)
-            .autostart(true)
             .build();
         mPlayerView.setup(config);
 
@@ -64,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
-2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
-3. Create a `PlaylistItem` object named `playlistItem`.  (Add notes about required and optional properties).
-4. Create a `List<PlaylistItem>` object called `playlist`. For example: `List<PlaylistItem> playlist = new ArrayList<>();`
-5. Add `playlistItem` to `playlist`.
-6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
-7. Assign `playlist` to `config`.
-8. Set up `mPlayerView` with `config`.
+1. <p>In <strong>app/res/layout/activity_main.xml</strong>, add the <code>JWPlayerView</code>.</p>
+2. <p>In <strong>app/java/MainActivity.java</strong>, define <code>mPlayerView</code> to reference the <code>JWPlayerView</code> in <strong>app/res/layout/activity_main.xml</strong>.</p>
+3. <p>Create a <code>PlaylistItem</code> object named <code>playlistItem</code>. <br/><br/>At the minimum, you must include the <code>file</code> and <code>mediaId</code> properties.</p>
+4. <p>Create a <code>List<PlaylistItem></code> object called <code>playlist</code>. <br/><br/>For example: <code>List<PlaylistItem> playlist = new ArrayList<>();</code></p>
+5. <p>Add <code>playlistItem</code> to <code>playlist</code>.</p>
+6. <p>Use <code>PlayerConfig.Builder()</code> to create a <code>config</code> object that defines the properties of the player.</p>
+7. <p>Assign <code>playlist</code> to the <code>config</code> object.</p>
+8. <p>Set up <code>mPlayerView</code> with <code>config</code>.
