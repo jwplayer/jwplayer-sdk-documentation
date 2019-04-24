@@ -20,7 +20,7 @@ To complete the SDK import process, you must configure **AndroidManifest.xml**.
 </application>
 ```
 
-1. Open **AndroidManifest.xml**.
+1. Open **app/manifests/AndroidManifest.xml**.
 2. In the `<application>` element, use a `<meta-data/>` element to add your JW Player license key. If you are using the Demo app, be sure to uncomment the `<meta-data/>` element.
 3. In all `<activity>` elements that will contain a player, add `android:configChanges="keyboard|keyboardHidden|orientation|screenSize"`.  This prevents the Activity from being destroyed when rotated. If you are using the Demo app, this is already included.
 4. (Optional) If your app reads media content from the user's device, add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`. <a href="https://developer.android.com/training/permissions/requesting" target="_blank">Request App Permissions</a> explains how requesting permissions works.
