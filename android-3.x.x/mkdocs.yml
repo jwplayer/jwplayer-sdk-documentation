@@ -14,7 +14,7 @@ extra:
 nav:
 - Getting Started:
   - 'Introduction': 'index.md'
-  - 'Download SDK': 'getting-started/download-sdk.md'
+  - 'Download the SDK': 'getting-started/download-the-dk.md'
   - 'Configure ProGuard': 'getting-started/configure-proguard.md'
   - 'Configure the manifest': 'getting-started/configure-the-manifest.md'
   - 'Add a player to an activity': 'getting-started/add-a-player-to-an-activity.md'
