@@ -6,9 +6,7 @@ The `JWPlayerView` is the central UI component of our SDK. This class allows you
 
 You must add `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app.
 
-<br/>
-
-app/res/layout/activity_main.xml
+app/res/layout/activity_main.xml:
 ```xml
  <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +34,7 @@ app/res/layout/activity_main.xml
 
 <br/>
 
-app/java/MainActivity.java
+app/java/MainActivity.java:
 ```java
 public class MainActivity extends AppCompatActivity {
 
