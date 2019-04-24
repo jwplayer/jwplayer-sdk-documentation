@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         playlist.add(playlistItem);
         PlayerConfig config = new PlayerConfig.Builder()
             .playlist(playlist)
-            .autostart(true)
             .build();
         mPlayerView.setup(config);
 
@@ -66,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
 
 1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
 2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
-3. Create a `PlaylistItem` object named `playlistItem`. At the minimum, you **must include** the `file` and `mediaId` properties.
-4. Create a `List<PlaylistItem>` object called `playlist`. For example: `List<PlaylistItem> playlist = new ArrayList<>();`
+3. Create a `PlaylistItem` object named `playlistItem`. At the minimum, you *must include* the `file` and `mediaId` properties.
+4. Create a `List<PlaylistItem>` object called `playlist`. <br/><br/>For example: `List<PlaylistItem> playlist = new ArrayList<>();`<br/><br/>
 5. Add `playlistItem` to `playlist`.
 6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
 7. Assign `playlist` to `config`.
