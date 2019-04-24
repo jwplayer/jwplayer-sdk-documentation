@@ -14,8 +14,7 @@ To complete the SDK import process, you must configure **AndroidManifest.xml**.
     android:value="abcD1234edf56GHiJK789lm0N" />
   <activity
     ...
-    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-    ...
+    android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
   </activity>
 </application>
 ```

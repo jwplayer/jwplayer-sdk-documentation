@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         playlist.add(playlistItem);
         PlayerConfig config = new PlayerConfig.Builder()
             .playlist(playlist)
+            .autostart(true)
             .build();
         mPlayerView.setup(config);
 
