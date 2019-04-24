@@ -30,6 +30,7 @@
 * Added Fairplay DRM support for Airplay
 * Changed the Enums to NS_ENUM for better type-checking
 * Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes
+* Improved JW Player expired license user experience by adding an error message notification and halting player setup or playback
 
 ### Fixes
 * Fixed an issue where the `onAdSchedule` callback would not fire for VMAP ads
