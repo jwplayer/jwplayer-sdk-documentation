@@ -4,7 +4,11 @@
 
 The `JWPlayerView` is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback, and register multiple event listeners that could help you with custom analytics or error handling.
 
-Use the following steps and code examples to add the `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app:
+Use the following steps and code examples to add the `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app.
+
+!!!tip
+Adding the `JWPlayerView` gives you more control over the `JWPlayerView` lifecycle. If you do need this control, you can add the [JWPlayerFragment or JWPlayerSupportFragment](https://developer.jwplayer.com/sdk/android/reference/) to your app instead.
+!!!
 
 1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
 2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
