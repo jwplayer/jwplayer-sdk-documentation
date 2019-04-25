@@ -2,11 +2,16 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: April 24, 2019</sup>
+<sup>Last updated: April 25, 2019</sup>
 
-To complete the SDK import process, you must configure **AndroidManifest.xml**.
+To complete the SDK import process, you must configure the **AndroidManifest.xml**.
 
-```groovy
+1. Open **app/manifests/AndroidManifest.xml**.
+2. In the `<application>` element, use a `<meta-data/>` element to add your JW Player license key. If you are using the Demo app, be sure to uncomment the `<meta-data/>` element.
+3. In all `<activity>` elements that will contain a player, add `android:configChanges="keyboard|keyboardHidden|orientation|screenSize"`.  This prevents the Activity from being destroyed when rotated. If you are using the Demo app, this is already included.
+4. (Optional) If your app reads media content from the user's device, add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`. <a href="https://developer.android.com/training/permissions/requesting" target="_blank">Request App Permissions</a> explains how requesting permissions works.
+
+```xml
 <application>
   ...
   <meta-data
@@ -18,11 +23,6 @@ To complete the SDK import process, you must configure **AndroidManifest.xml**.
   </activity>
 </application>
 ```
-
-1. Open **app/manifests/AndroidManifest.xml**.
-2. In the `<application>` element, use a `<meta-data/>` element to add your JW Player license key. If you are using the Demo app, be sure to uncomment the `<meta-data/>` element.
-3. In all `<activity>` elements that will contain a player, add `android:configChanges="keyboard|keyboardHidden|orientation|screenSize"`.  This prevents the Activity from being destroyed when rotated. If you are using the Demo app, this is already included.
-4. (Optional) If your app reads media content from the user's device, add `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`. <a href="https://developer.android.com/training/permissions/requesting" target="_blank">Request App Permissions</a> explains how requesting permissions works.
 
 You have configured the manifest. You can now [add the player to your activity](../add-a-player-to-an-activity).
 
