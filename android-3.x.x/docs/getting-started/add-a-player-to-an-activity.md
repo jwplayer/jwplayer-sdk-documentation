@@ -14,6 +14,7 @@ Use the following steps and code examples to add the `JWPlayerView` to the **app
 6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
 7. Assign `playlist` to `config`.
 8. Set up `mPlayerView` with `config`.
+9. Override `onDestroy()`, `onPause()`, `onResume()`, `onStart()`, and `onStop()`. This allows you to properly handle the Activity Lifecycle and to release the player from memory, when necessary.
 
 <br/>
 
@@ -71,6 +72,35 @@ public class MainActivity extends AppCompatActivity {
             .build();
         mPlayerView.setup(config);
 
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mPlayerView.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mPlayerView.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mPlayerView.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mPlayerView.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mPlayerView.onDestroy();
     }
 }
 ```
