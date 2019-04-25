@@ -1,14 +1,24 @@
 # Add a player to an activity
 
-<sup>Last Updated: April 24, 2019</sup>
+<sup>Last Updated: April 25, 2019</sup>
 
 The `JWPlayerView` is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback, and register multiple event listeners that could help you with custom analytics or error handling.
 
-You must add `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app.
+Use the following steps and code examples to add the `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app:
+
+1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
+2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
+3. Create a `PlaylistItem` object named `playlistItem`. At the minimum, you *must include* the `file` and `mediaId` properties.
+4. Create a `List<PlaylistItem>` object called `playlist`. <br/><br/>For example: `List<PlaylistItem> playlist = new ArrayList<>();`<br/><br/>
+5. Add `playlistItem` to `playlist`.
+6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
+7. Assign `playlist` to `config`.
+8. Set up `mPlayerView` with `config`.
 
 <br/>
 
-app/res/layout/activity_main.xml:
+**app/res/layout/activity_main.xml**:
+
 ```xml
  <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +46,8 @@ app/res/layout/activity_main.xml:
 
 <br/>
 
-app/java/MainActivity.java:
+**app/java/MainActivity.java**:
+
 ```java
 public class MainActivity extends AppCompatActivity {
 
@@ -64,11 +75,24 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
-2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
-3. Create a `PlaylistItem` object named `playlistItem`. At the minimum, you *must include* the `file` and `mediaId` properties.
-4. Create a `List<PlaylistItem>` object called `playlist`. <br/><br/>For example: `List<PlaylistItem> playlist = new ArrayList<>();`<br/><br/>
-5. Add `playlistItem` to `playlist`.
-6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
-7. Assign `playlist` to `config`.
-8. Set up `mPlayerView` with `config`.
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
