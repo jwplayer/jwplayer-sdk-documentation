@@ -19,6 +19,7 @@ nav:
   - 'Introduction': 'index.md'
   - 'Download the SDK': 'getting-started/download-the-sdk.md'
   - 'Configure your project': 'getting-started/configure-your-project.md'
+  - 'Add a player to your app': 'getting-started/add-a-player-to-your-app.md'
   - 'Basic Embedding': 'embedding/embedding.md'
 - Content:
   - 'Captions': 'customization/captions.md'
