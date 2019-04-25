@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: February 12, 2019</sup>
+<sup>Last updated: April 25, 2019</sup>
 
 To complete the SDK import process, you must add the player license key and import the `JWPlayerController`.
 
@@ -17,6 +17,8 @@ This approach allows you to add the license key to your app.
 1. In the **info.plist** file in your Xcode project, create a **Key** called `JWPlayerKey`. If you used CocoaPods to integrate the SDK, be sure to edit the **info.plist** of your Xcode project and not the **info.plist** of the Pods project.
 2. Set the **Type** to **String**.
 3. Enter the player key for the **Value**.
+
+<br/>
 
 ### Programmatic approach
 
@@ -37,6 +39,8 @@ didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : An
     return true
 }
 ```
+
+<br/>
 
 ## Import the JWPlayerController object
 
@@ -61,6 +65,8 @@ In Objective-C files, you must import this header either into individual files o
 ```
 
 You have configured your project.
+
+<br/>
 
 ### Swift
 
