@@ -4,9 +4,11 @@
 
 <sup>Last Updated: April 26, 2019</sup>
 
-Use the following steps and code examples to add a player to the **{appName}/ViewController.h** or **{appName}/ViewController.swift** file of your app:
+Use the following steps and code examples to add a player to the **ViewController.h** or **ViewController.swift** file of your app:
 
-1. In **{appName}/ViewController.h** or **{appName}/ViewController.swift**, create a `JWPlayerController` object named `player`.
+<br/>
+
+1. In **ViewController.h** or **ViewController.swift**, create a `JWPlayerController` object named `player`.
 2. Create a `JWConfig` object named `config`. At the minimum, *you must define* the `file` property.
 4. Initialize the `player` with the `config`.
 
@@ -20,29 +22,32 @@ Use the following steps and code examples to add a player to the **{appName}/Vie
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     JWConfig *config = [[JWConfig alloc] init];
-        config.file = @”http://example.com/hls.m3u8”;
-        
+    config.file = @"http://example.com/hls.m3u8";
+    self.player = [[JWPlayerController alloc] initWithConfig:config];
+}
+
+- (void)viewDidAppear {
+    [super viewDidAppear];
+    [self.view addSubview:self.player.view];
 }
 ```
 
 ```Swift
-class SwiftViewController: UIViewController {
-    @IBOutlet weak var playerContainerView: UIView!
+class ViewController: UIViewController {
     var player: JWPlayerController?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let config: JWConfig  = JWConfig(contentURL: "http://content.bitsontherun.com/videos/3XnJSIm4-injeKYZS.mp4")
+        let config: JWConfig  = JWConfig()
+        config.file = "http://example.com/hls.m3u8"
         player = JWPlayerController(config: config)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let playerView: UIView = player!.view
-        playerContainerView.addSubview(playerView)
-        playerView.constrainToSuperview()
+        view.addSubview(player!.view)
     }
 }
 ```
