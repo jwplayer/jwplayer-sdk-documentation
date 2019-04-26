@@ -2,13 +2,13 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: January 8, 2019</sup>
+<sup>Last updated: April 26, 2019</sup>
 
 !!!
-If you used the [Gradle](../download-sdk/#gradle) or [Demo](../download-sdk/#demo) approach to import the JW Player SDK for Android or the JW Player SDK for Android Open Source Demo, JW Player's `consumer-proguard.pro` configuration has been applied automatically. You can skip this article and [configure your project](../configure-project).
+If you used the [Gradle](../download-the-sdk/#gradle) or [Demo](../download-the-sdk/#demo) approach to import the JW Player SDK for Android or the JW Player SDK for Android Open Source Demo, JW Player's `consumer-proguard.pro` configuration has been applied automatically. You can skip this article and [configure the manifest](../configure-the-manifest).
 !!!
 
-If you used the [Local](../download-sdk/#local) approach, no ProGuard configuration has been added. If you choose to obfuscate your code with ProGuard, add the following ProGuard configuration. This suggested ProGuard configuration ensures that the JW Player SDK for Android will work as intended.
+If you used the [Local](../download-the-sdk/#local) approach, no ProGuard configuration has been added. If you choose to obfuscate your code with ProGuard, add the following ProGuard configuration. This suggested ProGuard configuration ensures that the JW Player SDK for Android will work as intended.
 
 ```
 ProGuard Configuration
@@ -27,7 +27,7 @@ ProGuard Configuration
 -keep class com.longtailvideo.jwplayer.modules.** { *; }
 ```
 
-You can now [configure your project](../configure-project).
+You can now [configure the manifest](../configure-the-manifest).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
