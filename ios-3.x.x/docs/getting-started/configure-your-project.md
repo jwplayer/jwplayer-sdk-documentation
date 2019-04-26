@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: April 25, 2019</sup>
+<sup>Last updated: April 26, 2019</sup>
 
 To complete the SDK import process, you must add the player license key and import the `JWPlayerController`.
 
@@ -14,18 +14,7 @@ To complete the SDK import process, you must add the player license key and impo
 
 <br/>
 
-**AppDelegate.m**
-
-```Objective-C
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [JWPlayerController setPlayerKey:@"YOUR_KEY_HERE"]; 
-    return YES; 
-}
-```
-
-!!!tip
-As an alternative to steps 1-2, you can add the player license key to the **Info.plist** of your app. <br/>&bull; Create a **Key** named **JWPlayerKey**.<br/>&bull; From the **Type** options, select **String**.<br/>&bull; Set your player license key as the **Value**.
-!!!
+You have configured your project. You can now [add a player to your view](../add-a-player-to-your-view).
 
 <br/>
 
@@ -37,7 +26,19 @@ As an alternative to steps 1-2, you can add the player license key to the **Info
 
 <br/>
 
-**AppDelegate.swift**
+You have configured your project. You can now [add a player to your view](../add-a-player-to-your-view).
+
+
+<br/>
+
+**AppDelegate**
+
+```Objective-C
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [JWPlayerController setPlayerKey:@"YOUR_KEY_HERE"]; 
+    return YES; 
+}
+```
 
 ```Swift
 func application(_ application: UIApplication, 
@@ -46,15 +47,11 @@ didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : An
     return true
 }
 ```
-
-!!!tip
-As an alternative to steps 1-2, you can add the player license key to the **Info.plist** of your app. <br/>&bull; Create a **Key** named **JWPlayerKey**.<br/>&bull; From the **Type** options, select **String**.<br/>&bull; Set your player license key as the **Value**.
-!!!
-
 <br/>
 
-
-You have configured your project. You can now add a player to your view.
+!!!tip
+As an alternative to steps 1-2, you can add the player license key to the **Info.plist** of your app. <br/><br/>&bull; Create a **Key** named **JWPlayerKey**.<br/>&bull; From the **Type** options, select **String**.<br/>&bull; Set your player license key as the **Value**.
+!!!
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
