@@ -26,7 +26,7 @@
 ## Version 3.4.0 (May 2, 2019)
 ### Updates
 * Upgraded to [Google IMA iOS version 3.8.1](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history) which includes IAB’s Open Measurement SDK that enables third-party viewability and verification measurement for ads served to mobile and desktop environments.
-* Added a new "Experimental API" class that exposes an API to register video controls that overlay the media element and would be considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/ios/omsdk).
+* Added a new "Experimental API" class that enables the registration of video controls that overlay the media element. Typically, these video controls are considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/ios/omsdk).
 
 <a name="3-3-0"></a>
 ## Version 3.3.0 (Build 88 - April 8, 2019)
