@@ -58,16 +58,18 @@ Use the following steps and code examples to add the `JWPlayerView` to the **app
 ```java
 public class MainActivity extends AppCompatActivity {
 
+    JWPlayerView mplayerView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mPlayerView = (JWPlayerView) findViewById(R.id.jwplayer);
+        mPlayerView = findViewById(R.id.jwplayer);
         PlaylistItem playlistItem = new PlaylistItem.Builder()
-            .file("https://content.jwplatform.com/videos/zf79GW51-VhzQqByf.mp4")
-            .image("https://content.jwplatform.com/thumbs/zf79GW51-720.jpg")
-            .mediaId("zf79GW51")
+            .file("https://content.jwplatform.com/videos/123acb4e-Zy98xW76.mp4")
+            .image("https://content.jwplatform.com/thumbs/123acb4e-720.jpg")
+            .mediaId("123acb4e")
             .build();
 
         List<PlaylistItem> playlist = new ArrayList<>();
