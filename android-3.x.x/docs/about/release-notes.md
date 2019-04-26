@@ -26,20 +26,21 @@
 <a name="3-5-1"></a>
 ## Version 3.5.1 (April 24, 2019)
 ### Updates
-* Added a new "Experimental API" class that exposes an API to register video controls that overlay the media element and would be considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK which is now integrated in Google IMA. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
+* Added a new "Experimental API" class that enables the registration of video controls that overlay the media element. Typically, these video controls are considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
 * Improved JW Player expired license user experience by adding an error message notification and halting player setup or playback
 * Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes.
 
 ### Fixes
-* Fixed issue where video content would restart from the beginning after ad playback if two midrolls were scheduled for the same time position. 
-* Fixed issue where video was shortly displayed before IMA VMAP preroll in playlist.
-* Fixed issue where Google IMA ads would play with sound even when the player configuration was set to mute. Information on advertising player configuration options can be found [here](https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/configuration-reference/#advertising).
-* Fixed issue where the app would crash if related items file was not found. 
+* Fixed issue where video content restarts from the beginning after ad playback if two midrolls are scheduled for the same time position.
+* Fixed issue where video is shortly displayed before IMA VMAP preroll in playlist.
+* Fixed issue where Google IMA ads play with sound when the [advertising](https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/configuration-reference/#advertising) player configuration is set to mute.
+* Fixed issue where the app crashes if related items file is not found.
+
 _Chromecast_
-* Fixed issue where players with Chromecast buttons using `Fragments` would not stay connected to casting session.
-* Fixed issue where the title and image were not available for playlists with related videos when casting.
-* Fixed issue where the parent video would be casted when the user selected a related video.
-* Fixed issue where audio would play on the sender when the casting session was started when a VAST or Freewheel ad was in progress.
+* Fixed issue where players with Chromecast buttons using `Fragments` lose connection to a casting session.
+* Fixed issue where the title and image are not available for playlists with related videos during a casting session.
+* Fixed issue where the parent video is casted when the user selects a related video.
+* Fixed issue where audio plays on the sender app when the casting session starts and a VAST or Freewheel ad is already in progress.
 
 <a name="3-5-0"></a>
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
