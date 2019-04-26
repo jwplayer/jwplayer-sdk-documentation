@@ -27,7 +27,7 @@
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
 ### Enhancements
 * Upgraded SDK to use JW Player [8.7.3](https://developer.jwplayer.com/release-notes/jw-player/?id=14373250)
-* Upgraded to [Google IMA version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history)
+* Upgraded to [Google IMA version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history)which includes IAB’s Open Measurement SDK that enables third-party viewability and verification measurement for ads served to mobile and desktop environments.
 * Migrated the Chromecast implementation to the latest Google Cast library (version 16.1.2). Please refer to the [Chromecast documentation](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/enable-casting-to-chromecast-devices/) for implementation details.
 
 ### Bug fixes
