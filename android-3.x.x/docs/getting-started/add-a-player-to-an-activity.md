@@ -1,21 +1,23 @@
 # Add a player to an activity
 
-<sup>Last Updated: April 25, 2019</sup>
+<sup>Last Updated: April 26, 2019</sup>
 
-The `JWPlayerView` is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback, and register multiple event listeners that could help you with custom analytics or error handling.
+The [JWPlayerView](https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/JWPlayerView.html) is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback, and register multiple event listeners that could help you with custom analytics or error handling.
 
 !!!tip
-Adding the `JWPlayerView` gives you more control over the `JWPlayerView` lifecycle. If you do not need this control, you can add the [JWPlayerFragment or JWPlayerSupportFragment](https://developer.jwplayer.com/sdk/android/reference/) to your app instead.
+Adding the `JWPlayerView` gives you more control over the `JWPlayerView` lifecycle. If you do not need this control, you can add the [JWPlayerFragment](https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/JWPlayerFragment.html) or [JWPlayerSupportFragment](https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/JWPlayerSupportFragment.html) to your app instead.
 !!!
 
 Use the following steps and code examples to add the `JWPlayerView` to the **app/res/layout/activity_main.xml** and **app/java/MainActivity.java** files of your app:
 
-1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
+<br/>
+
+1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.<br/><br/>**NOTE**: The `jwp` namespace shown in the example below allows you to set default player settings. For a full list of available options, read [XML Options and PlayerConfig](../../customization/xml-options-and-playerconfig).<br/><br/>
 2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
-3. Create a `PlaylistItem` object named `playlistItem`. At the minimum, you *must include* the `file` and `mediaId` properties.
+3. Create a <a href="https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/media/playlists/PlaylistItem.html" target="_blank">PlaylistItem</a> object named `playlistItem`. At the minimum, you **must include** the <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/playlists/PlaylistItem.Builder.html#file-java.lang.String-" target="_blank">file</a> and <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/playlists/PlaylistItem.Builder.html#mediaId-java.lang.String-" target="_blank">mediaId</a> properties.
 4. Create a `List<PlaylistItem>` object called `playlist`. <br/><br/>For example: `List<PlaylistItem> playlist = new ArrayList<>();`<br/><br/>
 5. Add `playlistItem` to `playlist`.
-6. Use `PlayerConfig.Builder()` to create a `config` object that defines the properties of the player.
+6. Use <a href="https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/configuration/PlayerConfig.Builder.html" target="_blank">PlayerConfig.Builder()</a> to create a `config` object that defines the properties of the player.
 7. Assign `playlist` to `config`.
 8. Set up `mPlayerView` with `config`.
 9. Override `onDestroy()`, `onPause()`, `onResume()`, `onStart()`, and `onStop()`. This allows you to properly handle the Activity Lifecycle and to release the player from memory, when necessary.
