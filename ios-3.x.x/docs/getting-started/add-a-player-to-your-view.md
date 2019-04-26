@@ -1,8 +1,8 @@
-# Add a player to your app
+# Add a player to your view
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last Updated: April 25, 2019</sup>
+<sup>Last Updated: April 26, 2019</sup>
 
 Use the following steps and code examples to add a player to the **{appName}/ViewController.h** or **{appName}/ViewController.swift** file of your app:
 
