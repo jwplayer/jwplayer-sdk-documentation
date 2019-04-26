@@ -8,8 +8,8 @@ Use the following steps and code examples to add a player to the **ViewControlle
 
 <br/>
 
-1. In **ViewController.h** or **ViewController.swift**, create a `JWPlayerController` object named `player`.
-2. Create a `JWConfig` object named `config`. At the minimum, *you must define* the `file` property.
+1. In **ViewController.h** or **ViewController.swift**, create a <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWPlayerController.html" target="_blank">JWPlayerController</a> object named `player`.
+2. Create a <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWConfig.html" target="_blank">JWConfig</a> object named `config`. At the minimum, you **must define** the <a href="https://staging-developer.jwplayer.com/sdk/ios/reference/Classes/JWConfig.html#//api/name/file" target="_blank">file</a> property.
 4. Initialize the `player` with the `config`.
 
 ```Objective-C
