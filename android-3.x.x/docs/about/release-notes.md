@@ -42,6 +42,9 @@ _Chromecast_
 * Fixed issue where the parent video is casted when the user selects a related video.
 * Fixed issue where audio plays on the sender app when the casting session starts and a VAST or Freewheel ad is already in progress.
 
+### Known Issue
+* Infrequently Freewheel pre-roll VPAID ads continue to load after ad completion and prevent video playback to start. This issue has been reported to Freewheel. 
+
 <a name="3-5-0"></a>
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
 ### Enhancements
