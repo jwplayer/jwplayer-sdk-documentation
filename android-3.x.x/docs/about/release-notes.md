@@ -35,8 +35,6 @@
 * Fixed issue where video is shortly displayed before IMA VMAP preroll in playlist.
 * Fixed issue where Google IMA ads play with sound when the [advertising](https://developer.jwplayer.com/jw-player/docs/developer-guide/customization/configuration-reference/#advertising) player configuration is set to mute.
 * Fixed issue where the app crashes if related items file is not found.
-
-_Chromecast_
 * Fixed issue where players with Chromecast buttons using `Fragments` lose connection to a casting session.
 * Fixed issue where the title and image are not available for playlists with related videos during a casting session.
 * Fixed issue where the parent video is casted when the user selects a related video.
