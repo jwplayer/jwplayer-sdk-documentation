@@ -43,7 +43,7 @@ _Chromecast_
 * Fixed issue where audio plays on the sender app when the casting session starts and a VAST or Freewheel ad is already in progress.
 
 ### Known Issue
-* Infrequently Freewheel pre-roll VPAID ads continue to load after ad completion and prevent video playback to start. This issue has been reported to Freewheel. 
+* Intermittently Freewheel pre-roll VPAID ads continue to load after ad completion and prevent video playback to start. This issue will be fixed in the next Android release. 
 
 <a name="3-5-0"></a>
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
