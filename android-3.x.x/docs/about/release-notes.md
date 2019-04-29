@@ -24,7 +24,7 @@
 * [Version 1.x](#1-x) 
 
 <a name="3-5-1"></a>
-## Version 3.5.1 (April 24, 2019)
+## Version 3.5.1 (April 29, 2019)
 ### Updates
 * Added a new "Experimental API" class that enables the registration of video controls that overlay the media element. Typically, these video controls are considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
 * Improved JW Player expired license user experience by adding an error message notification and halting player setup or playback
