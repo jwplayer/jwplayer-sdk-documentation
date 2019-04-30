@@ -1,7 +1,7 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: April 15, 2019</sup>
+<sup>Last updated: April 23, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
@@ -67,14 +67,14 @@ allprojects {
 #### Add SDK dependencies
 
 1. Open the build.gradle file for your app.
-2. Add the `com.longtailvideo.jwplayer:jwplayer-core` and `com.longtailvideo.jwplayer:jwplayer-common` dependencies.
+2. Add the `com.longtailvideo.jwplayer:jwplayer-core:x.x.x` and `com.longtailvideo.jwplayer:jwplayer-common:x.x.x` dependencies. Be sure to replace `x.x.x` with the dependency version number.
 3. Sync Gradle.
 
 ```groovy
 dependencies {
   ...
-  implementation 'com.longtailvideo.jwplayer:jwplayer-core:#sdk_version_simple#'
-  implementation 'com.longtailvideo.jwplayer:jwplayer-common:#sdk_version_simple#'
+  implementation 'com.longtailvideo.jwplayer:jwplayer-core:x.x.x'
+  implementation 'com.longtailvideo.jwplayer:jwplayer-common:x.x.x'
 }
 ```
 
@@ -117,16 +117,16 @@ Now that you have the required items listed in the previous subsection, you can 
 1. From within Android Studio, open your app.
 2. Click **File > New > New Module... > Import .JAR / .AAR Package**.
 3. Click **Next**.
-4. Select jwplayer-core-#sdk_version_simple#.aar from your computer.
+4. Select **jwplayer-core-x.x.x.aar** from your computer.
 5. Click **Finish**.
-6. Repeat the previous steps and add jwplayer-common-#sdk_version_simple#.aar.
+6. Repeat the previous steps and add **jwplayer-common-x.x.x.aar**.
 
 #### Add SDK dependencies
 
 1. Click **File > Project Structure... > Dependencies**. Under **Modules**, be sure that your app is selected.
 2. Click the plus sign in the main panel.
 3. Select **Module dependency**.
-4. Select jwplayer-core-#sdk_version_simple# and jwplayer-common-#sdk_version_simple#.
+4. Select jwplayer-core-x.x.x and jwplayer-common-x.x.x.
 5. Click **OK**.
 
 You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](../configure-project). If necessary, you can also [configure ProGuard](../configure-proguard).
