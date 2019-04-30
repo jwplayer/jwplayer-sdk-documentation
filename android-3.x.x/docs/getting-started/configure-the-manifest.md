@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: April 25, 2019</sup>
+<sup>Last updated: April 25, 2019</sup> 
 
 To complete the SDK import process, use the following steps to configure the **AndroidManifest.xml** file:
 
