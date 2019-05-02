@@ -24,7 +24,7 @@
 * [Version 1.x](#1-x) 
 
 <a name="3-5-1"></a>
-## Version 3.5.1 (April 29, 2019)
+## Version 3.5.1 (Build 71 - April 29, 2019)
 ### Updates
 * Added a new "Experimental API" class that enables the registration of video controls that overlay the media element. Typically, these video controls are considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/android/omsdk).
 * Improved JW Player expired license user experience by adding an error message notification and halting player setup or playback
@@ -47,7 +47,7 @@
 ## Version 3.5.0 (Build 70 - Mar 14, 2019)
 ### Enhancements
 * Upgraded SDK to use JW Player [8.7.3](https://developer.jwplayer.com/release-notes/jw-player/?id=14373250)
-* Upgraded to [Google IMA version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history)which includes IAB’s Open Measurement SDK that enables third-party viewability and verification measurement for ads served to mobile and desktop environments.
+* Upgraded to [Google IMA version 3.10.6](https://developers.google.com/interactive-media-ads/docs/sdks/android/v3/history) which includes IAB’s Open Measurement SDK that enables third-party viewability and verification measurement for ads served to mobile and desktop environments.
 * Migrated the Chromecast implementation to the latest Google Cast library (version 16.1.2). Please refer to the [Chromecast documentation](https://developer.jwplayer.com/sdk/android/docs/developer-guide/chromecast/enable-casting-to-chromecast-devices/) for implementation details.
 
 ### Bug fixes
