@@ -12,7 +12,7 @@ Use the following steps and code examples to add the `JWPlayerView` to the **app
 
 <br/>
 
-1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.<br/><br/>**NOTE**: The `jwp` namespace shown in the example below allows you to set default player settings. For a full list of available options, read [XML Options and PlayerConfig](../../customization/xml-options-and-playerconfig).<br/><br/>
+1. In **app/res/layout/activity_main.xml**, add the `JWPlayerView`.
 2. In **app/java/MainActivity.java**, define `mPlayerView` to reference the `JWPlayerView` in **app/res/layout/activity_main.xml**.
 3. Create a <a href="https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/media/playlists/PlaylistItem.html" target="_blank">PlaylistItem</a> object named `playlistItem`. At the minimum, you **must include** the <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/playlists/PlaylistItem.Builder.html#file-java.lang.String-" target="_blank">file</a> and <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/playlists/PlaylistItem.Builder.html#mediaId-java.lang.String-" target="_blank">mediaId</a> properties.
 4. Create a `List<PlaylistItem>` object called `playlist`. <br/><br/>For example: `List<PlaylistItem> playlist = new ArrayList<>();`<br/><br/>
@@ -36,8 +36,7 @@ Use the following steps and code examples to add the `JWPlayerView` to the **app
             xmlns:jwp="http://schemas.android.com/apk/lib/com.longtailvideo.jwplayer"
             android:id="@+id/jwplayer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            jwp:jw_autostart="true" />
+            android:layout_height="match_parent" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         mPlayerView = findViewById(R.id.jwplayer);
         PlaylistItem playlistItem = new PlaylistItem.Builder()
             .file("https://content.jwplatform.com/videos/123acb4e-Zy98xW76.mp4")
-            .image("https://content.jwplatform.com/thumbs/123acb4e-720.jpg")
             .mediaId("123acb4e")
             .build();
 
@@ -76,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         playlist.add(playlistItem);
         PlayerConfig config = new PlayerConfig.Builder()
             .playlist(playlist)
-            .autostart(true)
             .build();
         mPlayerView.setup(config);
 
