@@ -2,27 +2,32 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: February 12, 2019</sup>
+<sup>Last updated: May 9, 2019</sup>
 
 To complete the SDK import process, you must add the player license key and import the `JWPlayerController`.
 
-## Add the player license key
+## Objective-C
 
-Use one of the methods below to add your license key to your project.
+1. In Xcode, open **AppDelegate.m**.
+2. Set the player license key by adding `JWPlayerController setPlayerKey` in `application:didFinishLaunchingWithOptions`.  This approach allows you to either set the license within the code or to insert a method to retrieve the license key from a remote location.
+3. Import **JWPlayerController.h** into any file that will have an embedded player.<br/><br/>`#import <JWPlayer_iOS_SDK/JWPlayerController.h>`
 
-### Plist approach
+You have configured your project. You can now [add a player to your view](../add-a-player-to-your-view).
 
-This approach allows you to add the license key to your app.
+<br/>
 
-1. In the **info.plist** file in your Xcode project, create a **Key** called `JWPlayerKey`. If you used CocoaPods to integrate the SDK, be sure to edit the **info.plist** of your Xcode project and not the **info.plist** of the Pods project.
-2. Set the **Type** to **String**.
-3. Enter the player key for the **Value**.
+## Swift
 
-### Programmatic approach
+1. In Xcode, open **AppDelegate.swift**.
+2. Set the player license key by adding `JWPlayerController setPlayerKey` in `application:didFinishLaunchingWithOptions`. This approach allows you to either set the license within the code or to insert a method to retrieve the license key from a remote location.
+3. Create a <a href="https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift" target="_blank">bridging header file</a> and import **JWPlayerController.h**. If Xcode does not display a pop-up window with an option to create a bridging header file, you will have to create this file manually.
 
-This approach allows you to add the license key within your code or decoupled from your app. As an example, you could insert a method in your app that retrieves the license key from a remote location. This is useful if you foresee a need to change your license key and you want to avoid having to resubmit your app to the App Store.
+You have configured your project. You can now [add a player to your view](../add-a-player-to-your-view).
 
-In the **AppDelegate.m** file, use `JWPlayerController setPlayerKey` in `application:didFinishLaunchingWithOptions` to set your license key.
+
+<br/>
+
+**AppDelegate**
 
 ```Objective-C
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -30,6 +35,7 @@ In the **AppDelegate.m** file, use `JWPlayerController setPlayerKey` in `applica
     return YES; 
 }
 ```
+
 ```Swift
 func application(_ application: UIApplication, 
 didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]?) -> Bool {   
@@ -38,37 +44,9 @@ didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : An
 }
 ```
 
-## Import the JWPlayerController object
-
-The `JWPlayerController` object provides the playback control interface that encapsulates the player and its state. Due to this, **JWPlayerController.h** becomes the umbrella header file that enables access to the JW Player iOS SDK.
-
-In Objective-C files, you must import this header either into individual files or into a precompiled header (.pch) file. In Swift files, the [bridging header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift) acts like a .pch file.
-
-### Objective-C
-
-1. From Xcode, open the **.xcworkspace** file for your project.
-2. Import **JWPlayerController.h**: `#import <JWPlayer_iOS_SDK/JWPlayerController.h>`. The path must use underscores (`_`) instead of dashes (`-`).
-
-```Objective-C
-#import <UIKit/UIKit.h>
-#import "JWPlayer_iOS_SDK/JWPlayerController.h"
-
-@interface ViewController : UIViewController
-
-@property (nonatomic) JWPlayerController *player;
-
-@end
-```
-
-You have configured your project.
-
-### Swift
-
-1. From Xcode, open the **.xcworkspace** file for your project.
-2. Create a <a href="https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift" target="_blank">bridging header file</a>. If Xcode does not display a pop-up window with an option to create a bridging header file, you will have to create this file manually.
-3. Within the bridging header file, import **JWPlayerController.h**.
-
-You have configured your project.
+!!!tip
+As an alternative to steps 1-2, you can add the player license key to the **Info.plist** of your app. <br/><br/>&bull; Create a **Key** named **JWPlayerKey**.<br/>&bull; From the **Type** options, select **String**.<br/>&bull; Set your player license key as the **Value**.
+!!!
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
