@@ -1,6 +1,6 @@
 # Add a player to an activity
 
-<sup>Last Updated: April 26, 2019</sup>
+<sup>Last Updated: May 9, 2019</sup>
 
 The <a href="https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/JWPlayerView.html" target="_blank">JWPlayerView</a> is the central UI component of our SDK. This class allows you to easily load new media into the player, manage video and audio playback, and register multiple event listeners that could help you with custom analytics or error handling.
 

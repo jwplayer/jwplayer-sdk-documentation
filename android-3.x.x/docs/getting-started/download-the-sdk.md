@@ -1,14 +1,13 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: April 23, 2019</sup>
+<sup>Last updated: May 9, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
 !!!
 
-To add a player to your app, you must import the JW Player SDK for Android and then configure the manifest file. You can choose one of three approaches to complete these tasks. In the following table, several notes about each approach are listed. Read each approach and click the GET STARTED link for the approach that suits your implementation needs.
-
+To add a player to your app, you must import the JW Player SDK for Android and then configure your project. To complete these tasks, review the table below and click the GET STARTED link for the approach that suits your implementation needs.
 
 
 |Approach|Notes|
