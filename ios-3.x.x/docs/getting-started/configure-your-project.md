@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: May 15, 2019</sup>
+<sup>Last updated: May 9, 2019</sup>
 
 To complete the SDK import process, you must add the player license key and import the `JWPlayerController`.
 
