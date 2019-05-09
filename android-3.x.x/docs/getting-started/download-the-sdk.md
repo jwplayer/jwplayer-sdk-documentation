@@ -1,7 +1,7 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: May 9, 2019</sup>
+<sup>Last updated: May 15, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
