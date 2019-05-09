@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let config: JWConfig  = JWConfig()
+        var config = JWConfig()
         config.file = "http://example.com/hls.m3u8"
         player = JWPlayerController(config: config)
     }
