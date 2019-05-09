@@ -1,14 +1,13 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: April 23, 2019</sup>
+<sup>Last updated: May 9, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
 !!!
 
-To add a player to your app, you must import the JW Player SDK for Android and then configure your project. You can choose one of three approaches to complete these tasks. In the following table, several notes about each approach are listed. Read each approach and click the GET STARTED link for the approach that suits your implementation needs.
-
+To add a player to your app, you must import the JW Player SDK for Android and then configure your project. To complete these tasks, review the table below and click the GET STARTED link for the approach that suits your implementation needs.
 
 
 |Approach|Notes|
@@ -78,7 +77,7 @@ dependencies {
 }
 ```
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](../configure-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure the manifest file](../configure-the-manifest).
 
 ---
 
@@ -129,7 +128,7 @@ Now that you have the required items listed in the previous subsection, you can 
 4. Select jwplayer-core-x.x.x and jwplayer-common-x.x.x.
 5. Click **OK**.
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure your project](../configure-project). If necessary, you can also [configure ProGuard](../configure-proguard).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure the manifest file](../configure-the-manifest). If necessary, you can also [configure ProGuard](../configure-proguard).
 
 ---
 
@@ -151,7 +150,7 @@ Before you can start experimenting with the JW Player SDK for Android Open Sour
 |Android Studio| 1. Download <a href="https://developer.android.com/studio/" target="_blank">Android Studio<a/>.<br/>2. <a href="https://developer.android.com/studio/install" target="_blank">Install Android Studio</a>.|
 |JW Player SDK for Android Open Source Demo and license key | 1. Clone the repository into your Android Studio workspace: <br/><br/>`git clone git@github.com:jwplayer/jwplayer-sdk-android-demo.git`.<br/><br/>2. From your [JW Player dashboard](https://dashboard.jwplayer.com/#/welcome), click **Players > PLAYER DOWNLOADS & KEYS**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the Android SDK.|
 
-You have retrieved your JW Player license key and imported the JW Player SDK for Android Open Source Demo into Android Studio. You can now [configure your project](../configure-project).
+You have retrieved your JW Player license key and imported the JW Player SDK for Android Open Source Demo into Android Studio. You can now [configure the manifest file](../configure-the-manifest).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
