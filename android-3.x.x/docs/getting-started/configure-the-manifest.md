@@ -6,8 +6,6 @@
 
 To complete the SDK import process, use the following steps to configure the **AndroidManifest.xml** file:
 
-<br/>
-
 1. Open the **app/manifests/AndroidManifest.xml** file.
 2. In the `<application>` element, use a `<meta-data/>` element to add your JW Player license key. If you are using the Demo app, be sure to uncomment the `<meta-data/>` element.
 3. In all `<activity>` elements that will contain a player, add `android:configChanges="keyboard|keyboardHidden|orientation|screenSize"`.  This prevents the Activity from being destroyed when rotated. If you are using the Demo app, this is already included.
