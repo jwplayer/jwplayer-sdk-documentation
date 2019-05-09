@@ -2,14 +2,14 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: April 15, 2019</sup> 
+<sup>Last updated: May 15, 2019</sup> 
 
 !!!important
 Use of the iOS SDK v3 requires a JW Player Enterprise license. Please [contact our team](https://www.jwplayer.com/contact-us/?utm_source=developer&utm_medium=CTA&utm_campaign=player-docs) if you would like to upgrade your account.<br/><br/>
 If you are using JW Player SDK for iOS 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/ios/docs/v2/developer-guide/index.html).
 !!!
 
-To add a player to your app, you must import the JW Player SDK for iOS and then configure your project. You can choose one of three approaches to complete these tasks. In the following table, several notes about each approach are listed. Read each approach and click the GET STARTED link for the approach that suits your implementation needs.
+To add a player to your app, you must import the JW Player SDK for iOS and then configure your project. To complete these tasks, review the table below and click the GET STARTED link for the approach that suits your implementation needs.
 
 |Approach|Notes|
 |---|---|
