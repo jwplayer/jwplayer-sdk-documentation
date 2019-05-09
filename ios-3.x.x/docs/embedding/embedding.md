@@ -4,6 +4,7 @@
 
 This section includes samples for basic player operations such as configuration. All numbered examples given refer to either Objective C (1) or Swift (2). For additional examples, see the [sample application](https://github.com/jwplayer/jwplayer-sdk-ios-demo)
 
+<!--
 **Declaring a player variable**
 
 	1) @property JWPlayerController *player;
@@ -50,7 +51,7 @@ After the player is instantiated, the player.view property represents the player
 !!!tip
 It is strongly recommended to add the player view to the view hierarchy in or after the viewDidAppear method of the embedding view controller.
 !!!
-
+-->
 **Configuration object**
 
 All the data needed to create a player should be populated in the configuration object before calling initializing a player. Here are some examples.
