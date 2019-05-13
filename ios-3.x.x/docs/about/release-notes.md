@@ -31,6 +31,7 @@ _Breaking Change_
 
 ### Fixes
 * Fixed issue where lockscreen controls do not appear when the device is locked during playback.
+* Fixed issue where VAST ads don't redirect to the advertisment's link when clicked.
 
 <a name="3-4-0"></a>
 ## Version 3.4.0 (Build 91 - May 2, 2019)
