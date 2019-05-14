@@ -24,7 +24,7 @@
 * [Version 1.x](#1-x)
 
 <a name="3-5-0"></a>
-## Version 3.5.0 (Build xx - May 14, 2019)
+## Version 3.5.0 (Build 92 - May 14, 2019)
 ### Update
 * Migrated webview handling from [UIWebView](https://developer.apple.com/documentation/uikit/uiwebview) to [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview).
 
@@ -33,8 +33,8 @@
 * Fixed an issue where VAST ads don't redirect to the advertisment's link when clicked.
 
 ### Known Issue
-* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in the next iOS release.
-* Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in the next iOS release.
+* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in a later iOS release.
+* Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in a later iOS release.
 
 <a name="3-4-0"></a>
 ## Version 3.4.0 (Build 91 - May 2, 2019)
