@@ -29,8 +29,8 @@
 * Migrated webview handling from [UIWebView](https://developer.apple.com/documentation/uikit/uiwebview) to [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview).
 
 ### Fixes
-* Fixed issue where lockscreen controls do not appear when the device is locked during playback.
-* Fixed issue where VAST ads don't redirect to the advertisment's link when clicked.
+* Fixed an issue where lockscreen controls do not appear when the device is locked during playback.
+* Fixed an issue where VAST ads don't redirect to the advertisment's link when clicked.
 
 ### Known Issue
 * When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in the next iOS release.
