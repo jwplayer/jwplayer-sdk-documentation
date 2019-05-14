@@ -4,6 +4,7 @@
 
 ##### Major Version Releases
 
+* [Version 3.5.0 (May 14, 2019)](#3-5-0)
 * [Version 3.4.0 (May 2, 2019)](#3-4-0)
 * [Version 3.3.0 (Apr 08, 2019)](#3-3-0)
 * [Version 3.2.0 (Jan 23, 2019)](#3-2-0)
@@ -21,6 +22,19 @@
 * [Version 2.0.33 (Dec 01, 2015)](#2-0-33)
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
+
+<a name="3-5-0"></a>
+## Version 3.5.0 (Build 92 - May 14, 2019)
+### Update
+* Migrated webview handling from [UIWebView](https://developer.apple.com/documentation/uikit/uiwebview) to [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview).
+
+### Fixes
+* Fixed an issue where lockscreen controls do not appear when the device is locked during playback.
+* Fixed an issue where VAST ads don't redirect to the advertisment's link when clicked.
+
+### Known Issue
+* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in a later iOS release.
+* Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in a later iOS release.
 
 <a name="3-4-0"></a>
 ## Version 3.4.0 (Build 91 - May 2, 2019)
