@@ -33,7 +33,8 @@
 * Fixed issue where VAST ads don't redirect to the advertisment's link when clicked.
 
 ### Known Issue
-* When device is locked the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in the next iOS release. 
+* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in the next iOS release.
+* Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in the next iOS release.
 
 <a name="3-4-0"></a>
 ## Version 3.4.0 (Build 91 - May 2, 2019)
