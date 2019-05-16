@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: March 14, 2019 </sup>
+<sup>Last Updated: May 15, 2019 </sup>
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
@@ -58,9 +58,9 @@ Now that you have added the Google Cast dependency, you must configure your app:
 
 <br/>
 
-**1.** Implement the `OptionsProvider` interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
+**1.** Implement the <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/LaunchOptions" target="_blank">OptionsProvider</a> interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
 
-This interface also creates an instance of `CastOptions` that defines the behavior of the framework. For example, `setReceiverApplicationId()` allows you to filter discovery results and to launch the receiver app when a cast session starts.
+This interface also creates an instance of <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/framework/CastOptions.Builder" target="_blank">CastOptions</a> that defines the behavior of the framework. For example, `setReceiverApplicationId()` allows you to filter discovery results and to launch the receiver app when a cast session starts.
 
 ```java
 public class CastOptionsProvider implements OptionsProvider {
