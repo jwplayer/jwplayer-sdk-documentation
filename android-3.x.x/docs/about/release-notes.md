@@ -26,7 +26,7 @@
 <a name="3-5-2"></a>
 ## Version 3.5.2 (Build 72 - May 21, 2019)
 ### Fixes
-* Fixed an issue where developer is unable to disable fullscreen on rotation when using`JWSupportFragment`.
+* Fixed an issue where developer is unable to disable fullscreen on rotation when using `JWSupportFragment`.
 * Fixed an issue where `SharingPluginEvents` are not available for use. 
 
 <a name="3-5-1"></a>
