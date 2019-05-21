@@ -37,6 +37,8 @@ nav:
   - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
   - 'Customization': 'chromecast/customization.md'
 - Advertising:
+  - 'Monetize your content': 'advertising/monetize-your-content.md'
+  - 'Define ad rules': 'advertising/define-ad-rules.md'
   - 'Advertising Overview': 'advertising/overview.md'
   - 'VAST': 'advertising/vast.md'
   - 'Google IMA': 'advertising/google-ima.md'
