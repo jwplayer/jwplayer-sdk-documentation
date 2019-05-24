@@ -1,6 +1,8 @@
 # Define ad rules
 
-<sup>Last Updated: May 27, 2019</sup>
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
+<sup>Last Updated: May 29, 2019</sup>
 
 In addition to [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. 
 
@@ -84,7 +86,7 @@ AdBreak adBreak = new AdBreak.Builder()
 
 AdBreak adBreak2 = new AdBreak.Builder()
     .tag("https://www.domain.com/adtag-mid-roll1.xml")
-    .offset(10)
+    .offset("10")
     .build();
 
 AdBreak adBreak3 = new AdBreak.Builder()

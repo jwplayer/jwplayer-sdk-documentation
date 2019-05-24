@@ -1,6 +1,8 @@
 # Monetize your content
 
-<sup>Last Updated: May 27, 2019</sup>
+<img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
+
+<sup>Last Updated: May 29, 2019</sup>
 
 JW Player's advertising features help you to monetize your content with video ads while keeping your viewers engaged. JW Player supports standard ad types (VAST, VPAID, VMAP), accommodates third-party technologies (Google IMA SDK, FreeWheel SDK), and supports any ad server. You can customize your viewers' ad experiences with ad rules, ad breaks, and localized player messaging.
 
@@ -98,7 +100,7 @@ AdBreak adBreak = new AdBreak.Builder()
 
 AdBreak adBreak2 = new AdBreak.Builder()
     .tag("https://www.domain.com/adtag-mid-roll1.xml")
-    .offset(10)
+    .offset("10")
     .build();
 
 AdBreak adBreak3 = new AdBreak.Builder()
