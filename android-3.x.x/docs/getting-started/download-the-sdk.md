@@ -1,7 +1,7 @@
 # Download the SDK
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last updated: May 9, 2019</sup>
+<sup>Last updated: May 29, 2019</sup>
 
 !!!important
 If you are using JW Player SDK for Android 2.x.x, use this [SDK documentation](https://developer.jwplayer.com/sdk/android/docs/v2/developer-guide/index.html).
@@ -12,7 +12,7 @@ To add a player to your app, you must import the JW Player SDK for Android and t
 
 |Approach|Notes|
 |---|---|
-|[Gradle](#gradle)|- No SDK download is required.<br/> - Core and optional modules must be added to your app. <br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/>- Either the standard SDK repository or SDK with Amazon Fire (Fire OS 5+) support repository can be accessed.<br/><br/>[GET STARTED](#gradle)|
+|[Gradle](#gradle)<br/><strong>(Recommended)</strong>|- No SDK download is required.<br/> - Core and optional modules must be added to your app. <br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/>- Either the standard SDK repository or SDK with Amazon Fire (Fire OS 5+) support repository can be accessed.<br/><br/>[GET STARTED](#gradle)|
 |[Local](#local)|- JW Player SDK for Android must be downloaded and unzipped.<br/>- Core and optional modules must be imported.<br/>- ProGuard must be configured. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/><br/>[GET STARTED](#local)|
 |[Demo](#demo)|- JW Player SDK for Android Open Source Demo must be downloaded.<br/>- All modules are included. No modules need to be imported or set as dependencies.<br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is not required. The open source demo is a basic demonstration app that allows you to experiment with the SDK.<br/><br/>[GET STARTED](#demo)|
 
@@ -66,10 +66,25 @@ allprojects {
 #### Add SDK dependencies
 
 1. Open the build.gradle file for your app.
-2. Add the `com.longtailvideo.jwplayer:jwplayer-core:x.x.x` and `com.longtailvideo.jwplayer:jwplayer-common:x.x.x` dependencies. Be sure to replace `x.x.x` with the dependency version number.
-3. Sync Gradle.
+2. If you have configured your project to `minSdkVersion 21` or higher, set `multiDexEnabled true` in the `defaultConfig`. Otherwise, follow Google's instructions to add <a href="https://developer.android.com/studio/build/multidex#mdex-pre-l" target="_blank">Multidex support prior to Android 5.0</a>.
+3. Use `compileOptions` to configure support for Java 8 language support.
+4. Add the `com.longtailvideo.jwplayer:jwplayer-core:x.x.x` and `com.longtailvideo.jwplayer:jwplayer-common:x.x.x` dependencies. Be sure to replace `x.x.x` with the dependency version number.
+5. Sync Gradle.
 
 ```groovy
+android {
+	  defaultConfig {
+	      ...
+		    minSdkVersion 21
+        multiDexEnabled true
+    }
+		...
+		compileOptions {
+			  sourceCompatibility = '1.8'
+				targetCompatibility = '1.8'
+		}
+}
+
 dependencies {
   ...
   implementation 'com.longtailvideo.jwplayer:jwplayer-core:x.x.x'
@@ -127,6 +142,13 @@ Now that you have the required items listed in the previous subsection, you can 
 3. Select **Module dependency**.
 4. Select jwplayer-core-x.x.x and jwplayer-common-x.x.x.
 5. Click **OK**.
+6. Click **Apply**.
+7. Click **Modules** in the far-left navigation. Under **Modules**, be sure that your app is selected.
+8. On the **Properties** tab, select **1.8 (Java 8)** from **Source Compatibility** and **Target Compatibility** drop-down menus. This ensures Java 8 language support for your app.
+9. If you have set **Compile Sdk Version** to **21** or higher, select **true** from the **Multi Dex Enabled** dropdown on the **Default Config** tab. Otherwise, follow Google's instructions to add <a href="https://developer.android.com/studio/build/multidex#mdex-pre-l" target="_blank">Multidex support prior to Android 5.0</a>.
+10. Click **Apply**.
+11. Click **OK**.
+
 
 You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure the manifest file](../configure-the-manifest). If necessary, you can also [configure ProGuard](../configure-proguard).
 
