@@ -42,11 +42,12 @@ Before you begin the Gradle approach to add the SDK to your project, you need th
 
 
 <a name="gradle-import"></a>
-### Import SDK
+
+### Import the SDK
 
 Now that you have the required items listed in the previous subsection, you can import the JW Player SDK for Android to your project and add dependencies.
 
-#### Add SDK to your project
+#### Add the SDK to your project
 
 1. From within Android Studio, open your app.
 2. Open the build.gradle file for your project.
@@ -63,28 +64,33 @@ allprojects {
 }
 ```
 
-#### Add SDK dependencies
+#### Configure app module settings
 
 1. Open the build.gradle file for your app.
 2. If you have configured your project to `minSdkVersion 21` or higher, set `multiDexEnabled true` in the `defaultConfig`. Otherwise, follow Google's instructions to add <a href="https://developer.android.com/studio/build/multidex#mdex-pre-l" target="_blank">Multidex support prior to Android 5.0</a>.
 3. Use `compileOptions` to configure support for Java 8 language support.
-4. Add the `com.longtailvideo.jwplayer:jwplayer-core:x.x.x` and `com.longtailvideo.jwplayer:jwplayer-common:x.x.x` dependencies. Be sure to replace `x.x.x` with the dependency version number.
-5. Sync Gradle.
 
 ```groovy
 android {
-	  defaultConfig {
-	      ...
-		    minSdkVersion 21
+    defaultConfig {
+        ...
+        minSdkVersion 21
         multiDexEnabled true
     }
-		...
-		compileOptions {
-			  sourceCompatibility = '1.8'
-				targetCompatibility = '1.8'
-		}
+    ...
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
+```
 
+#### Add SDK dependencies
+
+1. In the build.gradle file for your app, add the `com.longtailvideo.jwplayer:jwplayer-core:x.x.x` and `com.longtailvideo.jwplayer:jwplayer-common:x.x.x` dependencies. Be sure to replace `x.x.x` with the dependency version number.
+2. Sync Gradle.
+
+```groovy
 dependencies {
   ...
   implementation 'com.longtailvideo.jwplayer:jwplayer-core:x.x.x'
@@ -143,12 +149,15 @@ Now that you have the required items listed in the previous subsection, you can 
 4. Select jwplayer-core-x.x.x and jwplayer-common-x.x.x.
 5. Click **OK**.
 6. Click **Apply**.
-7. Click **Modules** in the far-left navigation. Under **Modules**, be sure that your app is selected.
+7. Click **OK**.
+
+#### Configure app module settings
+
+1. Click **File > Project Structure... > Modules**. Under **Modules**, be sure that your app is selected.
 8. On the **Properties** tab, select **1.8 (Java 8)** from **Source Compatibility** and **Target Compatibility** drop-down menus. This ensures Java 8 language support for your app.
 9. If you have set **Compile Sdk Version** to **21** or higher, select **true** from the **Multi Dex Enabled** dropdown on the **Default Config** tab. Otherwise, follow Google's instructions to add <a href="https://developer.android.com/studio/build/multidex#mdex-pre-l" target="_blank">Multidex support prior to Android 5.0</a>.
 10. Click **Apply**.
 11. Click **OK**.
-
 
 You have retrieved your JW Player license key and imported the JW Player SDK for Android into your project. You can now [configure the manifest file](../configure-the-manifest). If necessary, you can also [configure ProGuard](../configure-proguard).
 
