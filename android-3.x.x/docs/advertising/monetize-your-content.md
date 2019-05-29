@@ -19,7 +19,6 @@ To begin running advertising through your JW Player, you need the items in the f
 | Item | Description |
 | -- | -- |
 | An embedded JW Player | A JW Player with content<br/><br/>If you have not already, [add a player to your activity](../../getting-started/add-a-player-to-an-activity).|
-| JW Player Business or Enterprise license | Account plan that enables access to advanced video player features like advertising<br/><br/>[Upgrade](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) to a Business or Enterprise license if you would like to access JW Player's advertising features. |
 | An ad tag | URL of the ad tag for VAST and IMA plugins, or a string placeholder for FreeWheel<br/><br/>The ad tag should be an active tag generated from an advertising platform in a [supported ad format](https://support.jwplayer.com/articles/ad-formats-reference">supported ad format). |
 
 <br/>
