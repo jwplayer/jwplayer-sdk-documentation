@@ -12,9 +12,9 @@ To add a player to your app, you must import the JW Player SDK for Android and t
 
 |Approach|Notes|
 |---|---|
-|[Gradle](#gradle)<br/><strong>(Recommended)</strong>|- No SDK download is required.<br/> - Core and optional modules must be added to your app. <br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/>- Either the standard SDK repository or SDK with Amazon Fire (Fire OS 5+) support repository can be accessed.<br/><br/>[GET STARTED](#gradle)|
-|[Local](#local)|- JW Player SDK for Android must be downloaded and unzipped.<br/>- Core and optional modules must be imported.<br/>- ProGuard must be configured. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/><br/>[GET STARTED](#local)|
-|[Demo](#demo)|- JW Player SDK for Android Open Source Demo must be downloaded.<br/>- All modules are included. No modules need to be imported or set as dependencies.<br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is not required. The open source demo is a basic demonstration app that allows you to experiment with the SDK.<br/><br/>[GET STARTED](#demo)|
+|Gradle<br/><strong>(Recommended)</strong>|- No SDK download is required.<br/> - Core and optional modules must be added to your app. <br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/>- Either the standard SDK repository or SDK with Amazon Fire (Fire OS 5+) support repository can be accessed.<br/><br/>[GET STARTED](#gradle)|
+|Local|- JW Player SDK for Android must be downloaded and unzipped.<br/>- Core and optional modules must be imported.<br/>- ProGuard must be configured. ProGuard protects the SDK classes.<br/>- An existing app is required.<br/><br/>[GET STARTED](#local)|
+|Demo|- JW Player SDK for Android Open Source Demo must be downloaded.<br/>- All modules are included. No modules need to be imported or set as dependencies.<br/>- ProGuard automatically applied. ProGuard protects the SDK classes.<br/>- An existing app is not required. The open source demo is a basic demonstration app that allows you to experiment with the SDK.<br/><br/>[GET STARTED](#demo)|
 
 <br/><br/>
 <a name="gradle"></a>
