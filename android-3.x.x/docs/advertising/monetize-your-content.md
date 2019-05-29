@@ -19,7 +19,7 @@ To begin running advertising through your JW Player, you need the items in the f
 | Item | Description |
 | -- | -- |
 | An embedded JW Player | A JW Player with content<br/><br/>If you have not already, [add a player to your activity](../../getting-started/add-a-player-to-an-activity).|
-| An ad tag | URL of the ad tag for VAST and IMA plugins, or a string placeholder for FreeWheel<br/><br/>The ad tag should be an active tag generated from an advertising platform in a [supported ad format](https://support.jwplayer.com/articles/ad-formats-reference">supported ad format). |
+| An ad tag | URL of the ad tag for VAST and IMA plugins, or a string placeholder for FreeWheel<br/><br/>The ad tag should be an active tag generated from an advertising platform in a [supported ad format](https://support.jwplayer.com/articles/ad-formats-reference">supported ad format</a>). |
 
 <br/>
 
