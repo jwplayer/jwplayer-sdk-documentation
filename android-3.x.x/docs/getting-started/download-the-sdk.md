@@ -154,7 +154,7 @@ Now that you have the required items listed in the previous subsection, you can 
 #### Configure app module settings
 
 1. Click **File > Project Structure... > Modules**. Under **Modules**, be sure that your app is selected.
-8. On the **Properties** tab, select **1.8 (Java 8)** from **Source Compatibility** and **Target Compatibility** drop-down menus. This ensures Java 8 language support for your app.
+8. On the **Properties** tab, select **1.8 (Java 8)** from the **Source Compatibility** and **Target Compatibility** drop-down menus. This ensures Java 8 language support for your app.
 9. If you have set **Compile Sdk Version** to **21** or higher, select **true** from the **Multi Dex Enabled** dropdown on the **Default Config** tab. Otherwise, follow Google's instructions to add <a href="https://developer.android.com/studio/build/multidex#mdex-pre-l" target="_blank">Multidex support prior to Android 5.0</a>.
 10. Click **Apply**.
 11. Click **OK**.
