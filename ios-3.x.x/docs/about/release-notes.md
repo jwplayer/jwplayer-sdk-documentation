@@ -4,6 +4,8 @@
 
 ##### Major Version Releases
 
+* [Version 3.5.0 (May 14, 2019)](#3-5-0)
+* [Version 3.4.0 (May 2, 2019)](#3-4-0)
 * [Version 3.3.0 (Apr 08, 2019)](#3-3-0)
 * [Version 3.2.0 (Jan 23, 2019)](#3-2-0)
 * [Version 3.1.0 (Aug 23, 2018)](#3-1-0)
@@ -21,6 +23,25 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-5-0"></a>
+## Version 3.5.0 (Build 92 - May 14, 2019)
+### Update
+* Migrated webview handling from [UIWebView](https://developer.apple.com/documentation/uikit/uiwebview) to [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview).
+
+### Fixes
+* Fixed an issue where lockscreen controls do not appear when the device is locked during playback.
+* Fixed an issue where VAST ads don't redirect to the advertisment's link when clicked.
+
+### Known Issue
+* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in a later iOS release.
+* Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in a later iOS release.
+
+<a name="3-4-0"></a>
+## Version 3.4.0 (Build 91 - May 2, 2019)
+### Updates
+* Upgraded to [Google IMA iOS version 3.8.1](https://developers.google.com/interactive-media-ads/docs/sdks/ios/v3/history) which includes IAB’s Open Measurement SDK that enables third-party viewability and verification measurement for ads served to mobile and desktop environments.
+* Added a new "Experimental API" class that enables the registration of video controls that overlay the media element. Typically, these video controls are considered obstructions and reduce the viewability rate calculated by the Open Measurement SDK. Learn more about Google IMA’s Open Measurement SDK integration and how to register video controls overlay obstructions [here](https://developers.google.com/interactive-media-ads/docs/sdks/ios/omsdk).
+
 <a name="3-3-0"></a>
 ## Version 3.3.0 (Build 88 - April 8, 2019)
 ### Updates
@@ -30,9 +51,7 @@
 * Added Fairplay DRM support for Airplay
 * Changed the Enums to NS_ENUM for better type-checking
 * Added `onWarning` callback for non-fatal error debugging or troubleshooting purposes
-
-### Fixes
-* Fixed an issue where the `onAdSchedule` callback would not fire for VMAP ads
+* Improved JW Player expired license user experience by adding an error message notification and halting player setup or playback
 
 ### Known Issue
 * Caption tracks with the `defaultTrack` property set to true will not be rendered when casting via Google Cast
