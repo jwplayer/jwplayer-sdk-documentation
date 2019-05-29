@@ -4,12 +4,12 @@
 
 <sup>Last Updated: May 29, 2019</sup>
 
-In addition to [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. 
+After [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. 
 
 * If you are publishing playlists that consist of short-duration videos, like tutorials or product reviews, you can define `startOn` (the first playlist item allowing ad playback) and `frequency` (the regularity of ads within a playlist). 
 * If you are publishing long-form content, like webinars or interviews, you can define `startOnSeek` (which determines if a returning visitor is served a pre-roll before resuming content playback) and `timeBetweenAds` (which sets the minimum time that must elapse between ads playback).
 
-You can read [Ad rule reference](https://support.jwplayer.com/articles/ad-rules-reference) to learn more how each ad rule impacts a user's experience.
+You can read [Ad rules reference](https://support.jwplayer.com/articles/ad-rules-reference) to learn more about how each ad rule impacts a user's experience.
 
 !!!important
 &bull; When using a VAST (`AdSource.VAST`) ad client, you can define any of the four `advertising.rules` properties.<br/><br/>&bull; When using an IMA (`AdSource.IMA`) or a FreeWheel (`AdSource.FW`) ad client, you can only define `startOn` and `frequency`.
@@ -19,7 +19,7 @@ You can read [Ad rule reference](https://support.jwplayer.com/articles/ad-rules-
 
 ## Implementation
 
-Use the following steps and code samples to define ad rules for the player your added to your activity with an [ad schedule](../monetize-your-content).
+Use the following steps and code samples to define ad rules for the [player your added to your activity](../../getting-started/add-a-player-to-an-activity) with an [ad schedule](../monetize-your-content).
 
 1. Create an <a href="https://developer.jwplayer.com/sdk/android/reference/index.html?com/longtailvideo/jwplayer/media/ads/AdRules.Builder.html" target="_blank">AdRules</a> object named `adRules`.
 2. Configure the properties of the `adRules` object for your use case.
@@ -31,7 +31,7 @@ Use the following steps and code samples to define ad rules for the player your 
 
 ### Example 1: Short-form content
 
-DESCRIPTION: The following example illustrates a short-form media item with a pre-roll. Additionally, the first ad plays before the first playlist item (`startOn: 1`). Then, subsequent pre-rolls appear for every third playlist item (`frequency: 3`), starting with the fourth playlist item.
+The following example illustrates a short-form media item with a pre-roll. The first ad plays before the first playlist item (`startOn: 1`). Then, subsequent pre-rolls appear for every third playlist item (`frequency: 3`), starting with the fourth playlist item.
 
 ```java
 mPlayerView = findViewById(R.id.jwplayer);
@@ -72,7 +72,7 @@ mPlayerView.setup(config);
 
 ### Example 2: Long-form content
 
-DESCRIPTION: The following example illustrates a long-form media item with multiple ad breaks. Additionally, the `startOnSeek` and `timeBeetweenAds` (set to 300 seconds) ad rules have been defined.
+The following example illustrates a long-form media item with multiple ad breaks. The `startOnSeek` and `timeBeetweenAds` (set to 300 seconds) ad rules have been defined.
 
 ```java
 mPlayerView = findViewById(R.id.jwplayer);
@@ -134,3 +134,25 @@ PlayerConfig config = new PlayerConfig.Builder()
 
 mPlayerView.setup(config);
 ```
+
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
