@@ -26,7 +26,7 @@
 <a name="3-5-1"></a>
 ## Version 3.5.1 (Build 93 - May 30, 2019)
 ### Fixes
-* Fixed an offline playback issue where only the first playlist item successfully plays in locally stored playlists. All subsequent playlist items fail to play.
+* Fixed an offline playback issue where only the first playlist item successfully plays in locally stored playlists and all subsequent playlist items fail to play.
 * Fixed a lockscreen issue where the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed when the device is locked. 
 * Fixed an issue where sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. 
 
