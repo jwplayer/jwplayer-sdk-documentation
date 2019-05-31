@@ -23,6 +23,16 @@
 * [Version 2.0.32 (Nov 17, 2015)](#2-0-32)
 * [Version 1.x](#1-x)
 
+<a name="3-5-1"></a>
+## Version 3.5.1 (Build 93 - May 30, 2019)
+### Fixes
+* Fixed an offline playback issue where only the first playlist item successfully plays in locally stored playlists and all subsequent playlist items fail to play.
+* Fixed a lockscreen issue where the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed when the device is locked. 
+* Fixed an issue where sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. 
+
+### Known Issue
+* During Freewheel ad playback, user cannot use play or pause in lockscreen control center when device is locked. 
+
 <a name="3-5-0"></a>
 ## Version 3.5.0 (Build 92 - May 14, 2019)
 ### Update
@@ -33,7 +43,7 @@
 * Fixed an issue where VAST ads don't redirect to the advertisment's link when clicked.
 
 ### Known Issue
-* When device is locked, the play/pause buttons in the lockscreen control center flicker for less than 1 second when pressed. This will be fixed in a later iOS release.
+* When device is locked, the play/pause buttons in the lockscreen control center flickers for less than 1 second when pressed. This will be fixed in a later iOS release.
 * Sometimes when the device is locked, the elapsed playback time does not display in the lockscreen control center time slider. This will be fixed in a later iOS release.
 
 <a name="3-4-0"></a>
