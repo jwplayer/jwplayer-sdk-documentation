@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last Updated: March 14, 2019</sup>
+<sup>Last Updated: March 14, 2019</sup> 
 
 The JW Player SDK for iOS (JW Player SDK) is built upon the native iOS player framework, AVFoundation. This allows you to create a custom video experience that accesses the speed and performance of the native OS in conjunction with JW Player features.
 
