@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
 ##### Major Version Releases
-* [Version 3.6.0 (June x, 2019)](#3-6-0)
+* [Version 3.6.0 (June 10, 2019)](#3-6-0)
 * [Version 3.5.0 (Mar 14, 2019)](#3-5-0)
 * [Version 3.4.0 (Jan 03, 2019)](#3-4-0)
 * [Version 3.3.0 (Nov 29, 2018)](#3-3-0)
@@ -25,9 +25,9 @@
 * [Version 1.x](#1-x) 
 
 <a name="3-6-0"></a>
-## Version 3.6.0 (Build 73 - June x, 2019)
+## Version 3.6.0 (Build 73 - June 10, 2019)
 ### Updates
-* Improved Android fullscreen handling for `RecyclerView` and non-`RecyclerView` configurations. The `JWPlayerView` will detect whether or not it is running a `RecyclerView`and will use the appropriate handler allowing for a seamless fullscreen user experience. 
+* Improved Android fullscreen handling for `RecyclerView` and non-`RecyclerView` configurations. The `JWPlayerView` will detect whether or not it is running a `RecyclerView` and will use the appropriate handler allowing for a seamless fullscreen user experience. 
 * Upgraded SDK to use JW Player [8.8.6](https://developer.jwplayer.com/release-notes/jw-player/?id=15975052#v886)
 
 <a name="3-5-2"></a>
