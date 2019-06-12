@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: May 29, 2019</sup>
+<sup>Last Updated: June 12, 2019</sup>
 
 After [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. 
 
@@ -72,7 +72,7 @@ mPlayerView.setup(config);
 
 ### Example 2: Long-form content
 
-The following example illustrates a long-form media item with multiple ad breaks. The `startOnSeek` and `timeBeetweenAds` (set to 300 seconds) ad rules have been defined.
+The following example illustrates a long-form media item with multiple ad breaks. The `startOnSeek` and `timeBetweenAds` (set to 300 seconds) ad rules have been defined.
 
 ```java
 mPlayerView = findViewById(R.id.jwplayer);
