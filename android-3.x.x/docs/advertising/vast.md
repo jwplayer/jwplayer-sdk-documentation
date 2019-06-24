@@ -148,6 +148,7 @@ PlayerConfig playerConfig = new PlayerConfig.Builder()
 mPlayerView.setup(playerConfig);
 ```
 
+<!--
 ## Assign an ad schedule to the entire playlist
 
 When using `AdSource.VAST` you have the option of setting an ad schedule for the entire playlist by creating an `Advertising` object.
@@ -189,6 +190,8 @@ PlayerConfig playerConfig = new PlayerConfig.Builder()
 // Setup your player with the config
 mPlayerView.setup(playerConfig);
 ```
+-->
+
 ## VMAP Advertising
 
 Currently, `VMAP` advertising schedules can only be assigned to the entire playlist using our `VMAPAdvertising` object. The added benefit of using `VMAP` is the fact that it contains its own ad schedule which can be served across different platforms.
@@ -376,6 +379,7 @@ PlayerConfig playerConfig = new PlayerConfig.Builder(this)
 mPlayerView.setup(playerConfig);
 ```
 
+<!--
 ## Timing your ads
 
 Timing your ads is accomplished with the [`AdBreak`](http://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/ads/AdBreak.html) object and its offset variable.

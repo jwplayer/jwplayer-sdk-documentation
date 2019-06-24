@@ -5,6 +5,7 @@
 ## Overview
 The JW Player SDK for Android is integrated with FreeWheel Ad Manager and supports VAST and VPAID advertising. In this document we will set up your project with FreeWheel and demonstrate all supported features of the FreeWheel implementation.
 
+<!--
 ## Supported Features
 * Pre-rolls
 * Mid-rolls
@@ -75,6 +76,7 @@ PlayerConfig playerConfig = new PlayerConfig.Builder()
 // Setup your player with the config
 mPlayerView.setup(playerConfig);
 ```
+-->
 
 ## Assign an Ad Schedule to a Playlist Item
 To setup an ad schedule for an individual playlist item, create an `AdBreak` object with a specific offset and assign a list of the ad breaks to the media. Note: the `FwAdvertising` object must be created and the FreeWheel settings configuration provided there.
@@ -120,7 +122,7 @@ PlayerConfig playerConfig = new PlayerConfig.Builder()
 // Setup the player
 mPlayerView.setup(playerConfig);
 ```
-
+<!--
 ## Ad Offset
 FreeWheel supports defining advertising offsets. The following formats are available:
 
@@ -129,6 +131,8 @@ FreeWheel supports defining advertising offsets. The following formats are avail
 **Seconds** | AdBreak adBreak = new AdBreak("15");
 **Percentage** | AdBreak adBreak = new AdBreak("30%");
 **Time Stamp** | AdBreak adBreak = new AdBreak("01:55:30:000");
+
+-->
 
 ## Custom Parameters
 Use the `setCustomParams` method of the `FwSettings` object to customize your FreeWheel ad request.
