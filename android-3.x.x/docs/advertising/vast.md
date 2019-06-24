@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-## Overview
+<!-- ## Overview -->
 
 The JW Player SDK for Android supports VAST advertising and follows the standards set by the IAB.
 
@@ -14,6 +14,7 @@ Access-Control-Allow-Origin: http://intercept.jw/
 This configuration is described in the IAB VAST specification on page 16: [http://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf](http://www.iab.com/wp-content/uploads/2015/06/VASTv3_0.pdf)
 !!!
 
+<!--
 ## Supported Features
 
 * VAST 4
@@ -26,6 +27,8 @@ This configuration is described in the IAB VAST specification on page 16: [http:
 * VPAID 2.0
 * Ad Tag Variables
 * Skip Offset
+
+-->
 
 ## Ad tag waterfalls
 
