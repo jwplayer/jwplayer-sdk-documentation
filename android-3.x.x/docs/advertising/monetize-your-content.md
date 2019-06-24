@@ -21,7 +21,11 @@ To begin running advertising through your JW Player, you need the items in the f
 
 ## Add a pre-roll ad break to a player
 
-The most basic advertising implementation is to run a single VAST ad tag as a pre-roll before each Playlist item.
+The most basic advertising implementation is to run a single VAST ad tag as a pre-roll before each playlist item.
+
+!!!important
+If you are using IMA ad tags, follow the steps in [Enable Google IMA](../enable-google-ima). If you are using FreeWheel, follow the steps in [Enable FreeWheel Ad Manager](../enable-freewheel-ad-manager).
+!!!
 
 Use the following steps to add a pre-roll to the [player you added to your activity](../../getting-started/add-a-player-to-an-activity): 
 
