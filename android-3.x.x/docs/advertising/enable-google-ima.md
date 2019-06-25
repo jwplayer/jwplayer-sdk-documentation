@@ -4,7 +4,9 @@
 
 <sup>Last Updated: June 26, 2019</sup>
 
-The JW Player SDK for Android integrates Google's IMA Android SDK. With this SDK integration, you can use the Google IMA ad client to request ads.
+The JW Player SDK for Android integrates <a href="https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility" target="_blank">Google's IMA Android SDK</a>. With this SDK integration, you can use the Google IMA ad client to request ads.
+
+<br/>
 
 ## Add the Google IMA dependency
 

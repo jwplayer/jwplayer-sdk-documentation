@@ -19,10 +19,26 @@ To begin running advertising through your JW Player, you need the items in the f
 
 <br/> 
 
-For more information on what the Google IMA SDK for Android supports out of the box, please visit:
+With the items in table, you can start to [monetize your content](../monetize-your-content).
 
-[https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility](https://developers.google.com/interactive-media-ads/docs/sdks/android/compatibility)
-
-<br/>
-
-If you have the items in table, you can start [monetizing your content](../monetize-your-content).
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
