@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-## Overview
+<!-- ## Overview
 The JW Player SDK for Android is integrated with Google's IMA SDK v#ima_sdk_version# and supports VAST and VMAP advertising. In this document we will set up your project with Google Play Services Ads and demonstrate all supported features of the Google IMA implementation.
 
 ## Supported Features
@@ -77,6 +77,7 @@ imaAdvertising.setCueText("Text that appears when you hover over the ad marker")
 imaAdvertising.setSkipMessage("Text that appears before skip is available");
 imaAdvertising.setSkipText("Text that appears when skip is available");
 ```
+-->
 	
 ## Assign an ad schedule to a playlist item
 

@@ -2,9 +2,9 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<!-- ## Overview -->
+<!-- ## Overview
 
-The JW Player SDK for Android supports VAST advertising and follows the standards set by the IAB.
+The JW Player SDK for Android supports VAST advertising and follows the standards set by the IAB.  -->
 
 !!!warning
 As of version 2.3 of the JW Player SDK for Android, your VAST advertisements must have CORS configured for: 
