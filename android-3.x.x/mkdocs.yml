@@ -38,10 +38,12 @@ nav:
   - 'Customization': 'chromecast/customization.md'
 - Advertising:
   - 'Monetize your content': 'advertising/monetize-your-content.md'
-  - 'Define ad rules': 'advertising/define-ad-rules.md'
   - 'VAST': 'advertising/vast.md'
+  - 'Enable Google IMA': 'advertising/enable-google-ima.md'
   - 'Google IMA': 'advertising/google-ima.md'
+  - 'Enable FreeWheel Ad Manager': 'advertising/enable-freewheel-ad-manager.md'
   - 'FreeWheel': 'advertising/freewheel.md'
+  - 'Define ad rules': 'advertising/define-ad-rules.md'
   - 'Advertising API': 'interaction/advertising.md'
 - Analytics:
   - 'Analytics': 'integration/analytics.md'
