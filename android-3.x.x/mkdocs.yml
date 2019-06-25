@@ -37,12 +37,14 @@ nav:
   - 'Enable casting to Chromecast devices': 'chromecast/enable-casting-to-chromecast-devices.md'
   - 'Customization': 'chromecast/customization.md'
 - Advertising:
+  - 'Overview': 'advertising/overview.md'
   - 'Monetize your content': 'advertising/monetize-your-content.md'
   - 'VAST': 'advertising/vast.md'
   - 'Enable Google IMA': 'advertising/enable-google-ima.md'
   - 'Google IMA': 'advertising/google-ima.md'
   - 'Enable FreeWheel Ad Manager': 'advertising/enable-freewheel-ad-manager.md'
   - 'FreeWheel': 'advertising/freewheel.md'
+  - 'Additional advertising functionality': 'advertising/additional-functionality.md'
   - 'Define ad rules': 'advertising/define-ad-rules.md'
   - 'Advertising API': 'interaction/advertising.md'
 - Analytics:
