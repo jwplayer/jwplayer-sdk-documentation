@@ -2,18 +2,14 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: May 29, 2019</sup>
+<sup>Last Updated: June 13, 2019</sup>
 
-After [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. 
+After [adding ads](../monetize-your-content) to your content, you can define ad rules that control how often a viewer sees ads while viewing your video content. <strong>Ad rules can be used only when using a VAST (`AdSource.VAST`) ad client</strong>.
 
 * If you are publishing playlists that consist of short-duration videos, like tutorials or product reviews, you can define `startOn` (the first playlist item allowing ad playback) and `frequency` (the regularity of ads within a playlist). 
 * If you are publishing long-form content, like webinars or interviews, you can define `startOnSeek` (which determines if a returning visitor is served a pre-roll before resuming content playback) and `timeBetweenAds` (which sets the minimum time that must elapse between ads playback).
 
 You can read [Ad rules reference](https://support.jwplayer.com/articles/ad-rules-reference) to learn more about how each ad rule impacts a user's experience.
-
-!!!important
-&bull; When using a VAST (`AdSource.VAST`) ad client, you can define any of the four `advertising.rules` properties.<br/><br/>&bull; When using an IMA (`AdSource.IMA`) or a FreeWheel (`AdSource.FW`) ad client, you can only define `startOn` and `frequency`.
-!!!
 
 <br/>
 
@@ -72,7 +68,7 @@ mPlayerView.setup(config);
 
 ### Example 2: Long-form content
 
-The following example illustrates a long-form media item with multiple ad breaks. The `startOnSeek` and `timeBeetweenAds` (set to 300 seconds) ad rules have been defined.
+The following example illustrates a long-form media item with multiple ad breaks. The `startOnSeek` and `timeBetweenAds` (set to 300 seconds) ad rules have been defined.
 
 ```java
 mPlayerView = findViewById(R.id.jwplayer);

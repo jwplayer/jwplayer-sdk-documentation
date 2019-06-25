@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last Updated: April 9, 2019
+<sup>Last Updated: June 7, 2019
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
@@ -44,14 +44,14 @@ end
 - (void)setUpCastController
 {
     self.castController = [[JWCastController alloc] initWithPlayer:self.player];
-    self.castController.chromeCastReceiverAppID = kGCKMediaDefaultReceiverApplicationID;
+    self.castController.chromeCastReceiverAppID = kGCKDefaultMediaReceiverApplicationID;
     self.castController.delegate = self;
 }
 ```
 ```Swift
 func setUpCastController() {
     castController = JWCastController(player: player)
-    castController?.chromeCastReceiverAppID = kGCKMediaDefaultReceiverApplicationID
+    castController?.chromeCastReceiverAppID = kGCKDefaultMediaReceiverApplicationID
     castController?.delegate = self
 }
 ```
@@ -61,21 +61,34 @@ func setUpCastController() {
 
 **5.** Call the `scanForDevices` method to scan for devices: `[self.castController scanForDevices];`. When devices become available, the `JWCastingDelegate` method, `onCastingDevicesAvailable:`, is called and returns an array of `JWCastingDevices`.
 
-<br/>
-
-**6.** Call the `connectToDevice:` method to connect to a device.  When a connection is established, the `JWCastingDelegate` method, `onConnectedToCastingDevice:`, is called. This signals the ability to cast the video that is reproduced by the `JWPlayerController`.
-
 ```Objective-C
 -(void)onCastingDevicesAvailable:(NSArray *)devices
 {
-    JWCastingDevice *chosenDevice = devices[0];
-    [self.castController connectToDevice:chosenDevice];
+    self.availableDevices = devices;
 }
 ```
 ```Swift
 func onCastingDevicesAvailable(_ devices: [JWCastingDevice]!) 
 {
-    let chosenDevice = devices.first
+    availableDevices = devices
+}
+```
+
+<br/>
+
+**6.** Call the `connectToDevice:` method to connect to a device.  When a connection is established, the `JWCastingDelegate` method, `onConnectedToCastingDevice:`, is called. This signals the ability to cast the video that is reproduced by the `JWPlayerController`.
+
+```Objective-C
+-(void)onUserSelectedDevice:(NSInteger)index
+{
+    JWCastingDevice *chosenDevice = availableDevices[index];
+    [self.castController connectToDevice:chosenDevice];
+}
+```
+```Swift
+func onUserSelectedDevice(_ index: Int!) 
+{
+    let chosenDevice = availableDevices[index]
     castController?.connect(to: chosenDevice)
 }
 ```
