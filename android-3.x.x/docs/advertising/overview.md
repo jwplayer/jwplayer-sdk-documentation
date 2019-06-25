@@ -19,7 +19,7 @@ To begin running advertising through your JW Player, you need the items in the f
 
 <br/> 
 
-With the items in table, you can start to [monetize your content](../monetize-your-content).
+With the items in the table, you can start to [monetize your content](../monetize-your-content).
 
 <br/><br/>
 <div id="wufoo-mff60sc1xnn4cu">
