@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: May 9, 2019</sup> 
+<sup>Last updated: June 26, 2019</sup> 
 
 !!!important
 Use of the iOS SDK v3 requires a JW Player Enterprise license. Please [contact our team](https://www.jwplayer.com/contact-us/?utm_source=developer&utm_medium=CTA&utm_campaign=player-docs) if you would like to upgrade your account.<br/><br/>
@@ -39,7 +39,7 @@ Before you begin this approach to add the SDK to your project, you need the item
 |---|---|
 |Enterprise or Developer license|JW Player SDK for iOS requires an [Enterprise](https://www.jwplayer.com/contact-us/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Xcode| Download and install <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode<a/>.|
-|License key | 1. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > PLAYER DOWNLOADS & KEYS**.<br/>2. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
+|License key | 1. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > Downloads & Keys**.<br/>2. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
 
 
 <a name="cocoapods-addsdk"></a>
@@ -104,7 +104,7 @@ Before you begin this approach to add the SDK to your project, you need the item
 |---|---|
 |Enterprise or Developer license|JW Player SDK for iOS requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Xcode| Download and install <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode<a/>.|
-|JW Player SDK for iOS and license key | 1. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > PLAYER DOWNLOADS & KEYS**.<br/>2. In the **Downloads** section, select a **VERSION** of the iOS SDK from the dropdown menu.<br/>3. Click the icon in the **DOWNLOAD** column.<br/>4. Copy the **LICENSE KEY** for the JW Player SDK for iOS.<br/>5. On your computer, unzip the JW Player SDK for iOS .zip file.|
+|JW Player SDK for iOS and license key | 1. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > Downloads & Keys**.<br/>2. In the **Downloads** section, select a **VERSION** of the iOS SDK from the dropdown menu.<br/>3. Click the icon in the **DOWNLOAD** column.<br/>4. Copy the **LICENSE KEY** for the JW Player SDK for iOS.<br/>5. On your computer, unzip the JW Player SDK for iOS .zip file.|
 
 <a name="local-addsdk"></a>
 
@@ -140,7 +140,7 @@ Before you can start experimenting with the JW Player SDK for iOS Open Source D
 |---|---|
 |Enterprise or Developer license|JW Player Open Source Demo for iOS. requires an [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade) or [Developer](https://developer.jwplayer.com/sign-up/) license.|
 |Xcode| Download and install <a href="https://developer.apple.com/support/xcode/" target="_blank">Xcode<a/>.|
-|JW Player SDK for iOS Open Source Demo and license key | 1. Download the <a href="https://github.com/jwplayer/jwplayer-sdk-ios-demo" target="_blank">JW Player Open Source Demo for iOS</a>. <br/>2. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > PLAYER DOWNLOADS & KEYS**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
+|JW Player SDK for iOS Open Source Demo and license key | 1. Download the <a href="https://github.com/jwplayer/jwplayer-sdk-ios-demo" target="_blank">JW Player Open Source Demo for iOS</a>. <br/>2. From your <a href="https://dashboard.jwplayer.com/#/welcome" target="_blank">JW Player dashboard</a>, click **Players > Downloads & Keys**.<br/>3. In the **Downloads** section, copy the **LICENSE KEY** for the JW Player SDK for iOS.|
 
 You have retrieved your JW Player license key and downloaded the JW Player SDK for iOS Open Source Demo. You can now [configure your project](../configure-your-project).
 

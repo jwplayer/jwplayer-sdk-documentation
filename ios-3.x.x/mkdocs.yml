@@ -31,14 +31,15 @@ nav:
   - 'AirPlay': 'casting/airplay.md'
   - 'Chromecast': 'casting/chromecast.md'
 - Advertising:
-  - 'Basic Ad Embed': 'monetization/ad-configuration.md'
+  - 'Overview': 'monetization/overview.md'
+  - 'Monetize your content': 'monetization/monetize-your-content.md'
   - 'Ad Scheduling': 'monetization/ad-schedules.md'
   - 'Tag Waterfall': 'monetization/ad-waterfall.md'
   - 'Ad tag variables': 'monetization/ad-tag-variables.md'
   - 'Non linear ads': 'monetization/nonlinear-ads.md'
   - 'Google IMA': 'monetization/ad-google_ima.md'
   - 'FreeWheel': 'monetization/freewheel.md'
-  - 'Ad Rules': 'monetization/ad-rules.md'
+  - 'Define ad rules': 'monetization/define-ad-rules.md'
 - Analytics:
   - 'Analytics': 'integration/analytics.md'
 - Troubleshooting:

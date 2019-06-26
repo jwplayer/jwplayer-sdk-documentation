@@ -2,26 +2,15 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: May 29, 2019</sup>
+<sup>Last Updated: June 26, 2019</sup>
 
-JW Player's advertising features help you to monetize your content with video ads while keeping your viewers engaged. JW Player supports standard ad types (VAST, VPAID, VMAP), accommodates third-party technologies (Google IMA SDK, FreeWheel SDK), and supports any ad server that returns the previously-mentioned ad types. You can customize your viewers' ad experiences with ad rules, ad breaks, and localized player messaging.
+The most basic advertising implementation is to run a single VAST ad tag as a pre-roll before each playlist item.
 
-<br/>
-
-## Get the required items
-
-To begin running advertising through your JW Player, you need the items in the following table.
-
-| Item | Description |
-| -- | -- |
-| An embedded JW Player | A JW Player with content<br/><br/>If you have not already, [add a player to your activity](../../getting-started/add-a-player-to-an-activity).|
-| An ad tag | URL of the ad tag for VAST and IMA plugins, or a string placeholder for FreeWheel<br/><br/>The ad tag should be an active tag generated from an advertising platform in a [supported ad format](https://support.jwplayer.com/articles/ad-formats-reference). |
-
-<br/>
+!!!important
+If you are using IMA ad tags, follow the steps in [Enable Google IMA](../enable-google-ima). If you are using FreeWheel, follow the steps in [Enable FreeWheel Ad Manager](../enable-freewheel-ad-manager).
+!!!
 
 ## Add a pre-roll ad break to a player
-
-The most basic advertising implementation is to run a single VAST ad tag as a pre-roll before each Playlist item.
 
 Use the following steps to add a pre-roll to the [player you added to your activity](../../getting-started/add-a-player-to-an-activity): 
 
@@ -76,7 +65,7 @@ Use the following steps to add multiple ad breaks to the previous VAST pre-roll 
 
 1. Define an additional `AdBreak` object.
 2. Assign an ad tag to the `tag` property. 
-3. When defining the <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/ads/AdBreak.Builder.html#offset-java.lang.String-" target="_blank">offset</a> property, choose one of the following values to schedule a mid-roll or post-roll ad:<br/><br/>**Mid-roll**<br/>&nbsp;&nbsp;- **{number}**: (String) Ad plays after the specified number of seconds.<br/><br/>&nbsp;&nbsp;- **{timecode}**: (String) Ad plays at a specific time, in `hh:mm:ss:mmm` format.<br/>&nbsp;&nbsp;- **{xx%}**: (String) Ad plays after xx% of the content has played.<br/><br/>**Post-roll**<br/>&nbsp;&nbsp;- `post`: (String) Ad plays after the content.<br/><br/>
+3. When defining the <a href="https://developer.jwplayer.com/sdk/android/reference/com/longtailvideo/jwplayer/media/ads/AdBreak.Builder.html#offset-java.lang.String-" target="_blank">offset</a> property, choose one of the following values to schedule a mid-roll or post-roll ad:<br/><br/>**Mid-roll**<br/>&nbsp;&nbsp;- **{number}**: (String) Ad plays after the specified number of seconds.<br/>&nbsp;&nbsp;- **{timecode}**: (String) Ad plays at a specific time, in `hh:mm:ss:mmm` format.<br/>&nbsp;&nbsp;- **{xx%}**: (String) Ad plays after xx% of the content has played.<br/><br/>**Post-roll**<br/>&nbsp;&nbsp;- `post`: (String) Ad plays after the content.<br/><br/>
 4. Add the additional `AdBreak` object to `adSchedule`.
 
 ```java

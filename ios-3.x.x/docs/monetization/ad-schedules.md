@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-Ads can be scheduled in two ways:
+<!-- Ads can be scheduled in two ways:
 
 ## An adSchedule Object
 
@@ -21,6 +21,7 @@ Set an array of AdBreak objects to the schedule property of the config's adverti
 	JWAdBreak(tag: "/vast.xml", offset:"50%"),
 	JWAdBreak(tag: "/vast.xml", offset:"post")]
 ```
+-->
 
 ## VMAP Advertisements##
 
