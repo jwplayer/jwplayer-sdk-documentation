@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last updated: June 26, 2019</sup>
+<sup>Last updated: June 26, 2019</sup> 
 
 JW Player's advertising features help you to monetize your content with video ads while keeping your viewers engaged. JW Player supports standard ad types (VAST, VPAID, VMAP), accommodates third-party technologies (Google IMA SDK, FreeWheel SDK), and supports any ad server that returns the previously-mentioned ad types. You can customize your viewers' ad experiences with ad rules, ad breaks, and localized player messaging.
 
