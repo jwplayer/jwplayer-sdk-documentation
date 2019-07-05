@@ -13,12 +13,14 @@ Use the following steps and code examples to add a player to the **ViewControlle
 4. Initialize the `player` with the `config`.
 
 ```Objective-C
+@interface ObjCViewController()
+
 @property (nonatomic) JWPlayerController *player;
 
 @end
 
-@implementation ObjCViewController
 
+@implementation ObjCViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +34,8 @@ Use the following steps and code examples to add a player to the **ViewControlle
     [super viewDidAppear];
     [self.view addSubview:self.player.view];
 }
+
+@end
 ```
 
 ```Swift
