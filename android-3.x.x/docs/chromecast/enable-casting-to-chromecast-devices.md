@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: May 16, 2019 </sup>
+<sup>Last Updated: August 6, 2019 </sup>
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
@@ -60,6 +60,8 @@ Now that you have added the Google Cast dependency, you must configure your app:
 
 **1.** Implement the <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/LaunchOptions" target="_blank">OptionsProvider</a> interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
 
+This interface creates an instance of <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/LaunchOptions" target="_blank">LaunchOptions</a> that defines how the receiver application is launched. For example, `setLanguage()` allows you to set the language to be used by the receiver application.
+
 This interface also creates an instance of <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/framework/CastOptions.Builder" target="_blank">CastOptions</a> that defines the behavior of the framework. For example, `setReceiverApplicationId()` allows you to filter discovery results and to launch the receiver app when a cast session starts.
 
 ```java
@@ -67,8 +69,13 @@ public class CastOptionsProvider implements OptionsProvider {
 
     @Override
     public CastOptions getCastOptions(Context context) {
+        LaunchOptions launchOptions = new LaunchOptions.Builder()
+            .setLanguage("en-US")
+            .build();
+            
         CastOptions castOptions = new CastOptions.Builder()
             .setReceiverApplicationId(context.getString(R.string.app_id))
+            .setLaunchOptions(launchOptions);
             .build();
 
         return castOptions;
