@@ -1,6 +1,6 @@
 # Enable FreeWheel Ad Manager
 
-<sup>Last Updated: August 6, 2017</sup>
+<sup>Last Updated: August 6, 2019</sup>
 
 The JW Player SDK for iOS integrates FreeWheel's SDK. With this SDK integration, you can use the FreeWheel ad client to request ads.
 
