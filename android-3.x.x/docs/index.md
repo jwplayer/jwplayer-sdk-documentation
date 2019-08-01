@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Update: August 6, 2019
+<sup>Last Updated: August 6, 2019
 
 ## About the SDK
 
