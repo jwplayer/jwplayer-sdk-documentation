@@ -4,6 +4,8 @@
 
 The JW Player SDK for iOS integrates FreeWheel's SDK. With this SDK integration, you can use the FreeWheel ad client to request ads.
 
+<br/>
+
 ## Get required items
 
 Before you add the FreeWheel Ad Manager to your app, you need the following values from your FreeWheel account.  If you do not know where to find these values, contact your FreeWheel account representative.
@@ -15,6 +17,8 @@ Before you add the FreeWheel Ad Manager to your app, you need the following valu
 | `profileId` | FreeWheel identifier of a particular application environment | `96749:global-cocoa` |
 | `sectionId` | FreeWheel identifier of a location where the video content plays | `DemoSiteGroup.01` |
 | `serverId` | URL of FreeWheel ad server | `http://demo.v.fwmrm.net/ad/g/1` |
+
+<br/>
 
 ## Add the FreeWheel Ad Manager dependency
 
@@ -30,7 +34,7 @@ If you are using Swift instead of Objective-C, use the <a href="https://hub.free
 4. Click **Finish**.
 5. Select the target in the project editor.
 6. Click **General**.
-7. Verify that the **AdManager.framework** appears in both the **Embedded Binaries** and **Linked Frameworks and Libraries** sections. <br/><br/>If the framework does not appear in both sections, delete the instance of the framework. Then, drag the **AdManager.framework** folder from the Xcode navigation to the **Embedded Binaries** section. The framework should appear in both sections.
+7. Verify that the **AdManager.framework** appears in both the **Embedded Binaries** and **Linked Frameworks and Libraries** sections. <br/><br/>If the framework does not appear in both sections, delete the instance of the framework. Then, drag the **AdManager.framework** folder from the Xcode navigation to the **Embedded Binaries** section. The framework should appear in both sections.<br/>
 8. Highlight your target and in **Build Settings > Linking > Other Linker Flags**, add `-ObjC`. This is <a href="https://hub.freewheel.tv/pages/viewpage.action?spaceKey=techdocs&title=How+to+Compile+FreeWheel+iOS+SDK+and+Optional+Modules+into+App#HowtoCompileFreeWheeliOSSDKandOptionalModulesintoApp-Enable-ObjCLinkerFlag" target="_blank">required to compile the app against the FreeWheel iOS SDK</a>.
 
 <br/>
@@ -45,7 +49,7 @@ Use the following steps to add a pre-roll ad to [the player you added to your vi
 4. Define `config.advertising.client` as `JWAdClientFreewheel` (Obj-C) or `.freewheel` (Swift). This defines the ad client.
 5. Assign `adBreak` to the <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdConfig.html#//api/name/schedule" target="_blank">schedule</a> property of the `JWAdConfig`. This adds the ad schedule to the player's `config` property.
 
-```Objective-C
+```Obj-C
 @property (nonatomic) JWPlayerController *player;
 @property (nonatomic, weak) IBOutlet UIView *playerContainerView;
 @end
@@ -121,7 +125,7 @@ Use the following steps to add multiple ad breaks to the previous pre-roll examp
 4. Add the additional `AdBreak` object to the `schedule` array.
 
 
-```Objective-C
+```Obj-C
 @property (nonatomic) JWPlayerController *player;
 @property (nonatomic, weak) IBOutlet UIView *playerContainerView;
 @end
@@ -194,3 +198,26 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
