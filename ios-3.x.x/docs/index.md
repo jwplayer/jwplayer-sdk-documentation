@@ -41,6 +41,8 @@ Each version of this SDK has been built to work with a specific plugin version. 
 | 3.5.x | 3.8.1 | 6.16.3.0 | 4.3.5 |
 | 3.6.0 | 3.8.1 | 6.16.3.0 | 4.3.5 |
 
+<br/>
+
 ## Documentation
 
 This developer guide provides best practice approaches for implementing this SDK. We also provide comprehensive documentation for each class in our [SDK reference](https://developer.jwplayer.com/sdk/ios/reference/). 
