@@ -24,12 +24,12 @@ The JW Player SDK for iOS is built upon the native iOS player framework, AVFound
 ## Requirements
 
 ### General
-* JW Player Enterprise or Developer license
+* JW Player [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade/) or [Developer](https://developer.jwplayer.com/sign-up/) license
 * iOS version 9.0+
 
 ### Plugin support
 
-Each version of this SDK has been built to work with a specific plugin version. Use the following table to ensure that you are referencing the correct plugin version in your Podfile.
+Each version of this SDK has been built to work with a specific plugin version. Use the following table to ensure that you are referencing the correct plugin version in your app.
 
 | JW Player iOS SDK | FreeWheel SDK | Google Cast SDK | Google IMA SDK |
 | --- | --- | --- | --- |
