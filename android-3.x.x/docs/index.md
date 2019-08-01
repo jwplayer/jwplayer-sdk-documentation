@@ -23,7 +23,7 @@ The JW Player SDK for Android is a media player for the Android Operating System
 
 ## Requirements
 
-* JW Player Enterprise or Developer license
+* JW Player [Enterprise](https://www.jwplayer.com/pricing/?utm_source=developer&utm_medium=CTA&utm_campaign=Developer%20Nav%20Upgrade/) or [Developer](https://developer.jwplayer.com/sign-up/) license
 * Android 4.1 (API level 16)
 
 <br/>
