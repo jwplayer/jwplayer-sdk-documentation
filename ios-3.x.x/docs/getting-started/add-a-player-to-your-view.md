@@ -34,8 +34,9 @@ Use the following steps and code examples to add a player to the **ViewControlle
     [super viewDidAppear];
     [self.view addSubview:self.player.view];
 }
-```
 
+@end
+```
 ```Swift
 class ViewController: UIViewController {
     var player: JWPlayerController?
@@ -52,8 +53,6 @@ class ViewController: UIViewController {
         view.addSubview(player!.view)
     }
 }
-
-@end
 ```
 
 <br/><br/>
