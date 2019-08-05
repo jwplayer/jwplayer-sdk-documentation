@@ -2,12 +2,13 @@
 
 <img src="https://img.shields.io/badge/SDK-Android%20v3-0AAC29.svg?logo=android">
 
+
 <sup>Last Updated: August 6, 2019 </sup>
 
 The Google Cast framework enables a viewer to stream video and audio content to a compatible TV or sound system. By enabling the Google Cast framework in your app, a viewer can use a cast button to stream your content to a Chromecast-enabled device on a shared network connection.
 
 !!!important
-&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.<br/><br/>&bull; DVR and live streaming capabilities are currently not supported.
+&bull; The JW Player SDK supports casting to the Default Media Receiver and to Styled Media Receivers.<br/><br/>&bull; Custom receivers are not officially supported. However, if the video playback implements the same interface used in the Default Media Receiver, you may be able to initiate a casting session with a custom receiver.<br/><br/>&bull; To specify a receiver, specify a media receiver app ID when initializing the CastManager.
 !!!
 
 The following sections explain how to enable the Google Cast framework for your Android app:
@@ -245,3 +246,40 @@ Add [JWPlayerFragment](../../usage/jwplayer-fragment), [JWPlayerSupportFragment]
 
 Visit <a href="https://developers.google.com/cast/docs/android_sender" target="_blank">Google Cast</a> to discover additional feature and customization options.
 
+<br/>
+
+## FAQ
+
+**Which features are not supported when casting with an Android SDK player?**
+<br/><br/>
+The following features are not supported during a casting session with an Android SDK player:
+
+* Advertising
+* Multiple-audio tracks or AudioTrack switching<sup>1</sup>
+* In-manifest WebVTT captions<sup>1</sup>
+* 608 captions
+* DVR and live streaming capabilities
+
+<sup>1</sup>Chromecast does not support these features natively.
+
+<br/><br/>
+<div id="wufoo-mff60sc1xnn4cu">
+Use this <a href="https://jwplayerdocs.wufoo.com/forms/mff60sc1xnn4cu">form</a> to provide your feedback.
+</div>
+<script type="text/javascript">var mff60sc1xnn4cu;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'jwplayerdocs',
+'formHash':'mff60sc1xnn4cu',
+'autoResize':true,
+'height':'288',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true,
+'defaultValues': 'field118=' + location.pathname};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { mff60sc1xnn4cu = new WufooForm();mff60sc1xnn4cu.initialize(options);mff60sc1xnn4cu.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>

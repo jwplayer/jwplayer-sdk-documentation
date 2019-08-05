@@ -14,7 +14,7 @@ The JW Player SDK for iOS is integrated with FreeWheel Ad Manager and supports V
 * Multiple Ad Instances
 * Custom Parameters
 
-## Setting up your project for FreeWheel SDK
+<!-- ## Setting up your project for FreeWheel SDK
 
 ### Building with the Framework
 1. Add the FreeWheel `AdManager.framework` to your project. This can be downloaded from your [FreeWheel Hub](https://hub.freewheel.tv/) account (sign-in required). 
@@ -70,7 +70,7 @@ To configure Freewheel ads you have to use `JWConfig`, `JWAdConfig` and `JWFreew
 
     JWConfig *conf = [[JWConfig alloc] init];
     conf.advertising = advertising;
-
+-->
 
 ## Assign an Ad Schedule to a Playlist Item
 Set up an ad schedule for FreeWheel ads using the `JWAdBreak` API and assign it to the adSchedule property of the `JWConfig` instance.
@@ -94,7 +94,7 @@ Note: While creating the `JWAdBreak` instance you must to pass two parameters - 
 - `tag` - for FreeWheel it can be any string with any content - it is used for determining a particular ad break in the FreeWheel plugin internally. If you have multiple ad breaks placed in the ad schedule array, the tag value should be unique for each ad break.
 - `offset` - position where ad break should be played. Use “pre” for the JWAdBreak offset value if you want to play pre-roll. Please reference the following section that describes how to set ad offsets for mid-rolls.
 
-## Ad Offset
+<!-- ## Ad Offset
 FreeWheel supports defining advertising offsets. The following formats are available:
 
 |Type|Example  |
@@ -102,6 +102,8 @@ FreeWheel supports defining advertising offsets. The following formats are avail
 **Seconds** | JWAdBreak *secBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_1" offset:@"12"];
 **Percentage** | JWAdBreak *percBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_2" offset:@“50%”];
 **Time Stamp** | JWAdBreak *timestampBreak = [JWAdBreak adBreakWithTag:@"custom_midroll_3" offset:@“00:00:45”];
+
+-->
 
 ## Custom Parameters
 
@@ -116,7 +118,7 @@ fwConf.custom = @{@"key1": @"val1", @"key2": @"val2"};
 ## VPAID
 No additional setup required to use VPAID. FreeWheel configuration for VPAID and VAST are the same. However, the FreeWheel campaign should be configured to use VPAID. 
 
-## Unsupported Features
+<!-- ## Unsupported Features
 
 ### Postroll
-Post-rolls are not supported at this time but will be added in the future.
+Post-rolls are not supported at this time but will be added in the future. -->
