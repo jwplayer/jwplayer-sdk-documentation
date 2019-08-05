@@ -17,7 +17,7 @@ extra:
 pages:
 - Welcome:
   - 'Introduction': 'index.md'
-- Get Started:
+- Get started:
   - 'System Requirements': 'intro/requirements.md'
   - 'Library and Project Setup': 'intro/getting-started.md'
 - Create a JW Player:
