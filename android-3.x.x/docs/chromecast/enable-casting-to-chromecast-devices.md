@@ -97,7 +97,7 @@ public class CastOptionsProvider implements OptionsProvider {
 <application>
     ...
     <meta-data
-        android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+        android:name="OPTIONS_PROVIDER_CLASS_NAME"
         android:value="com.foo.CastOptionsProvider" />
 
 </application>
