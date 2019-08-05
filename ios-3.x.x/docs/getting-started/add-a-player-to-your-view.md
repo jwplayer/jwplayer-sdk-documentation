@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=apple">
 
-<sup>Last Updated: May 9, 2019</sup>
+<sup>Last Updated: August 6, 2019</sup>
 
 Use the following steps and code examples to add a player to the **ViewController.h** or **ViewController.swift** file of your app:
 
@@ -13,6 +13,8 @@ Use the following steps and code examples to add a player to the **ViewControlle
 4. Initialize the `player` with the `config`.
 
 ```Objective-C
+@interface ObjCViewController ()
+
 @property (nonatomic) JWPlayerController *player;
 
 @end
@@ -32,8 +34,9 @@ Use the following steps and code examples to add a player to the **ViewControlle
     [super viewDidAppear];
     [self.view addSubview:self.player.view];
 }
-```
 
+@end
+```
 ```Swift
 class ViewController: UIViewController {
     var player: JWPlayerController?
