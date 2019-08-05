@@ -28,7 +28,7 @@ To begin using the FreeWheel ad client, you must first add a dependency to your 
 If you are using Swift instead of Objective-C, use the <a href="https://hub.freewheel.tv/display/techdocs/Use+AdManager+in+a+Swift+Project" target="_blank">FreeWheel guide</a> to set up your library.
 !!!
 
-1. From your FreeWheel representative, request the FreeWheel Ad Manager SDK for iOS that is bitcode-enabled with dynamic libraries.
+1. From your FreeWheel representative, request the FreeWheel Ad Manager SDK for iOS that is bitcode-enabled with dynamic libraries. This <a href="https://developer.jwplayer.com/sdk/ios/docs/developer-guide/" target="_blank">table</a> shows the minimum supported FreeWheel SDK version that has been tested for each JW Player iOS SDK version.
 2. From within Xcode, expand the project in the navigator.
 3. Drag FreeWheel's **AdManager.framework** file from your desktop into the **Frameworks** folder in Xcode. In the pop-up screen that appears, be sure to select your target.
 4. Click **Finish**.
