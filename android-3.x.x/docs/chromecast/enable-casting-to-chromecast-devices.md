@@ -59,7 +59,7 @@ Now that you have added the Google Cast dependency, you must configure your app:
 
 <br/>
 
-**1.** Implement the <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/LaunchOptions" target="_blank">OptionsProvider</a> interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
+**1.** Implement the `OptionsProvider` interface. This interface supplies options needed to initialize `CastContext`. `CastContext` is a global singleton object that coordinates all interactions of the framework.
 
 This interface creates an instance of <a href="https://developers.google.com/android/reference/com/google/android/gms/cast/LaunchOptions" target="_blank">LaunchOptions</a> that defines how the receiver application is launched. For example, `setLanguage()` allows you to set the language to be used by the receiver application.
 
