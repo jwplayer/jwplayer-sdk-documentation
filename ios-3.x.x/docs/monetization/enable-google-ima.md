@@ -53,8 +53,6 @@ Use the following steps to add a pre-roll ad to the player you added to your vie
 4. Add `adBreak` to the <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdConfig.html#//api/name/schedule" target="_blank">schedule</a> array property of the `JWAdConfig`. This adds the ad schedule to the player's `config` property.
 
 ```Obj-C
-...
-
 @property (nonatomic) JWPlayerController *player;
 @property (nonatomic, weak) IBOutlet UIView *playerContainerView;
 @end
@@ -77,8 +75,6 @@ Use the following steps to add a pre-roll ad to the player you added to your vie
     [super viewDidAppear];
     [self.view addSubview:self.player.view];
 }
-
-...
 ```
 ```Swift
 class ViewController: UIViewController {
