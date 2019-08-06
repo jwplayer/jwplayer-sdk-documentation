@@ -20,7 +20,7 @@ The JW Player SDK for iOS is built upon the native iOS player framework, AVFound
 * API design that enables native control creation and can be applied to Android and web player implementations
 * Casting
 * Caption support
-* Analytics 
+* Analytics
 
 <br/>
 
