@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/SDK-iOS%20v3-0AAC29.svg?logo=android">
 
-<sup>Last Updated: August 6, 2019</sup>
+<sup>Last Updated: August 29, 2019</sup>
 
 The JW Player SDK for iOS integrates Google's IMA iOS SDK. With this SDK integration, you can use the Google IMA ad client to request ads.
 
@@ -47,7 +47,7 @@ Now that you have the required items listed in the previous subsection, you can 
 
 Use the following steps to add a pre-roll ad to the player you added to your view:
 
-1. Instantiate a <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdBreak.html" target="_blank">JWAdBreak</a> object called `adBreak`. At a minimum, you must assign an ad tag URL to the `tag` property.
+1. Instantiate a <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdBreak.html" target="_blank">JWAdBreak</a> object called `adBreak`. At a minimum, you must assign an ad tag URL to the `tag` property.  **Be sure that the ad tag URL is an absolute URL.** 
 2. Instantiate a <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdConfig.html" target="_blank">JWAdConfig</a> object and assign it to `config.advertising`.
 3. Define `config.advertising.client` as `JWAdClientGoogima` (Obj-C) or `.googima` (Swift). This defines the ad client.
 4. Add `adBreak` to the <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdConfig.html#//api/name/schedule" target="_blank">schedule</a> array property of the `JWAdConfig`. This adds the ad schedule to the player's `config` property.
@@ -110,8 +110,8 @@ You can build upon this basic implementation by [adding more ad breaks](#add-mul
 Use the following steps to add multiple ad breaks to the previous pre-roll example:
 
 1. Instantiate an additional `JWAdBreak` object.
-2. Assign an ad tag to the `tag` property.
-3. When defining the <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdBreak.html#//api/name/offset" target="_blank">offset</a> property, choose one of the following values to schedule a mid-roll or post-roll ad:<br/><br/>**Mid-roll**<br/>&nbsp;&nbsp;- **{number}**: (String) Ad plays after the specified number of seconds.<br/>&nbsp;&nbsp;- **{timecode}**: (String) Ad plays at a specific time, in `hh:mm:ss:mmm` format.<br/>&nbsp;&nbsp;- **{xx%}**: (String) Ad plays after xx% of the content has played.<br/><br/>**Post-roll**<br/>&nbsp;&nbsp;- `post`: (String) Ad plays after the content.<br/><br/>
+2. Assign an ad tag to the `tag` property.  **Be sure that the ad tag URL is an absolute URL.** 
+3. When defining the <a href="https://developer.jwplayer.com/sdk/ios/reference/Classes/JWAdBreak.html#//api/name/offset" target="_blank">offset</a> property, choose one of the following values to schedule a mid-roll or post-roll ad:<br/><br/>**Mid-roll**<br/>&nbsp;&nbsp;- **{number}**: (String) Ad plays after the specified number of seconds.<br/>&nbsp;&nbsp;- **{timecode}**: (String) Ad plays at a specific time, in `hh:mm:ss:mmm` format.<br/><br/>**Post-roll**<br/>&nbsp;&nbsp;- `post`: (String) Ad plays after the content.<br/><br/>
 4. Add the additional `AdBreak` object to the `schedule` array.
 
 ```Obj-C
